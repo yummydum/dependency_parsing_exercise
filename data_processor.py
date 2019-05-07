@@ -1,8 +1,12 @@
 from collections import Counter
 from pathlib import Path
-from typing import Generator,List,Dict
+from typing import Generator,List,Dict,Tuple
 import re
 import torch
+from util import set_logger
+
+# set logger
+logger = set_logger(__name__)
 
 class ConllEntry:
     """
@@ -30,11 +34,10 @@ numberRegex = re.compile("[0-9]+|[0-9]+\\.[0-9]+|[0-9]+[0-9,]+")
 def normalize(word:str) -> str:
     return 'NUM' if numberRegex.match(word) else word.lower()
 
-def read_conll(conll_path:Path) -> Generator[List[str],None,None]:
+def read_conll(conll_path:Path) -> Generator[List[ConllEntry],None,None]:
     """
     Read the conll data sequentially and return a generetor of list of entry
     """
-
     # Entry which represents the ROOT
     root = ConllEntry(0,'*root*','ROOT-POS','ROOT-CPOS',-1,'rroot')
     entry_list = [root]
@@ -67,47 +70,44 @@ def read_conll(conll_path:Path) -> Generator[List[str],None,None]:
             yield entry_list
 
 def count_word_stat(conll_path:Path) -> Tuple[Counter,Counter,Counter]:
-    wordsCount = Counter()
-    posCount   = Counter()
-    relCount   = Counter()
+    words_count = Counter()
+    pos_count   = Counter()
+    rel_count   = Counter()
 
     conll_gen = read_conll(conll_path)
+    logger.debug("Now counting word stats...")
     for sentence in conll_gen:
         words    = []
         pos_tags = []
         relations= []
         # collect count for this sentence
-        for node in sentence:
-            words.append(node.norm)
-            pos_tags.append(node.pos)
-            relations.append(node.relation)
+        for entry in sentence:
+            words.append(entry.norm)
+            pos_tags.append(entry.pos)
+            relations.append(entry.relation)
         # update counter
-        wordsCount.update([node.norm for node in sentence])
-        posCount.update([node.pos for node in sentence])
-        relCount.update([node.relation for node in sentence])
+        words_count.update([entry.norm for entry in sentence])
+        pos_count.update([entry.pos for entry in sentence])
+        rel_count.update([entry.relation for entry in sentence])
 
-    return wordsCount,posCount,relCount
+    return words_count,pos_count,rel_count
 
 def get_indexers(conll_path:Path) -> Tuple[Dict[str,int],Dict[str,int]]:
     """ Return Dictionaries which maps word/pos to an unique index."""
     words_count,pos_count,rel_count = count_word_stat(conll_path)
-    word2index = {w: i for i, w in enumerate(wordsCount.keys())}
-    pos2index  = {t: i for i, t in enumerate(posCount.keys())}
+    logger.debug("Now constructing indexers...")
+    word2index = {w: i for i, w in enumerate(words_count.keys())}
+    pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
     return word2index,pos2index
 
-def prepare_sequence(entry:ConllEntry) -> Tuple[]:
-    idxs = [to_ix[w] for w in seq]
-     return torch.tensor(idxs, dtype=torch.long)
-
-def data_set(conll_path:Path) -> Generator[tensor]:
-    """ Generates """
+def data_generator(conll_path:Path) -> Generator[Tuple[torch.LongTensor,torch.LongTensor],None,None]:
+    """ Generates tuple of long tensor (word_tensor,pos_tensor) """
     conll_gen = read_conll(conll_path)
     word2index,pos2index = get_indexers(conll_path)
-    for sentence in conll_data
-        word_index = [word2index[w] for node.norm in sentence]
-        pos_index  = [pos2index[t]  for node.pos  in sentence]
-        yield torch.Longtensor(word_index),
-              torch.LongTensor(pos_index)
+    for sentence in conll_gen:
+        word_index = [word2index[entry.norm] for entry in sentence]
+        pos_index  = [pos2index[entry.pos]   for entry  in sentence]
+        yield torch.LongTensor(word_index),torch.LongTensor(pos_index)
 
 if __name__ == '__main__':
     test_path = Path("data","en-universal-test.conll")
@@ -119,4 +119,12 @@ if __name__ == '__main__':
             print(entry.head)
         break
 
+    # indexers
     word2index,pos2index = get_indexers(test_path)
+
+    # data set
+    data_gen = data_generator(test_path)
+    for i in data_gen:
+        print(i[0])  # tensor containing words
+        print(i[1])  # tensor containing pos
+        break
