@@ -2,7 +2,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Generator,List,Dict,Tuple
 import re
-import torch
+from torch import LongTensor
+from torch.utils.data import Dataset
 from util import set_logger
 
 # set logger
@@ -92,24 +93,36 @@ def count_word_stat(conll_path:Path) -> Tuple[Counter,Counter,Counter]:
 
     return words_count,pos_count,rel_count
 
-def get_indexers(conll_path:Path) -> Tuple[Dict[str,int],Dict[str,int]]:
-    """ Return Dictionaries which maps word/pos to an unique index."""
-    words_count,pos_count,rel_count = count_word_stat(conll_path)
-    logger.debug("Now constructing indexers...")
-    word2index = {w: i for i, w in enumerate(words_count.keys())}
-    pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
-    return word2index,pos2index
+class ConllDataSet(Dataset):
 
-def data_generator(conll_path:Path) -> Generator[Tuple[torch.LongTensor,torch.LongTensor],None,None]:
-    """ Generates tuple of long tensor (word_tensor,pos_tensor) """
-    conll_gen = read_conll(conll_path)
-    word2index,pos2index = get_indexers(conll_path)
-    for sentence in conll_gen:
-        word_index = [word2index[entry.norm] for entry in sentence]
-        pos_index  = [pos2index[entry.pos]   for entry  in sentence]
-        yield torch.LongTensor(word_index),torch.LongTensor(pos_index)
+    def __init__(self,conll_path:Path):
+        self.path = conll_path
+
+        # Hold word statistics
+        words_count,pos_count,rel_count = count_word_stat(conll_path)
+        self.word2index = {w: i for i, w in enumerate(words_count.keys())}
+        self.pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
+        self.vocab_size = len(self.word2index.keys())
+        self.pos_size   = len(self.pos2index.keys())
+
+        # Preprocess sentences
+        logger.debug("Now preprocessing data...")
+        self.data = []
+        for sentence in read_conll(conll_path):
+            word_index = [self.word2index[entry.norm] for entry in sentence]
+            pos_index  = [self.pos2index[entry.pos]   for entry  in sentence]
+            head       = [entry.head for entry in sentence]
+            data_i     = LongTensor(word_index),LongTensor(pos_index),head
+            self.data.append(data_i)
+
+    def __len__(self) -> int:
+        return len(self.data)
+
+    def __getitem__(self,idx:int) -> Tuple[LongTensor,LongTensor,List[int]]:
+        return  self.data[idx]
 
 if __name__ == '__main__':
+    # Test
     test_path = Path("data","en-universal-test.conll")
     conll_generator = read_conll(test_path)
     for sentence in conll_generator:
@@ -117,14 +130,4 @@ if __name__ == '__main__':
         for entry in sentence:
             print(entry.form)
             print(entry.head)
-        break
-
-    # indexers
-    word2index,pos2index = get_indexers(test_path)
-
-    # data set
-    data_gen = data_generator(test_path)
-    for i in data_gen:
-        print(i[0])  # tensor containing words
-        print(i[1])  # tensor containing pos
         break

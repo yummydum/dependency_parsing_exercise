@@ -2,10 +2,9 @@
 # The code is freely distributed under a MIT license. https://github.com/LxMLS/lxmls-toolkit/
 
 import numpy as np
-from typing import Tuple
+from typing import List,Tuple
 
-def eisner_decode(score_matrix:np.matrix,gold:np.array=None) -> Tuple[np.array,float]:
-
+def eisner_decode(score_matrix:List[List[float]],gold:List[int]=None) -> List[int]:
     """
     Implementation of Eisner's algorithm.
 
@@ -19,11 +18,11 @@ def eisner_decode(score_matrix:np.matrix,gold:np.array=None) -> Tuple[np.array,f
 
     Output:
     1) An numpy array where the ith element stores the index of the infered head word of the ith word.
-    2)
+    2) The maximum score obtained by the decoded sequence
     """
 
-    # Matrix should be square
-    row_num,col_num = np.shape(score_matrix)
+    score_matrix = np.array(score_matrix)
+    row_num,col_num = score_matrix.shape
     assert row_num == col_num
 
     # Number of words in the sentence (exclude ROOT)
@@ -74,11 +73,9 @@ def eisner_decode(score_matrix:np.matrix,gold:np.array=None) -> Tuple[np.array,f
             complete[s, t, 1] = np.max(complete_vals1)
             complete_backtrack[s, t, 1] = s + 1 + np.argmax(complete_vals1)
 
-    max_score = complete[0][N][1]
     heads = -np.ones(N+1, dtype=int)
     backtrack_eisner(incomplete_backtrack, complete_backtrack, 0, N, 1, 1, heads)
-    return heads,max_score
-
+    return heads
 
 def backtrack_eisner(incomplete_backtrack, complete_backtrack, s, t, direction, complete, heads):
     '''
@@ -128,38 +125,32 @@ if __name__ == '__main__':
 
     # test case 1
     # ROOT -> a -> b -> c
-    score_matrix = np.matrix([[np.nan,10,0,0],
-                              [0,np.nan,10,0],
-                              [0,0,np.nan,10],
-                              [0,0,0,np.nan]])
-    expected_heads = np.array([-1,0,1,2])
-    expected_score = 30.0 + 3.0
-    heads,score = eisner_decode(score_matrix)
+    score_matrix = np.array([[np.nan,10,0,0],
+                            [0,np.nan,10,0],
+                            [0,0,np.nan,10],
+                            [0,0,0,np.nan]])
+    expected_heads = [-1,0,1,2]
+    heads = eisner_decode(score_matrix)
     assert (expected_heads == heads).all()
-    assert expected_score == score
 
     # test case 2
     # ROOT -> b
     # b -> a
     # b -> c
-    score_matrix = np.matrix([[np.nan,0,4,0],
-                              [0,np.nan,0,0],
-                              [4,0,np.nan,8],
-                              [0,0,0,np.nan]])
-    expected_heads = np.array([-1,2,0,2])
-    expected_score = 16.0 + 3.0
-    heads,score = eisner_decode(score_matrix)
+    score_matrix = np.array([[np.nan,0,4,0],
+                            [0,np.nan,0,0],
+                            [4,0,np.nan,8],
+                            [0,0,0,np.nan]])
+    expected_heads = [-1,2,0,2]
+    heads = eisner_decode(score_matrix)
     assert (expected_heads == heads).all()
-    assert expected_score == score
 
     # test case 3
     # ROOT -> c -> b -> a
-    score_matrix = np.matrix([[np.nan,0,0,100],
-                              [0,np.nan,0,0],
-                              [0,100,np.nan,0],
-                              [0,0,100,np.nan]])
-    expected_heads = np.array([-1,2,3,0])
-    expected_score = 300.0 + 3.0
-    heads,score = eisner_decode(score_matrix)
+    score_matrix = np.array([[np.nan,0,0,100],
+                            [0,np.nan,0,0],
+                            [0,100,np.nan,0],
+                            [0,0,100,np.nan]])
+    expected_heads = [-1,2,3,0]
+    heads = eisner_decode(score_matrix)
     assert (expected_heads == heads).all()
-    assert expected_score == score

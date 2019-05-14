@@ -1,22 +1,30 @@
 from pathlib import Path
-from typing import Tuple
+from typing import List,Tuple,Union
 import numpy as np
 import torch
 import torch.autograd as autograd
 import torch.nn as nn
 import torch.optim as optim
 from decoder import eisner_decode
-from data_processor import count_word_stat,data_generator
+from data_processor import ConllDataSet
 from util import set_logger
 # set logger
 logger = set_logger(__name__)
-
+# Fix seed
 torch.manual_seed(1)
 
 class BiLSTM_Parser(nn.Module):
 
-    def __init__(self,vocab_size,pos_size,word_embed_dim,pos_embed_dim, lstm_hidden_dim,mlp_hidden_dim,num_layers):
-        super(BiLSTM_Parser, self).__init__()
+    def __init__(self,
+                 vocab_size,
+                 pos_size,
+                 word_embed_dim,
+                 pos_embed_dim,
+                 lstm_hidden_dim,
+                 mlp_hidden_dim,
+                 num_layers):
+
+        super(BiLSTM_Parser,self).__init__()
 
         # hidden dimension must be an even number for now
         assert lstm_hidden_dim % 2 == 0
@@ -40,11 +48,22 @@ class BiLSTM_Parser(nn.Module):
         # Hold the hidden state of LSTM layer
         self.hidden = self.init_hidden()
 
+        # Is the model used in training or inference
+        self.is_train_mode = True
+
+    def train(self):
+        self.is_train_mode = True
+
+    def eval(self):
+        self.is_train_mode = False
+
     def init_hidden(self):
         return (torch.randn(2, 1, self.lstm_hidden_dim // 2),
                 torch.randn(2, 1, self.lstm_hidden_dim // 2))
 
-    def _compute_score_matrix(self, word_tensor,pos_tensor) -> np.matrix:
+    def compute_score_matrix(self,
+                             word_tensor:torch.LongTensor,
+                             pos_tensor :torch.LongTensor) -> torch.Tensor:
         """
         Compute a score matrix where
         (i,j) element is the score of ith word being the head of jth word
@@ -59,7 +78,7 @@ class BiLSTM_Parser(nn.Module):
         lstm_out, self.hidden = self.lstm(embeds)
         lstm_out = lstm_out.view(sentence_len, self.lstm_hidden_dim)  # lstm_out.shape = (sentence_len,lstm_hidden_dim)
         # Compute score of h -> m
-        score_matrix = np.empty((sentence_len,sentence_len))
+        score_matrix = torch.zeros((sentence_len,sentence_len))
         for h in range(sentence_len):
             for m in range(sentence_len):    # for test : h=0;m=1
                 # Words cannot depend on itself
@@ -72,32 +91,53 @@ class BiLSTM_Parser(nn.Module):
                     score_matrix[h][m] = score
         return score_matrix
 
-    def forward(self, word_tensor,pos_tensor) -> Tuple[np.array,int]:
-        """
-        Determine the optimal dependency structure and it's score under the current param
-        """
+    def compute_head_score(self,
+                           score_matrix:torch.Tensor,
+                           head_list:List[int]) \
+                           -> float:
+        score = 0
+        for m,h in enumerate(head_list):
+            score += score_matrix[h][m]
+        return score
+
+    def forward(self,
+                word_tensor:torch.LongTensor,
+                pos_tensor :torch.LongTensor,
+                head_golden:List[int] = None)  \
+                -> Tuple[List[int],float,Union[float,None]]:
+
+        # Check inconsistent argument and mode
+        if self.is_train_mode and head_golden is None:
+            raise ValueError("Pass golden for training mode")
+        elif not self.is_train_mode and head_golden is not None:
+            raise ValueError("Golden is not needed for inference")
+
         # Extract features from lstm layer
-        lstm_feats = self._compute_score_matrix(word_tensor,pos_tensor)
+        score_matrix = self.compute_score_matrix(word_tensor,pos_tensor)
         # Find the best path, given the features.
-        head_words_hat,max_score = eisner_decode(lstm_feats)
-        return head_words_hat,max_score
+        head_hat = eisner_decode(score_matrix.tolist(),head_golden)
+        # Compute the scores
+        score_hat = self.compute_head_score(score_matrix,head_hat)
+        if head_golden is not None:
+            score_golden = self.compute_head_score(score_matrix,head_golden)
+        else:
+            score_golden = None
+        return head_hat,score_hat,score_golden
 
 if __name__ == '__main__':
-    train_path = Path("data","en-universal-train.conll")
-    # Get first data for test
-    data_gen = data_generator(train_path)
-    for data_i in data_gen:
-        break
-    word_tensor,pos_tensor = data_i
+
+    # Script for test
 
     # Initialize the model
-    words_count,pos_count,rel_count = count_word_stat(train_path)
-    model = BiLSTM_Parser(vocab_size = len(words_count.keys()),
-                          pos_size   = len(pos_count.keys()),
+    model = BiLSTM_Parser(vocab_size = train_data.vocab_size,
+                          pos_size   = train_data.pos_size,
                           word_embed_dim  = 100,
                           pos_embed_dim   = 10,
                           lstm_hidden_dim = 30,
                           mlp_hidden_dim  = 15,
                           num_layers      = 2)
     # Forward
-    model.forward(word_tensor,pos_tensor)  # self = model
+    train_path = Path("data","en-universal-train.conll")
+    train_data = ConllDataSet(train_path)
+    word_tensor,pos_tensor,head_golden  = train_data[0]
+    model.forward(word_tensor,pos_tensor,head_golden)  # self = model
