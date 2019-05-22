@@ -151,6 +151,13 @@ def margin_based_loss(score_hat:torch.Tensor,
 if __name__ == '__main__':
 
     ###  Script for test
+
+    # Load test
+    from pathlib import Path
+    train_path = Path("data","en-universal-train.conll")
+    train_data = ConllDataSet(train_path)
+
+    # Init model
     model = BiLSTM_Parser(vocab_size = train_data.vocab_size,
                           pos_size   = train_data.pos_size,
                           word_embed_dim  = 100,
