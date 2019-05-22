@@ -75,7 +75,7 @@ def eisner_decode(score_matrix:List[List[float]],gold:List[int]=None) -> List[in
 
     heads = -np.ones(N+1, dtype=int)
     backtrack_eisner(incomplete_backtrack, complete_backtrack, 0, N, 1, 1, heads)
-    return heads
+    return heads.tolist()
 
 def backtrack_eisner(incomplete_backtrack, complete_backtrack, s, t, direction, complete, heads):
     '''
@@ -125,10 +125,10 @@ if __name__ == '__main__':
 
     # test case 1
     # ROOT -> a -> b -> c
-    score_matrix = np.array([[np.nan,10,0,0],
-                            [0,np.nan,10,0],
-                            [0,0,np.nan,10],
-                            [0,0,0,np.nan]])
+    score_matrix = np.array([[0,10,0,0],
+                             [0,0,10,0],
+                             [0,0,0,10],
+                             [0,0,0,0]])
     expected_heads = [-1,0,1,2]
     heads = eisner_decode(score_matrix)
     assert (expected_heads == heads).all()
@@ -137,20 +137,20 @@ if __name__ == '__main__':
     # ROOT -> b
     # b -> a
     # b -> c
-    score_matrix = np.array([[np.nan,0,4,0],
-                            [0,np.nan,0,0],
-                            [4,0,np.nan,8],
-                            [0,0,0,np.nan]])
+    score_matrix = np.array([[0,0,4,0],
+                             [0,0,0,0],
+                             [4,0,0,8],
+                             [0,0,0,0]])
     expected_heads = [-1,2,0,2]
     heads = eisner_decode(score_matrix)
     assert (expected_heads == heads).all()
 
     # test case 3
     # ROOT -> c -> b -> a
-    score_matrix = np.array([[np.nan,0,0,100],
-                            [0,np.nan,0,0],
-                            [0,100,np.nan,0],
-                            [0,0,100,np.nan]])
+    score_matrix = np.array([[0,0,0,100],
+                             [0,0,0,0],
+                             [0,100,0,0],
+                             [0,0,100,0]])
     expected_heads = [-1,2,3,0]
     heads = eisner_decode(score_matrix)
     assert (expected_heads == heads).all()

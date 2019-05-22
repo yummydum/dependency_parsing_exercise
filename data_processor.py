@@ -1,6 +1,6 @@
 from collections import Counter
 from pathlib import Path
-from typing import Generator,List,Dict,Tuple
+from typing import Generator,List,Dict,Tuple,Optional
 import re
 from torch import LongTensor
 from torch.utils.data import Dataset
@@ -95,24 +95,34 @@ def count_word_stat(conll_path:Path) -> Tuple[Counter,Counter,Counter]:
 
 class ConllDataSet(Dataset):
 
-    def __init__(self,conll_path:Path):
+    def __init__(self,conll_path:Path,
+                 word2index:Optional[Dict[str,int]]=None,
+                 pos2index:Optional[Dict[str,int]] =None):
         self.path = conll_path
 
-        # Hold word statistics
-        words_count,pos_count,rel_count = count_word_stat(conll_path)
-        self.word2index = {w: i for i, w in enumerate(words_count.keys())}
-        self.pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
-        self.vocab_size = len(self.word2index.keys())
-        self.pos_size   = len(self.pos2index.keys())
+        # Set dict to map word/pos to index
+        if word2index is None and pos2index is None:
+            words_count,pos_count,rel_count = count_word_stat(conll_path)
+            self.word2index = {w: i for i, w in enumerate(words_count.keys())}
+            self.pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
+        elif word2index is not None and pos2index is not None:
+            self.word2index = word2index
+            self.pos2index  = pos2index
+        else:
+            raise ValueError("Provide both indexer or nothing")
+
+        # Size of input (add 1 for unknown token)
+        self.vocab_size = len(self.word2index.keys()) + 1
+        self.pos_size   = len(self.pos2index.keys())  + 1
 
         # Preprocess sentences
         logger.debug("Now preprocessing data...")
         self.data = []
         for sentence in read_conll(conll_path):
-            word_index = [self.word2index[entry.norm] for entry in sentence]
-            pos_index  = [self.pos2index[entry.pos]   for entry  in sentence]
+            word_index = [self.map2index(self.word2index,entry.norm) for entry in sentence]
+            pos_index  = [self.map2index(self.pos2index,entry.pos)   for entry in sentence]
             head       = [entry.head for entry in sentence]
-            data_i     = LongTensor(word_index),LongTensor(pos_index),head
+            data_i     = LongTensor(word_index).view(1,-1),LongTensor(pos_index).view(1,-1),head
             self.data.append(data_i)
 
     def __len__(self) -> int:
@@ -120,6 +130,12 @@ class ConllDataSet(Dataset):
 
     def __getitem__(self,idx:int) -> Tuple[LongTensor,LongTensor,List[int]]:
         return  self.data[idx]
+
+    def map2index(self,index_dict:Dict[str,int],token:str):
+        if token in index_dict:
+            return index_dict[token]
+        else:
+            return len(index_dict) + 1  # Index for unknown token
 
 if __name__ == '__main__':
     # Test

@@ -3,6 +3,7 @@
 %autoreload 2
 """
 from pathlib import Path
+import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
@@ -19,29 +20,34 @@ torch.manual_seed(1)
 train_data_path = Path("data","en-universal-train.conll")
 dev_data_path   = Path("data","en-universal-dev.conll")
 
-# Load data
+# Load train data
 train_data = ConllDataSet(train_data_path)
-train_data_loader = DataLoader(train_data,shuffle=True)
+# train_data_loader = DataLoader(train_data,shuffle=True)
+
+# Load dev data
+dev_data = ConllDataSet(dev_data_path,
+                        word2index=train_data.word2index,
+                        pos2index=train_data.pos2index)
+# dev_data_loader = DataLoader(dev_data,shuffle=True)
 
 # Init model
 model = BiLSTM_Parser(vocab_size = train_data.vocab_size,
                       pos_size   = train_data.pos_size,
                       word_embed_dim  = 100,
-                      pos_embed_dim   = 10,
-                      lstm_hidden_dim = 30,
-                      mlp_hidden_dim  = 15,
+                      pos_embed_dim   = 25,
+                      lstm_hidden_dim = 250,
+                      mlp_hidden_dim  = 100,
                       num_layers      = 2)
 # Init optimizer
-optimizer = optim.Adam(model.parameters(),lr=0.0001)
+optimizer = optim.Adam(model.parameters(),lr=0.1)
 
 # Config
-epoch_num = 5
+epoch_num = 100
 record_interval = 10
 
 for epoch in range(epoch_num):
     loss = 0
     loss_tracker = []
-    # Iterate over the data
     for i,data in enumerate(train_data):
         word_tensor = data[0]
         pos_tensor  = data[1]
@@ -64,12 +70,14 @@ for epoch in range(epoch_num):
             loss_tracker.append(mean_loss)
             loss = 0
 
+
     # Calc train/dev loss for this epoch
     train_loss = ""
     dev_loss   = ""
 
-# Report the result
-
+    # Store the result
+    fig,ax = plt.subplots()
+    ax.plot(range(len(loss_tracker)),loss_tracker)
 
 # Test the model
 test_data_path  = Path("data","en-universal-test.conll")
