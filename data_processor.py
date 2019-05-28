@@ -2,12 +2,13 @@ from collections import Counter
 from pathlib import Path
 from typing import Generator,List,Dict,Tuple,Optional
 import re
+import numpy as np
 from torch import LongTensor
 from torch.utils.data import Dataset
 from util import set_logger
 
-# set logger
 logger = set_logger(__name__)
+np.random.seed(1)
 
 class ConllEntry:
     """
@@ -97,14 +98,22 @@ class ConllDataSet(Dataset):
 
     def __init__(self,conll_path:Path,
                  word2index:Optional[Dict[str,int]]=None,
-                 pos2index:Optional[Dict[str,int]] =None):
+                 pos2index:Optional[Dict[str,int]] =None,
+                 word_dropout=False):
         self.path = conll_path
+        self.word_dropout = word_dropout
 
         # Set dict to map word/pos to index
         if word2index is None and pos2index is None:
+            logger.debug("Loading data for training...")
             words_count,pos_count,rel_count = count_word_stat(conll_path)
+            self.words_count = words_count
             self.word2index = {w: i for i, w in enumerate(words_count.keys())}
             self.pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
+
+            if word_dropout:
+                logger.debug("Word drop out enabled")
+
         elif word2index is not None and pos2index is not None:
             self.word2index = word2index
             self.pos2index  = pos2index
@@ -114,6 +123,7 @@ class ConllDataSet(Dataset):
         # Size of input (add 1 for unknown token)
         self.vocab_size = len(self.word2index.keys()) + 1
         self.pos_size   = len(self.pos2index.keys())  + 1
+
 
         # Preprocess sentences
         logger.debug("Now preprocessing data...")
@@ -133,9 +143,17 @@ class ConllDataSet(Dataset):
 
     def map2index(self,index_dict:Dict[str,int],token:str):
         if token in index_dict:
-            return index_dict[token]
+            if self.word_dropout:
+                drop_out_prob = 0.25 / (self.words_count[token] + 0.25)
+                is_drop = np.random.binomial(1,drop_out_prob)
+                if is_drop == 1:
+                    return len(index_dict.keys())  # Index for unknown token
+                else:
+                    return index_dict[token]
+            else:
+                return index_dict[token]
         else:
-            return len(index_dict) + 1  # Index for unknown token
+            return len(index_dict.keys())  # Index for unknown token
 
 if __name__ == '__main__':
     # Test

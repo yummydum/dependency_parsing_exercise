@@ -57,12 +57,6 @@ class BiLSTM_Parser(nn.Module):
         # Is the model used in training or inference
         self.is_train_mode = True
 
-    def train(self):
-        self.is_train_mode = True
-
-    def eval(self):
-        self.is_train_mode = False
-
     def compute_score_matrix(self,
                              word_tensor:torch.LongTensor,
                              pos_tensor :torch.LongTensor)  \

@@ -17,7 +17,7 @@ torch.manual_seed(0)
 
 # Read data
 train_path = Path("data","en-universal-train.conll")
-train_data = ConllDataSet(conll_path=train_path)
+train_data = ConllDataSet(conll_path=train_path,word_dropout=True)
 dev_path   = Path("data","en-universal-dev.conll")
 dev_data   = ConllDataSet(conll_path=dev_path,
                           word2index=train_data.word2index,
@@ -90,12 +90,12 @@ for epoch in range(epoch_num):
         logger.debug(f"Current mean loss for dev data is {mean_loss_dev}")
 
     # Save model
-    result_path = Path("result","model",f"model_epoch{epoch}.pt")
+    result_path = Path("result","model",f"model_word_dropout_epoch{epoch}.pt")
     torch.save(model,str(result_path))
 
 # Visualize the loss and scores
 for metric,tracks in tracker.items():
     fig,ax = plt.subplots()
     ax.plot(range(len(tracker[metric])),tracker[metric])
-    plot_path = Path("result",f"{__name__}_{metric}.jpeg")
+    plot_path = Path("result",f"{__name__}_{metric}_word_dropout.jpeg")
     fig.savefig(plot_path)
