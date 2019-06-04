@@ -9,6 +9,7 @@ import torch
 import torch.autograd as autograd
 import torch.nn as nn
 import torch.optim as optim
+from pytorch_pretrained_bert import BertTokenizer, BertModel
 from decoder import eisner_decode
 from data_processor import ConllDataSet
 from util import set_logger

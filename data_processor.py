@@ -5,6 +5,7 @@ import re
 import numpy as np
 from torch import LongTensor
 from torch.utils.data import Dataset
+from pytorch_pretrained_bert import BertTokenizer, BertModel
 from util import set_logger
 
 logger = set_logger(__name__)
@@ -154,6 +155,28 @@ class ConllDataSet(Dataset):
                 return index_dict[token]
         else:
             return len(index_dict.keys())  # Index for unknown token
+
+class ConllDataSet_BERT(Dataset):
+
+    def __init__(self,conll_path:Path):
+        self.path = conll_path
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+        # Preprocess sentences
+        logger.debug("Now preprocessing data...")
+        self.data = []
+        for sentence in read_conll(conll_path):
+            tokenized_sentence = [self.tokenizer(self.word2index,entry.norm) for entry in sentence]
+            word_index  =  self.tokenizer.convert_tokens_to_ids(word_index).view(1,-1)
+            segment_ids =  np.zeros(len(word_index)).tolist()
+            head       = [entry.head for entry in sentence]
+            self.data.append((word_index,segment_ids,head))
+
+    def __len__(self) -> int:
+        return len(self.data)
+
+    def __getitem__(self,idx:int) -> Tuple[LongTensor,LongTensor,List[int]]:
+        return  self.data[idx]
 
 if __name__ == '__main__':
     # Test

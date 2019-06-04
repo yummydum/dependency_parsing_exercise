@@ -1574,3 +1574,2140 @@
 2019-05-28 23:29:09,697 - DEBUG : Now at 5439th data in epoch 0
 2019-05-28 23:29:09,718 - DEBUG : Current mean loss for train data is 27.317901000380516
 2019-05-28 23:29:09,736 - DEBUG : Current mean score_hat is 23.707641653716564
+2019-05-28 23:29:09,768 - DEBUG : Current mean score_golden is -2.610259152017534
+2019-05-28 23:29:21,862 - DEBUG : Now at 5471th data in epoch 0
+2019-05-28 23:29:21,868 - DEBUG : Current mean loss for train data is 19.09978884458542
+2019-05-28 23:29:21,878 - DEBUG : Current mean score_hat is 16.300953149795532
+2019-05-28 23:29:21,897 - DEBUG : Current mean score_golden is -1.7988356025889516
+2019-05-28 23:29:33,486 - DEBUG : Now at 1631th data in epoch 0
+2019-05-28 23:29:33,489 - DEBUG : Current mean loss for train data is 31.350875437259674
+2019-05-28 23:29:33,491 - DEBUG : Current mean score_hat is 28.898103147745132
+2019-05-28 23:29:33,497 - DEBUG : Current mean score_golden is -1.4527724469080567
+2019-05-28 23:29:38,105 - DEBUG : Now at 5503th data in epoch 0
+2019-05-28 23:29:38,110 - DEBUG : Current mean loss for train data is 24.85040646791458
+2019-05-28 23:29:38,115 - DEBUG : Current mean score_hat is 21.507887467741966
+2019-05-28 23:29:38,123 - DEBUG : Current mean score_golden is -2.342518985271454
+2019-05-28 23:29:55,789 - DEBUG : Now at 1663th data in epoch 0
+2019-05-28 23:29:55,792 - DEBUG : Current mean loss for train data is 28.381455689668655
+2019-05-28 23:29:55,802 - DEBUG : Current mean score_hat is 26.136074662208557
+2019-05-28 23:29:55,813 - DEBUG : Current mean score_golden is -1.2453809883445501
+2019-05-28 23:30:03,100 - DEBUG : Now at 5535th data in epoch 0
+2019-05-28 23:30:03,119 - DEBUG : Current mean loss for train data is 29.879692018032074
+2019-05-28 23:30:03,121 - DEBUG : Current mean score_hat is 25.909408688545227
+2019-05-28 23:30:03,147 - DEBUG : Current mean score_golden is -2.9702833965420723
+2019-05-28 23:30:14,139 - DEBUG : Now at 1695th data in epoch 0
+2019-05-28 23:30:14,145 - DEBUG : Current mean loss for train data is 22.774313397705555
+2019-05-28 23:30:14,156 - DEBUG : Current mean score_hat is 20.803748577833176
+2019-05-28 23:30:14,169 - DEBUG : Current mean score_golden is -0.9705647896043956
+2019-05-28 23:30:33,782 - DEBUG : Now at 5567th data in epoch 0
+2019-05-28 23:30:33,796 - DEBUG : Current mean loss for train data is 29.973776310682297
+2019-05-28 23:30:33,816 - DEBUG : Current mean score_hat is 26.10129490494728
+2019-05-28 23:30:33,852 - DEBUG : Current mean score_golden is -2.8724817391484976
+2019-05-28 23:30:38,654 - DEBUG : Now at 1727th data in epoch 0
+2019-05-28 23:30:38,669 - DEBUG : Current mean loss for train data is 25.810623675584793
+2019-05-28 23:30:38,674 - DEBUG : Current mean score_hat is 23.792311668395996
+2019-05-28 23:30:38,678 - DEBUG : Current mean score_golden is -1.01831188891083
+2019-05-28 23:30:53,398 - DEBUG : Now at 5599th data in epoch 0
+2019-05-28 23:30:53,400 - DEBUG : Current mean loss for train data is 25.848408982157707
+2019-05-28 23:30:53,404 - DEBUG : Current mean score_hat is 22.3557780534029
+2019-05-28 23:30:53,407 - DEBUG : Current mean score_golden is -2.4926309045404196
+2019-05-28 23:30:55,454 - DEBUG : Now at 1759th data in epoch 0
+2019-05-28 23:30:55,457 - DEBUG : Current mean loss for train data is 23.90130391716957
+2019-05-28 23:30:55,460 - DEBUG : Current mean score_hat is 21.958192981779575
+2019-05-28 23:30:55,471 - DEBUG : Current mean score_golden is -0.9431108538992703
+2019-05-28 23:31:08,767 - DEBUG : Now at 5631th data in epoch 0
+2019-05-28 23:31:08,788 - DEBUG : Current mean loss for train data is 23.003782466053963
+2019-05-28 23:31:08,791 - DEBUG : Current mean score_hat is 19.8477234095335
+2019-05-28 23:31:08,796 - DEBUG : Current mean score_golden is -2.156059076078236
+2019-05-28 23:31:10,063 - DEBUG : Now at 1791th data in epoch 0
+2019-05-28 23:31:10,065 - DEBUG : Current mean loss for train data is 22.208066076040268
+2019-05-28 23:31:10,069 - DEBUG : Current mean score_hat is 20.33067673444748
+2019-05-28 23:31:10,096 - DEBUG : Current mean score_golden is -0.8773893285542727
+2019-05-28 23:31:24,032 - DEBUG : Now at 5663th data in epoch 0
+2019-05-28 23:31:24,036 - DEBUG : Current mean loss for train data is 23.535417020320892
+2019-05-28 23:31:24,043 - DEBUG : Current mean score_hat is 20.303899198770523
+2019-05-28 23:31:24,056 - DEBUG : Current mean score_golden is -2.2315179370343685
+2019-05-28 23:31:26,564 - DEBUG : Now at 1823th data in epoch 0
+2019-05-28 23:31:26,568 - DEBUG : Current mean loss for train data is 24.34004732966423
+2019-05-28 23:31:26,571 - DEBUG : Current mean score_hat is 22.407522976398468
+2019-05-28 23:31:26,582 - DEBUG : Current mean score_golden is -0.9325243942439556
+2019-05-28 23:31:36,453 - DEBUG : Now at 5695th data in epoch 0
+2019-05-28 23:31:36,456 - DEBUG : Current mean loss for train data is 20.065106242895126
+2019-05-28 23:31:36,458 - DEBUG : Current mean score_hat is 17.220924861729145
+2019-05-28 23:31:36,461 - DEBUG : Current mean score_golden is -1.844181246124208
+2019-05-28 23:31:43,270 - DEBUG : Now at 1855th data in epoch 0
+2019-05-28 23:31:43,273 - DEBUG : Current mean loss for train data is 23.837608478963375
+2019-05-28 23:31:43,276 - DEBUG : Current mean score_hat is 21.943065252155066
+2019-05-28 23:31:43,286 - DEBUG : Current mean score_golden is -0.894543259870261
+2019-05-28 23:31:55,010 - DEBUG : Now at 5727th data in epoch 0
+2019-05-28 23:31:55,012 - DEBUG : Current mean loss for train data is 27.004076570272446
+2019-05-28 23:31:55,015 - DEBUG : Current mean score_hat is 23.429911881685257
+2019-05-28 23:31:55,023 - DEBUG : Current mean score_golden is -2.574164904654026
+2019-05-28 23:32:07,707 - DEBUG : Now at 1887th data in epoch 0
+2019-05-28 23:32:07,711 - DEBUG : Current mean loss for train data is 26.87562671303749
+2019-05-28 23:32:07,714 - DEBUG : Current mean score_hat is 24.86757868528366
+2019-05-28 23:32:07,720 - DEBUG : Current mean score_golden is -1.008047959767282
+2019-05-28 23:32:14,343 - DEBUG : Now at 5759th data in epoch 0
+2019-05-28 23:32:14,361 - DEBUG : Current mean loss for train data is 24.223670780658722
+2019-05-28 23:32:14,372 - DEBUG : Current mean score_hat is 20.91697496175766
+2019-05-28 23:32:14,377 - DEBUG : Current mean score_golden is -2.3066957592964172
+2019-05-28 23:32:23,030 - DEBUG : Now at 1919th data in epoch 0
+2019-05-28 23:32:23,049 - DEBUG : Current mean loss for train data is 17.39033816754818
+2019-05-28 23:32:23,081 - DEBUG : Current mean score_hat is 15.733452469110489
+2019-05-28 23:32:23,116 - DEBUG : Current mean score_golden is -0.6568856742233038
+2019-05-28 23:32:33,697 - DEBUG : Now at 5791th data in epoch 0
+2019-05-28 23:32:33,719 - DEBUG : Current mean loss for train data is 23.78358691930771
+2019-05-28 23:32:33,731 - DEBUG : Current mean score_hat is 20.502665668725967
+2019-05-28 23:32:33,736 - DEBUG : Current mean score_golden is -2.2809213418513536
+2019-05-28 23:32:41,589 - DEBUG : Now at 1951th data in epoch 0
+2019-05-28 23:32:41,592 - DEBUG : Current mean loss for train data is 25.21031564474106
+2019-05-28 23:32:41,594 - DEBUG : Current mean score_hat is 23.3262839615345
+2019-05-28 23:32:41,604 - DEBUG : Current mean score_golden is -0.8840314708650112
+2019-05-28 23:32:52,281 - DEBUG : Now at 5823th data in epoch 0
+2019-05-28 23:32:52,284 - DEBUG : Current mean loss for train data is 25.972379595041275
+2019-05-28 23:32:52,287 - DEBUG : Current mean score_hat is 22.490031391382217
+2019-05-28 23:32:52,297 - DEBUG : Current mean score_golden is -2.4823480919003487
+2019-05-28 23:32:57,666 - DEBUG : Now at 1983th data in epoch 0
+2019-05-28 23:32:57,670 - DEBUG : Current mean loss for train data is 24.178927958011627
+2019-05-28 23:32:57,672 - DEBUG : Current mean score_hat is 22.360185593366623
+2019-05-28 23:32:57,681 - DEBUG : Current mean score_golden is -0.8187424410134554
+2019-05-28 23:33:06,314 - DEBUG : Now at 5855th data in epoch 0
+2019-05-28 23:33:06,319 - DEBUG : Current mean loss for train data is 21.62863028049469
+2019-05-28 23:33:06,324 - DEBUG : Current mean score_hat is 18.60452651977539
+2019-05-28 23:33:06,331 - DEBUG : Current mean score_golden is -2.0241036070510745
+2019-05-28 23:33:12,071 - DEBUG : Now at 2015th data in epoch 0
+2019-05-28 23:33:12,094 - DEBUG : Current mean loss for train data is 21.647215336561203
+2019-05-28 23:33:12,100 - DEBUG : Current mean score_hat is 19.91721497476101
+2019-05-28 23:33:12,104 - DEBUG : Current mean score_golden is -0.7300004912540317
+2019-05-28 23:33:20,425 - DEBUG : Now at 5887th data in epoch 0
+2019-05-28 23:33:20,427 - DEBUG : Current mean loss for train data is 20.9712902456522
+2019-05-28 23:33:20,432 - DEBUG : Current mean score_hat is 17.96876759827137
+2019-05-28 23:33:20,441 - DEBUG : Current mean score_golden is -2.0025225626304746
+2019-05-28 23:33:34,161 - DEBUG : Now at 2047th data in epoch 0
+2019-05-28 23:33:34,172 - DEBUG : Current mean loss for train data is 28.340384006500244
+2019-05-28 23:33:34,175 - DEBUG : Current mean score_hat is 26.425644800066948
+2019-05-28 23:33:34,197 - DEBUG : Current mean score_golden is -0.9147392148151994
+2019-05-28 23:33:35,410 - DEBUG : Now at 5919th data in epoch 0
+2019-05-28 23:33:35,428 - DEBUG : Current mean loss for train data is 22.721731662750244
+2019-05-28 23:33:35,442 - DEBUG : Current mean score_hat is 19.569679394364357
+2019-05-28 23:33:35,458 - DEBUG : Current mean score_golden is -2.1520522125065327
+2019-05-28 23:33:48,688 - DEBUG : Now at 5951th data in epoch 0
+2019-05-28 23:33:48,693 - DEBUG : Current mean loss for train data is 21.189996033906937
+2019-05-28 23:33:48,695 - DEBUG : Current mean score_hat is 18.17620860040188
+2019-05-28 23:33:48,701 - DEBUG : Current mean score_golden is -2.0137872993946075
+2019-05-28 23:33:56,313 - DEBUG : Now at 2079th data in epoch 0
+2019-05-28 23:33:56,317 - DEBUG : Current mean loss for train data is 28.05670255422592
+2019-05-28 23:33:56,323 - DEBUG : Current mean score_hat is 26.169724762439728
+2019-05-28 23:33:56,338 - DEBUG : Current mean score_golden is -0.8869777293875813
+2019-05-28 23:34:11,060 - DEBUG : Now at 5983th data in epoch 0
+2019-05-28 23:34:11,077 - DEBUG : Current mean loss for train data is 28.56663265824318
+2019-05-28 23:34:11,090 - DEBUG : Current mean score_hat is 24.84795382618904
+2019-05-28 23:34:11,093 - DEBUG : Current mean score_golden is -2.718678902834654
+2019-05-28 23:34:18,004 - DEBUG : Now at 2111th data in epoch 0
+2019-05-28 23:34:18,007 - DEBUG : Current mean loss for train data is 27.846265763044357
+2019-05-28 23:34:18,009 - DEBUG : Current mean score_hat is 25.960383147001266
+2019-05-28 23:34:18,014 - DEBUG : Current mean score_golden is -0.8858827194198966
+2019-05-28 23:34:32,159 - DEBUG : Now at 6015th data in epoch 0
+2019-05-28 23:34:32,188 - DEBUG : Current mean loss for train data is 27.973412603139877
+2019-05-28 23:34:32,197 - DEBUG : Current mean score_hat is 24.33594250679016
+2019-05-28 23:34:32,203 - DEBUG : Current mean score_golden is -2.6374701783061028
+2019-05-28 23:34:36,678 - DEBUG : Now at 2143th data in epoch 0
+2019-05-28 23:34:36,695 - DEBUG : Current mean loss for train data is 24.99571093916893
+2019-05-28 23:34:36,706 - DEBUG : Current mean score_hat is 23.182379335165024
+2019-05-28 23:34:36,712 - DEBUG : Current mean score_golden is -0.8133315332233906
+2019-05-28 23:34:44,081 - DEBUG : Now at 6047th data in epoch 0
+2019-05-28 23:34:44,130 - DEBUG : Current mean loss for train data is 19.439994364976883
+2019-05-28 23:34:44,141 - DEBUG : Current mean score_hat is 16.649667590856552
+2019-05-28 23:34:44,146 - DEBUG : Current mean score_golden is -1.7903266632929444
+2019-05-28 23:34:57,622 - DEBUG : Now at 2175th data in epoch 0
+2019-05-28 23:34:57,625 - DEBUG : Current mean loss for train data is 26.746179968118668
+2019-05-28 23:34:57,627 - DEBUG : Current mean score_hat is 24.894182801246643
+2019-05-28 23:34:57,635 - DEBUG : Current mean score_golden is -0.8519970029592514
+2019-05-28 23:34:58,096 - DEBUG : Now at 6079th data in epoch 0
+2019-05-28 23:34:58,103 - DEBUG : Current mean loss for train data is 21.751948565244675
+2019-05-28 23:34:58,105 - DEBUG : Current mean score_hat is 18.7429760992527
+2019-05-28 23:34:58,110 - DEBUG : Current mean score_golden is -2.0089725917205215
+2019-05-28 23:35:15,504 - DEBUG : Now at 6111th data in epoch 0
+2019-05-28 23:35:15,515 - DEBUG : Current mean loss for train data is 25.692429468035698
+2019-05-28 23:35:15,518 - DEBUG : Current mean score_hat is 22.31901577115059
+2019-05-28 23:35:15,523 - DEBUG : Current mean score_golden is -2.3734137415885925
+2019-05-28 23:35:16,621 - DEBUG : Now at 2207th data in epoch 0
+2019-05-28 23:35:16,654 - DEBUG : Current mean loss for train data is 26.805427461862564
+2019-05-28 23:35:16,659 - DEBUG : Current mean score_hat is 24.95044779777527
+2019-05-28 23:35:16,681 - DEBUG : Current mean score_golden is -0.8549798498861492
+2019-05-28 23:35:35,656 - DEBUG : Now at 2239th data in epoch 0
+2019-05-28 23:35:35,693 - DEBUG : Current mean loss for train data is 23.613098800182343
+2019-05-28 23:35:35,721 - DEBUG : Current mean score_hat is 21.842270523309708
+2019-05-28 23:35:35,730 - DEBUG : Current mean score_golden is -0.7708283364772797
+2019-05-28 23:35:37,360 - DEBUG : Now at 6143th data in epoch 0
+2019-05-28 23:35:37,367 - DEBUG : Current mean loss for train data is 25.40902788937092
+2019-05-28 23:35:37,370 - DEBUG : Current mean score_hat is 22.05126814544201
+2019-05-28 23:35:37,378 - DEBUG : Current mean score_golden is -2.3577595092356205
+2019-05-28 23:35:50,649 - DEBUG : Now at 2271th data in epoch 0
+2019-05-28 23:35:50,652 - DEBUG : Current mean loss for train data is 21.143223002552986
+2019-05-28 23:35:50,655 - DEBUG : Current mean score_hat is 19.47715957998298
+2019-05-28 23:35:50,669 - DEBUG : Current mean score_golden is -0.6660633229184896
+2019-05-28 23:36:07,045 - DEBUG : Now at 6175th data in epoch 0
+2019-05-28 23:36:07,076 - DEBUG : Current mean loss for train data is 32.16293525695801
+2019-05-28 23:36:07,104 - DEBUG : Current mean score_hat is 28.133055433630943
+2019-05-28 23:36:07,115 - DEBUG : Current mean score_golden is -3.0298795951530337
+2019-05-28 23:36:08,529 - DEBUG : Now at 2303th data in epoch 0
+2019-05-28 23:36:08,531 - DEBUG : Current mean loss for train data is 24.619216591119766
+2019-05-28 23:36:08,532 - DEBUG : Current mean score_hat is 22.854141801595688
+2019-05-28 23:36:08,536 - DEBUG : Current mean score_golden is -0.7650748053565621
+2019-05-28 23:36:26,895 - DEBUG : Now at 6207th data in epoch 0
+2019-05-28 23:36:26,899 - DEBUG : Current mean loss for train data is 23.19126060605049
+2019-05-28 23:36:26,901 - DEBUG : Current mean score_hat is 20.01228615641594
+2019-05-28 23:36:26,909 - DEBUG : Current mean score_golden is -2.1789742801338434
+2019-05-28 23:36:27,603 - DEBUG : Now at 2335th data in epoch 0
+2019-05-28 23:36:27,606 - DEBUG : Current mean loss for train data is 23.36378288269043
+2019-05-28 23:36:27,620 - DEBUG : Current mean score_hat is 21.678390458226204
+2019-05-28 23:36:27,636 - DEBUG : Current mean score_golden is -0.6853924440219998
+2019-05-28 23:36:45,087 - DEBUG : Now at 6239th data in epoch 0
+2019-05-28 23:36:45,096 - DEBUG : Current mean loss for train data is 26.06564712524414
+2019-05-28 23:36:45,104 - DEBUG : Current mean score_hat is 22.645029097795486
+2019-05-28 23:36:45,110 - DEBUG : Current mean score_golden is -2.420617968775332
+2019-05-28 23:36:46,679 - DEBUG : Now at 2367th data in epoch 0
+2019-05-28 23:36:46,682 - DEBUG : Current mean loss for train data is 26.147054195404053
+2019-05-28 23:36:46,699 - DEBUG : Current mean score_hat is 24.3967202603817
+2019-05-28 23:36:46,704 - DEBUG : Current mean score_golden is -0.750333764590323
+2019-05-28 23:37:02,874 - DEBUG : Now at 6271th data in epoch 0
+2019-05-28 23:37:02,876 - DEBUG : Current mean loss for train data is 25.40990060567856
+2019-05-28 23:37:02,879 - DEBUG : Current mean score_hat is 22.06817662715912
+2019-05-28 23:37:02,888 - DEBUG : Current mean score_golden is -2.341724084690213
+2019-05-28 23:37:05,443 - DEBUG : Now at 2399th data in epoch 0
+2019-05-28 23:37:05,449 - DEBUG : Current mean loss for train data is 25.333539605140686
+2019-05-28 23:37:05,452 - DEBUG : Current mean score_hat is 23.600016117095947
+2019-05-28 23:37:05,464 - DEBUG : Current mean score_golden is -0.7335235346108675
+2019-05-28 23:37:18,992 - DEBUG : Now at 6303th data in epoch 0
+2019-05-28 23:37:18,994 - DEBUG : Current mean loss for train data is 24.221392065286636
+2019-05-28 23:37:18,997 - DEBUG : Current mean score_hat is 20.99721410870552
+2019-05-28 23:37:19,004 - DEBUG : Current mean score_golden is -2.224177997559309
+2019-05-28 23:37:22,990 - DEBUG : Now at 2431th data in epoch 0
+2019-05-28 23:37:22,993 - DEBUG : Current mean loss for train data is 24.48967942595482
+2019-05-28 23:37:22,995 - DEBUG : Current mean score_hat is 22.78540003299713
+2019-05-28 23:37:23,012 - DEBUG : Current mean score_golden is -0.7042792970314622
+2019-05-28 23:37:37,571 - DEBUG : Now at 6335th data in epoch 0
+2019-05-28 23:37:37,607 - DEBUG : Current mean loss for train data is 25.034867227077484
+2019-05-28 23:37:37,626 - DEBUG : Current mean score_hat is 21.727061212062836
+2019-05-28 23:37:37,637 - DEBUG : Current mean score_golden is -2.3078060541301966
+2019-05-28 23:37:39,727 - DEBUG : Now at 2463th data in epoch 0
+2019-05-28 23:37:39,752 - DEBUG : Current mean loss for train data is 21.67273074388504
+2019-05-28 23:37:39,780 - DEBUG : Current mean score_hat is 20.031416103243828
+2019-05-28 23:37:39,790 - DEBUG : Current mean score_golden is -0.6413144902326167
+2019-05-28 23:37:59,369 - DEBUG : Now at 2495th data in epoch 0
+2019-05-28 23:37:59,371 - DEBUG : Current mean loss for train data is 24.86637318134308
+2019-05-28 23:37:59,373 - DEBUG : Current mean score_hat is 23.17527560889721
+2019-05-28 23:37:59,382 - DEBUG : Current mean score_golden is -0.6910976716317236
+2019-05-28 23:38:05,688 - DEBUG : Now at 6367th data in epoch 0
+2019-05-28 23:38:05,691 - DEBUG : Current mean loss for train data is 30.87893369793892
+2019-05-28 23:38:05,694 - DEBUG : Current mean score_hat is 26.980371803045273
+2019-05-28 23:38:05,704 - DEBUG : Current mean score_golden is -2.8985615484416485
+2019-05-28 23:38:15,181 - DEBUG : Now at 2527th data in epoch 0
+2019-05-28 23:38:15,185 - DEBUG : Current mean loss for train data is 23.549063056707382
+2019-05-28 23:38:15,187 - DEBUG : Current mean score_hat is 21.888480871915817
+2019-05-28 23:38:15,198 - DEBUG : Current mean score_golden is -0.6605821680277586
+2019-05-28 23:38:24,704 - DEBUG : Now at 6399th data in epoch 0
+2019-05-28 23:38:24,706 - DEBUG : Current mean loss for train data is 25.972018867731094
+2019-05-28 23:38:24,708 - DEBUG : Current mean score_hat is 22.530377686023712
+2019-05-28 23:38:24,712 - DEBUG : Current mean score_golden is -2.4416411966085434
+2019-05-28 23:38:31,366 - DEBUG : Now at 2559th data in epoch 0
+2019-05-28 23:38:31,372 - DEBUG : Current mean loss for train data is 23.455325216054916
+2019-05-28 23:38:31,386 - DEBUG : Current mean score_hat is 21.81428724527359
+2019-05-28 23:38:31,400 - DEBUG : Current mean score_golden is -0.6410380359739065
+2019-05-28 23:38:43,895 - DEBUG : Now at 6431th data in epoch 0
+2019-05-28 23:38:43,901 - DEBUG : Current mean loss for train data is 26.159282997250557
+2019-05-28 23:38:43,903 - DEBUG : Current mean score_hat is 22.6930493414402
+2019-05-28 23:38:43,911 - DEBUG : Current mean score_golden is -2.466233652085066
+2019-05-28 23:38:47,358 - DEBUG : Now at 2591th data in epoch 0
+2019-05-28 23:38:47,363 - DEBUG : Current mean loss for train data is 23.517997473478317
+2019-05-28 23:38:47,366 - DEBUG : Current mean score_hat is 21.951296627521515
+2019-05-28 23:38:47,375 - DEBUG : Current mean score_golden is -0.5667005889117718
+2019-05-28 23:39:03,403 - DEBUG : Now at 6463th data in epoch 0
+2019-05-28 23:39:03,407 - DEBUG : Current mean loss for train data is 26.222086906433105
+2019-05-28 23:39:03,410 - DEBUG : Current mean score_hat is 22.73127582669258
+2019-05-28 23:39:03,417 - DEBUG : Current mean score_golden is -2.4908109679818153
+2019-05-28 23:39:14,698 - DEBUG : Now at 2623th data in epoch 0
+2019-05-28 23:39:14,702 - DEBUG : Current mean loss for train data is 32.462999761104584
+2019-05-28 23:39:14,710 - DEBUG : Current mean score_hat is 30.719443380832672
+2019-05-28 23:39:14,720 - DEBUG : Current mean score_golden is -0.7435565227642655
+2019-05-28 23:39:19,701 - DEBUG : Now at 6495th data in epoch 0
+2019-05-28 23:39:19,711 - DEBUG : Current mean loss for train data is 24.345955058932304
+2019-05-28 23:39:19,715 - DEBUG : Current mean score_hat is 21.01693718135357
+2019-05-28 23:39:19,720 - DEBUG : Current mean score_golden is -2.3290179017931223
+2019-05-28 23:39:30,555 - DEBUG : Now at 2655th data in epoch 0
+2019-05-28 23:39:30,558 - DEBUG : Current mean loss for train data is 23.454686865210533
+2019-05-28 23:39:30,566 - DEBUG : Current mean score_hat is 21.904670640826225
+2019-05-28 23:39:30,588 - DEBUG : Current mean score_golden is -0.5500163296237588
+2019-05-28 23:39:37,045 - DEBUG : Now at 6527th data in epoch 0
+2019-05-28 23:39:37,061 - DEBUG : Current mean loss for train data is 25.53400829434395
+2019-05-28 23:39:37,071 - DEBUG : Current mean score_hat is 22.035796344280243
+2019-05-28 23:39:37,077 - DEBUG : Current mean score_golden is -2.4982119761407375
+2019-05-28 23:39:46,734 - DEBUG : Now at 2687th data in epoch 0
+2019-05-28 23:39:46,752 - DEBUG : Current mean loss for train data is 21.204825177788734
+2019-05-28 23:39:46,763 - DEBUG : Current mean score_hat is 19.72768995165825
+2019-05-28 23:39:46,782 - DEBUG : Current mean score_golden is -0.4771353555843234
+2019-05-28 23:39:54,447 - DEBUG : Now at 6559th data in epoch 0
+2019-05-28 23:39:54,451 - DEBUG : Current mean loss for train data is 22.503217488527298
+2019-05-28 23:39:54,459 - DEBUG : Current mean score_hat is 19.301741376519203
+2019-05-28 23:39:54,461 - DEBUG : Current mean score_golden is -2.201476166024804
+2019-05-28 23:40:11,667 - DEBUG : Now at 2719th data in epoch 0
+2019-05-28 23:40:11,698 - DEBUG : Current mean loss for train data is 30.46104222536087
+2019-05-28 23:40:11,702 - DEBUG : Current mean score_hat is 28.839438140392303
+2019-05-28 23:40:11,707 - DEBUG : Current mean score_golden is -0.6216039611026645
+2019-05-28 23:40:16,401 - DEBUG : Now at 6591th data in epoch 0
+2019-05-28 23:40:16,404 - DEBUG : Current mean loss for train data is 29.565437108278275
+2019-05-28 23:40:16,406 - DEBUG : Current mean score_hat is 25.68695840239525
+2019-05-28 23:40:16,412 - DEBUG : Current mean score_golden is -2.87847862765193
+2019-05-28 23:40:30,866 - DEBUG : Now at 2751th data in epoch 0
+2019-05-28 23:40:30,875 - DEBUG : Current mean loss for train data is 26.114685624837875
+2019-05-28 23:40:30,884 - DEBUG : Current mean score_hat is 24.560138136148453
+2019-05-28 23:40:30,906 - DEBUG : Current mean score_golden is -0.5545473927631974
+2019-05-28 23:40:34,114 - DEBUG : Now at 6623th data in epoch 0
+2019-05-28 23:40:34,140 - DEBUG : Current mean loss for train data is 25.001810118556023
+2019-05-28 23:40:34,142 - DEBUG : Current mean score_hat is 21.565683394670486
+2019-05-28 23:40:34,145 - DEBUG : Current mean score_golden is -2.436126722022891
+2019-05-28 23:40:46,486 - DEBUG : Now at 2783th data in epoch 0
+2019-05-28 23:40:46,492 - DEBUG : Current mean loss for train data is 23.7968417853117
+2019-05-28 23:40:46,498 - DEBUG : Current mean score_hat is 22.322814464569092
+2019-05-28 23:40:46,508 - DEBUG : Current mean score_golden is -0.47402726393193007
+2019-05-28 23:40:54,789 - DEBUG : Now at 6655th data in epoch 0
+2019-05-28 23:40:54,794 - DEBUG : Current mean loss for train data is 28.596545547246933
+2019-05-28 23:40:54,798 - DEBUG : Current mean score_hat is 24.810803413391113
+2019-05-28 23:40:54,809 - DEBUG : Current mean score_golden is -2.785741947591305
+2019-05-28 23:41:09,772 - DEBUG : Now at 2815th data in epoch 0
+2019-05-28 23:41:09,802 - DEBUG : Current mean loss for train data is 28.27075633406639
+2019-05-28 23:41:09,862 - DEBUG : Current mean score_hat is 26.697000086307526
+2019-05-28 23:41:09,886 - DEBUG : Current mean score_golden is -0.5737558836117387
+2019-05-28 23:41:21,361 - DEBUG : Now at 6687th data in epoch 0
+2019-05-28 23:41:21,377 - DEBUG : Current mean loss for train data is 25.784457683563232
+2019-05-28 23:41:21,395 - DEBUG : Current mean score_hat is 22.28766131401062
+2019-05-28 23:41:21,404 - DEBUG : Current mean score_golden is -2.4967963192611933
+2019-05-28 23:41:40,001 - DEBUG : Now at 6719th data in epoch 0
+2019-05-28 23:41:40,004 - DEBUG : Current mean loss for train data is 26.002274692058563
+2019-05-28 23:41:40,010 - DEBUG : Current mean score_hat is 22.520803585648537
+2019-05-28 23:41:40,018 - DEBUG : Current mean score_golden is -2.481470989063382
+2019-05-28 23:41:41,291 - DEBUG : Now at 2847th data in epoch 0
+2019-05-28 23:41:41,294 - DEBUG : Current mean loss for train data is 32.27212277054787
+2019-05-28 23:41:41,296 - DEBUG : Current mean score_hat is 30.646825790405273
+2019-05-28 23:41:41,302 - DEBUG : Current mean score_golden is -0.6252970471978188
+2019-05-28 23:42:00,066 - DEBUG : Now at 2879th data in epoch 0
+2019-05-28 23:42:00,074 - DEBUG : Current mean loss for train data is 24.544818714261055
+2019-05-28 23:42:00,077 - DEBUG : Current mean score_hat is 23.07167561352253
+2019-05-28 23:42:00,082 - DEBUG : Current mean score_golden is -0.47314333729445934
+2019-05-28 23:42:02,093 - DEBUG : Now at 6751th data in epoch 0
+2019-05-28 23:42:02,100 - DEBUG : Current mean loss for train data is 28.346922606229782
+2019-05-28 23:42:02,111 - DEBUG : Current mean score_hat is 24.641339898109436
+2019-05-28 23:42:02,144 - DEBUG : Current mean score_golden is -2.7055824622511864
+2019-05-28 23:42:18,204 - DEBUG : Now at 2911th data in epoch 0
+2019-05-28 23:42:18,228 - DEBUG : Current mean loss for train data is 26.830044746398926
+2019-05-28 23:42:18,243 - DEBUG : Current mean score_hat is 25.26388542354107
+2019-05-28 23:42:18,250 - DEBUG : Current mean score_golden is -0.5661590839736164
+2019-05-28 23:42:23,335 - DEBUG : Now at 6783th data in epoch 0
+2019-05-28 23:42:23,338 - DEBUG : Current mean loss for train data is 28.252793043851852
+2019-05-28 23:42:23,340 - DEBUG : Current mean score_hat is 24.583291947841644
+2019-05-28 23:42:23,348 - DEBUG : Current mean score_golden is -2.6695009265094995
+2019-05-28 23:42:42,885 - DEBUG : Now at 2943th data in epoch 0
+2019-05-28 23:42:42,903 - DEBUG : Current mean loss for train data is 27.989092394709587
+2019-05-28 23:42:42,916 - DEBUG : Current mean score_hat is 26.374269366264343
+2019-05-28 23:42:42,925 - DEBUG : Current mean score_golden is -0.6148229013197124
+2019-05-28 23:42:44,535 - DEBUG : Now at 6815th data in epoch 0
+2019-05-28 23:42:44,545 - DEBUG : Current mean loss for train data is 25.159641712903976
+2019-05-28 23:42:44,561 - DEBUG : Current mean score_hat is 21.755203902721405
+2019-05-28 23:42:44,583 - DEBUG : Current mean score_golden is -2.404437767341733
+2019-05-28 23:43:04,221 - DEBUG : Now at 2975th data in epoch 0
+2019-05-28 23:43:04,234 - DEBUG : Current mean loss for train data is 24.732312321662903
+2019-05-28 23:43:04,255 - DEBUG : Current mean score_hat is 23.198907613754272
+2019-05-28 23:43:04,265 - DEBUG : Current mean score_golden is -0.5334045542404056
+2019-05-28 23:43:08,631 - DEBUG : Now at 6847th data in epoch 0
+2019-05-28 23:43:08,635 - DEBUG : Current mean loss for train data is 28.34644913673401
+2019-05-28 23:43:08,641 - DEBUG : Current mean score_hat is 24.604023590683937
+2019-05-28 23:43:08,655 - DEBUG : Current mean score_golden is -2.7424257714301348
+2019-05-28 23:43:16,069 - DEBUG : Now at 3007th data in epoch 0
+2019-05-28 23:43:16,071 - DEBUG : Current mean loss for train data is 20.044237069785595
+2019-05-28 23:43:16,073 - DEBUG : Current mean score_hat is 18.664111219346523
+2019-05-28 23:43:16,079 - DEBUG : Current mean score_golden is -0.3801258197054267
+2019-05-28 23:43:27,044 - DEBUG : Now at 6879th data in epoch 0
+2019-05-28 23:43:27,048 - DEBUG : Current mean loss for train data is 25.814308822155
+2019-05-28 23:43:27,056 - DEBUG : Current mean score_hat is 22.398315519094467
+2019-05-28 23:43:27,062 - DEBUG : Current mean score_golden is -2.415993347764015
+2019-05-28 23:43:29,776 - DEBUG : Now at 3039th data in epoch 0
+2019-05-28 23:43:29,793 - DEBUG : Current mean loss for train data is 21.737700194120407
+2019-05-28 23:43:29,796 - DEBUG : Current mean score_hat is 20.38656072318554
+2019-05-28 23:43:29,802 - DEBUG : Current mean score_golden is -0.35113944998010993
+2019-05-28 23:43:40,883 - DEBUG : Now at 6911th data in epoch 0
+2019-05-28 23:43:40,887 - DEBUG : Current mean loss for train data is 21.751592248678207
+2019-05-28 23:43:40,890 - DEBUG : Current mean score_hat is 18.734634935855865
+2019-05-28 23:43:40,897 - DEBUG : Current mean score_golden is -2.016957376152277
+2019-05-28 23:43:45,627 - DEBUG : Now at 3071th data in epoch 0
+2019-05-28 23:43:45,632 - DEBUG : Current mean loss for train data is 22.457254149019718
+2019-05-28 23:43:45,639 - DEBUG : Current mean score_hat is 21.149379029870033
+2019-05-28 23:43:45,642 - DEBUG : Current mean score_golden is -0.30787520902231336
+2019-05-28 23:44:02,021 - DEBUG : Now at 3103th data in epoch 0
+2019-05-28 23:44:02,033 - DEBUG : Current mean loss for train data is 23.863253630697727
+2019-05-28 23:44:02,039 - DEBUG : Current mean score_hat is 22.518394146114588
+2019-05-28 23:44:02,042 - DEBUG : Current mean score_golden is -0.34485936257988214
+2019-05-28 23:44:02,054 - DEBUG : Now at 6943th data in epoch 0
+2019-05-28 23:44:02,060 - DEBUG : Current mean loss for train data is 28.56487987190485
+2019-05-28 23:44:02,066 - DEBUG : Current mean score_hat is 24.875892512500286
+2019-05-28 23:44:02,071 - DEBUG : Current mean score_golden is -2.688987306319177
+2019-05-28 23:44:21,299 - DEBUG : Now at 3135th data in epoch 0
+2019-05-28 23:44:21,306 - DEBUG : Current mean loss for train data is 27.48745146393776
+2019-05-28 23:44:21,315 - DEBUG : Current mean score_hat is 26.1218358874321
+2019-05-28 23:44:21,322 - DEBUG : Current mean score_golden is -0.36561560444533825
+2019-05-28 23:44:22,319 - DEBUG : Now at 6975th data in epoch 0
+2019-05-28 23:44:22,343 - DEBUG : Current mean loss for train data is 28.439719289541245
+2019-05-28 23:44:22,362 - DEBUG : Current mean score_hat is 24.76201742887497
+2019-05-28 23:44:22,375 - DEBUG : Current mean score_golden is -2.67770167067647
+2019-05-28 23:44:40,487 - DEBUG : Now at 7007th data in epoch 0
+2019-05-28 23:44:40,489 - DEBUG : Current mean loss for train data is 23.251582726836205
+2019-05-28 23:44:40,492 - DEBUG : Current mean score_hat is 20.076794266700745
+2019-05-28 23:44:40,501 - DEBUG : Current mean score_golden is -2.174788387492299
+2019-05-28 23:44:41,756 - DEBUG : Now at 3167th data in epoch 0
+2019-05-28 23:44:41,783 - DEBUG : Current mean loss for train data is 25.080297887325287
+2019-05-28 23:44:41,790 - DEBUG : Current mean score_hat is 23.719698786735535
+2019-05-28 23:44:41,795 - DEBUG : Current mean score_golden is -0.3605993199162185
+2019-05-28 23:44:53,726 - DEBUG : Now at 7039th data in epoch 0
+2019-05-28 23:44:53,729 - DEBUG : Current mean loss for train data is 21.157432317733765
+2019-05-28 23:44:53,733 - DEBUG : Current mean score_hat is 18.198411852121353
+2019-05-28 23:44:53,747 - DEBUG : Current mean score_golden is -1.9590202737599611
+2019-05-28 23:44:54,303 - DEBUG : Now at 3199th data in epoch 0
+2019-05-28 23:44:54,329 - DEBUG : Current mean loss for train data is 20.32603546977043
+2019-05-28 23:44:54,334 - DEBUG : Current mean score_hat is 19.03006537258625
+2019-05-28 23:44:54,342 - DEBUG : Current mean score_golden is -0.29597026435658336
+2019-05-28 23:45:09,557 - DEBUG : Now at 7071th data in epoch 0
+2019-05-28 23:45:09,559 - DEBUG : Current mean loss for train data is 24.12748157978058
+2019-05-28 23:45:09,563 - DEBUG : Current mean score_hat is 20.858111798763275
+2019-05-28 23:45:09,599 - DEBUG : Current mean score_golden is -2.2693697083741426
+2019-05-28 23:45:13,934 - DEBUG : Now at 3231th data in epoch 0
+2019-05-28 23:45:13,937 - DEBUG : Current mean loss for train data is 27.143764466047287
+2019-05-28 23:45:13,940 - DEBUG : Current mean score_hat is 25.831971019506454
+2019-05-28 23:45:13,946 - DEBUG : Current mean score_golden is -0.31179357320070267
+2019-05-28 23:45:26,048 - DEBUG : Now at 7103th data in epoch 0
+2019-05-28 23:45:26,052 - DEBUG : Current mean loss for train data is 24.939613491296768
+2019-05-28 23:45:26,054 - DEBUG : Current mean score_hat is 21.573722392320633
+2019-05-28 23:45:26,064 - DEBUG : Current mean score_golden is -2.365891009569168
+2019-05-28 23:45:34,678 - DEBUG : Now at 3263th data in epoch 0
+2019-05-28 23:45:34,692 - DEBUG : Current mean loss for train data is 27.48700910806656
+2019-05-28 23:45:34,707 - DEBUG : Current mean score_hat is 26.237753719091415
+2019-05-28 23:45:34,710 - DEBUG : Current mean score_golden is -0.2492551184259355
+2019-05-28 23:45:40,013 - DEBUG : Now at 7135th data in epoch 0
+2019-05-28 23:45:40,015 - DEBUG : Current mean loss for train data is 22.344211384654045
+2019-05-28 23:45:40,018 - DEBUG : Current mean score_hat is 19.27780832350254
+2019-05-28 23:45:40,031 - DEBUG : Current mean score_golden is -2.066402906551957
+2019-05-28 23:45:54,510 - DEBUG : Now at 3295th data in epoch 0
+2019-05-28 23:45:54,513 - DEBUG : Current mean loss for train data is 27.73842790722847
+2019-05-28 23:45:54,516 - DEBUG : Current mean score_hat is 26.527144119143486
+2019-05-28 23:45:54,525 - DEBUG : Current mean score_golden is -0.21128403674811125
+2019-05-28 23:45:57,705 - DEBUG : Now at 7167th data in epoch 0
+2019-05-28 23:45:57,735 - DEBUG : Current mean loss for train data is 25.658110350370407
+2019-05-28 23:45:57,737 - DEBUG : Current mean score_hat is 22.273567602038383
+2019-05-28 23:45:57,753 - DEBUG : Current mean score_golden is -2.3845427371561527
+2019-05-28 23:46:08,936 - DEBUG : Now at 3327th data in epoch 0
+2019-05-28 23:46:08,939 - DEBUG : Current mean loss for train data is 22.514331310987473
+2019-05-28 23:46:08,943 - DEBUG : Current mean score_hat is 21.370641857385635
+2019-05-28 23:46:08,954 - DEBUG : Current mean score_golden is -0.14368926919996738
+2019-05-28 23:46:17,981 - DEBUG : Now at 7199th data in epoch 0
+2019-05-28 23:46:17,984 - DEBUG : Current mean loss for train data is 25.377302318811417
+2019-05-28 23:46:17,988 - DEBUG : Current mean score_hat is 21.994616210460663
+2019-05-28 23:46:17,994 - DEBUG : Current mean score_golden is -2.382686071097851
+2019-05-28 23:46:29,324 - DEBUG : Now at 3359th data in epoch 0
+2019-05-28 23:46:29,330 - DEBUG : Current mean loss for train data is 25.32943570613861
+2019-05-28 23:46:29,337 - DEBUG : Current mean score_hat is 24.183269500732422
+2019-05-28 23:46:29,340 - DEBUG : Current mean score_golden is -0.14616623218171299
+2019-05-28 23:46:38,921 - DEBUG : Now at 7231th data in epoch 0
+2019-05-28 23:46:38,929 - DEBUG : Current mean loss for train data is 28.658842653036118
+2019-05-28 23:46:38,935 - DEBUG : Current mean score_hat is 24.962244883179665
+2019-05-28 23:46:38,955 - DEBUG : Current mean score_golden is -2.6965979440137744
+2019-05-28 23:46:45,815 - DEBUG : Now at 3391th data in epoch 0
+2019-05-28 23:46:45,819 - DEBUG : Current mean loss for train data is 23.608560025691986
+2019-05-28 23:46:45,821 - DEBUG : Current mean score_hat is 22.495678424835205
+2019-05-28 23:46:45,826 - DEBUG : Current mean score_golden is -0.112881641369313
+2019-05-28 23:46:59,659 - DEBUG : Now at 3423th data in epoch 0
+2019-05-28 23:46:59,662 - DEBUG : Current mean loss for train data is 20.701234608888626
+2019-05-28 23:46:59,665 - DEBUG : Current mean score_hat is 19.582402870059013
+2019-05-28 23:46:59,671 - DEBUG : Current mean score_golden is -0.11883163126185536
+2019-05-28 23:47:04,136 - DEBUG : Now at 7263th data in epoch 0
+2019-05-28 23:47:04,139 - DEBUG : Current mean loss for train data is 30.53572717308998
+2019-05-28 23:47:04,143 - DEBUG : Current mean score_hat is 26.64570379257202
+2019-05-28 23:47:04,151 - DEBUG : Current mean score_golden is -2.8900235891342163
+2019-05-28 23:47:16,701 - DEBUG : Now at 3455th data in epoch 0
+2019-05-28 23:47:16,704 - DEBUG : Current mean loss for train data is 25.17399552464485
+2019-05-28 23:47:16,708 - DEBUG : Current mean score_hat is 23.999799132347107
+2019-05-28 23:47:16,724 - DEBUG : Current mean score_golden is -0.1741962491068989
+2019-05-28 23:47:24,556 - DEBUG : Now at 7295th data in epoch 0
+2019-05-28 23:47:24,571 - DEBUG : Current mean loss for train data is 27.8156798183918
+2019-05-28 23:47:24,590 - DEBUG : Current mean score_hat is 24.159339606761932
+2019-05-28 23:47:24,608 - DEBUG : Current mean score_golden is -2.656340315937996
+2019-05-28 23:47:34,285 - DEBUG : Now at 3487th data in epoch 0
+2019-05-28 23:47:34,289 - DEBUG : Current mean loss for train data is 25.95146542787552
+2019-05-28 23:47:34,293 - DEBUG : Current mean score_hat is 24.832121074199677
+2019-05-28 23:47:34,300 - DEBUG : Current mean score_golden is -0.11934454319998622
+2019-05-28 23:47:41,874 - DEBUG : Now at 7327th data in epoch 0
+2019-05-28 23:47:41,891 - DEBUG : Current mean loss for train data is 25.626279294490814
+2019-05-28 23:47:41,900 - DEBUG : Current mean score_hat is 22.173109859228134
+2019-05-28 23:47:41,908 - DEBUG : Current mean score_golden is -2.453169286251068
+2019-05-28 23:47:46,672 - DEBUG : Now at 3519th data in epoch 0
+2019-05-28 23:47:46,674 - DEBUG : Current mean loss for train data is 20.231225319206715
+2019-05-28 23:47:46,677 - DEBUG : Current mean score_hat is 19.168694522231817
+2019-05-28 23:47:46,688 - DEBUG : Current mean score_golden is -0.06253075739368796
+2019-05-28 23:48:07,327 - DEBUG : Now at 3551th data in epoch 0
+2019-05-28 23:48:07,346 - DEBUG : Current mean loss for train data is 24.23290605098009
+2019-05-28 23:48:07,353 - DEBUG : Current mean score_hat is 23.20576150715351
+2019-05-28 23:48:07,361 - DEBUG : Current mean score_golden is -0.027144451858475804
+2019-05-28 23:48:07,968 - DEBUG : Now at 7359th data in epoch 0
+2019-05-28 23:48:07,970 - DEBUG : Current mean loss for train data is 30.065446585416794
+2019-05-28 23:48:07,973 - DEBUG : Current mean score_hat is 26.193992376327515
+2019-05-28 23:48:07,980 - DEBUG : Current mean score_golden is -2.8714541904628277
+2019-05-28 23:48:21,300 - DEBUG : Now at 3583th data in epoch 0
+2019-05-28 23:48:21,302 - DEBUG : Current mean loss for train data is 21.01370744407177
+2019-05-28 23:48:21,305 - DEBUG : Current mean score_hat is 19.995470154448412
+2019-05-28 23:48:21,310 - DEBUG : Current mean score_golden is -0.018237319425679743
+2019-05-28 23:48:24,076 - DEBUG : Now at 7391th data in epoch 0
+2019-05-28 23:48:24,099 - DEBUG : Current mean loss for train data is 23.532930374145508
+2019-05-28 23:48:24,122 - DEBUG : Current mean score_hat is 20.305930331349373
+2019-05-28 23:48:24,129 - DEBUG : Current mean score_golden is -2.2270000502467155
+2019-05-28 23:48:39,954 - DEBUG : Now at 3615th data in epoch 0
+2019-05-28 23:48:39,961 - DEBUG : Current mean loss for train data is 26.046940699219704
+2019-05-28 23:48:39,980 - DEBUG : Current mean score_hat is 24.995566599071026
+2019-05-28 23:48:39,985 - DEBUG : Current mean score_golden is -0.05137405055575073
+2019-05-28 23:48:42,703 - DEBUG : Now at 7423th data in epoch 0
+2019-05-28 23:48:42,706 - DEBUG : Current mean loss for train data is 26.628905296325684
+2019-05-28 23:48:42,709 - DEBUG : Current mean score_hat is 23.13259047269821
+2019-05-28 23:48:42,725 - DEBUG : Current mean score_golden is -2.4963149651885033
+2019-05-28 23:48:55,677 - DEBUG : Now at 3647th data in epoch 0
+2019-05-28 23:48:55,681 - DEBUG : Current mean loss for train data is 24.23135682940483
+2019-05-28 23:48:55,685 - DEBUG : Current mean score_hat is 23.1701672822237
+2019-05-28 23:48:55,692 - DEBUG : Current mean score_golden is -0.06118953530676663
+2019-05-28 23:48:57,813 - DEBUG : Now at 7455th data in epoch 0
+2019-05-28 23:48:57,816 - DEBUG : Current mean loss for train data is 22.845427989959717
+2019-05-28 23:48:57,819 - DEBUG : Current mean score_hat is 19.6709056571126
+2019-05-28 23:48:57,843 - DEBUG : Current mean score_golden is -2.1745224175974727
+2019-05-28 23:49:12,245 - DEBUG : Now at 3679th data in epoch 0
+2019-05-28 23:49:12,276 - DEBUG : Current mean loss for train data is 24.074417620897293
+2019-05-28 23:49:12,288 - DEBUG : Current mean score_hat is 23.019459173083305
+2019-05-28 23:49:12,292 - DEBUG : Current mean score_golden is -0.05495857889764011
+2019-05-28 23:49:15,183 - DEBUG : Now at 7487th data in epoch 0
+2019-05-28 23:49:15,187 - DEBUG : Current mean loss for train data is 25.470621198415756
+2019-05-28 23:49:15,189 - DEBUG : Current mean score_hat is 22.05841390788555
+2019-05-28 23:49:15,203 - DEBUG : Current mean score_golden is -2.412207130342722
+2019-05-28 23:49:28,904 - DEBUG : Now at 7519th data in epoch 0
+2019-05-28 23:49:28,915 - DEBUG : Current mean loss for train data is 21.626257821917534
+2019-05-28 23:49:28,926 - DEBUG : Current mean score_hat is 18.579482227563858
+2019-05-28 23:49:28,937 - DEBUG : Current mean score_golden is -2.04677551984787
+2019-05-28 23:49:31,793 - DEBUG : Now at 3711th data in epoch 0
+2019-05-28 23:49:31,830 - DEBUG : Current mean loss for train data is 25.451298117637634
+2019-05-28 23:49:31,850 - DEBUG : Current mean score_hat is 24.370283901691437
+2019-05-28 23:49:31,867 - DEBUG : Current mean score_golden is -0.08101428020745516
+2019-05-28 23:49:46,612 - DEBUG : Now at 7551th data in epoch 0
+2019-05-28 23:49:46,648 - DEBUG : Current mean loss for train data is 23.720198571681976
+2019-05-28 23:49:46,666 - DEBUG : Current mean score_hat is 20.44173027575016
+2019-05-28 23:49:46,709 - DEBUG : Current mean score_golden is -2.2784683499485254
+2019-05-28 23:49:49,453 - DEBUG : Now at 3743th data in epoch 0
+2019-05-28 23:49:49,458 - DEBUG : Current mean loss for train data is 22.918161764740944
+2019-05-28 23:49:49,468 - DEBUG : Current mean score_hat is 21.808285430073738
+2019-05-28 23:49:49,489 - DEBUG : Current mean score_golden is -0.10987634211778641
+2019-05-28 23:50:02,345 - DEBUG : Now at 7583th data in epoch 0
+2019-05-28 23:50:02,347 - DEBUG : Current mean loss for train data is 23.565344035625458
+2019-05-28 23:50:02,351 - DEBUG : Current mean score_hat is 20.279074370861053
+2019-05-28 23:50:02,370 - DEBUG : Current mean score_golden is -2.286269687116146
+2019-05-28 23:50:02,538 - DEBUG : Now at 3775th data in epoch 0
+2019-05-28 23:50:02,562 - DEBUG : Current mean loss for train data is 20.980777204036713
+2019-05-28 23:50:02,568 - DEBUG : Current mean score_hat is 19.864930734038353
+2019-05-28 23:50:02,585 - DEBUG : Current mean score_golden is -0.11584632028825581
+2019-05-28 23:50:16,531 - DEBUG : Now at 3807th data in epoch 0
+2019-05-28 23:50:16,533 - DEBUG : Current mean loss for train data is 21.573224619030952
+2019-05-28 23:50:16,536 - DEBUG : Current mean score_hat is 20.46882951259613
+2019-05-28 23:50:16,539 - DEBUG : Current mean score_golden is -0.10439528548158705
+2019-05-28 23:50:18,445 - DEBUG : Now at 7615th data in epoch 0
+2019-05-28 23:50:18,469 - DEBUG : Current mean loss for train data is 24.409650325775146
+2019-05-28 23:50:18,481 - DEBUG : Current mean score_hat is 20.993610709905624
+2019-05-28 23:50:18,491 - DEBUG : Current mean score_golden is -2.416039541363716
+2019-05-28 23:50:29,879 - DEBUG : Now at 3839th data in epoch 0
+2019-05-28 23:50:29,889 - DEBUG : Current mean loss for train data is 22.07360216975212
+2019-05-28 23:50:29,897 - DEBUG : Current mean score_hat is 20.986182510852814
+2019-05-28 23:50:29,899 - DEBUG : Current mean score_golden is -0.08741964772343636
+2019-05-28 23:50:39,527 - DEBUG : Now at 7647th data in epoch 0
+2019-05-28 23:50:39,545 - DEBUG : Current mean loss for train data is 28.158360451459885
+2019-05-28 23:50:39,548 - DEBUG : Current mean score_hat is 24.35889247059822
+2019-05-28 23:50:39,558 - DEBUG : Current mean score_golden is -2.799467960372567
+2019-05-28 23:50:40,943 - DEBUG : Now at 3871th data in epoch 0
+2019-05-28 23:50:40,946 - DEBUG : Current mean loss for train data is 17.851363509893417
+2019-05-28 23:50:40,947 - DEBUG : Current mean score_hat is 16.748944960534573
+2019-05-28 23:50:40,954 - DEBUG : Current mean score_golden is -0.10241874773055315
+2019-05-28 23:50:55,125 - DEBUG : Now at 3903th data in epoch 0
+2019-05-28 23:50:55,130 - DEBUG : Current mean loss for train data is 21.26157547533512
+2019-05-28 23:50:55,141 - DEBUG : Current mean score_hat is 20.197181969881058
+2019-05-28 23:50:55,148 - DEBUG : Current mean score_golden is -0.06439354876056314
+2019-05-28 23:50:57,653 - DEBUG : Now at 7679th data in epoch 0
+2019-05-28 23:50:57,656 - DEBUG : Current mean loss for train data is 25.970429629087448
+2019-05-28 23:50:57,660 - DEBUG : Current mean score_hat is 22.404801443219185
+2019-05-28 23:50:57,667 - DEBUG : Current mean score_golden is -2.565628070384264
+2019-05-28 23:51:10,162 - DEBUG : Now at 3935th data in epoch 0
+2019-05-28 23:51:10,211 - DEBUG : Current mean loss for train data is 20.04215384274721
+2019-05-28 23:51:10,246 - DEBUG : Current mean score_hat is 18.968852922320366
+2019-05-28 23:51:10,282 - DEBUG : Current mean score_golden is -0.07330088410526514
+2019-05-28 23:51:17,976 - DEBUG : Now at 7711th data in epoch 0
+2019-05-28 23:51:17,979 - DEBUG : Current mean loss for train data is 24.782368510961533
+2019-05-28 23:51:17,982 - DEBUG : Current mean score_hat is 21.34257198870182
+2019-05-28 23:51:17,992 - DEBUG : Current mean score_golden is -2.439796481281519
+2019-05-28 23:51:29,764 - DEBUG : Now at 7743th data in epoch 0
+2019-05-28 23:51:29,770 - DEBUG : Current mean loss for train data is 18.844905264675617
+2019-05-28 23:51:29,772 - DEBUG : Current mean score_hat is 16.022427176125348
+2019-05-28 23:51:29,776 - DEBUG : Current mean score_golden is -1.8224780475720763
+2019-05-28 23:51:39,279 - DEBUG : Now at 3967th data in epoch 0
+2019-05-28 23:51:39,282 - DEBUG : Current mean loss for train data is 31.517606109380722
+2019-05-28 23:51:39,284 - DEBUG : Current mean score_hat is 30.511043310165405
+2019-05-28 23:51:39,293 - DEBUG : Current mean score_golden is -0.006562790833413601
+2019-05-28 23:51:49,333 - DEBUG : Now at 7775th data in epoch 0
+2019-05-28 23:51:49,336 - DEBUG : Current mean loss for train data is 27.691212460398674
+2019-05-28 23:51:49,338 - DEBUG : Current mean score_hat is 23.95457497984171
+2019-05-28 23:51:49,341 - DEBUG : Current mean score_golden is -2.736637477762997
+2019-05-28 23:51:55,724 - DEBUG : Now at 3999th data in epoch 0
+2019-05-28 23:51:55,726 - DEBUG : Current mean loss for train data is 24.5103976726532
+2019-05-28 23:51:55,728 - DEBUG : Current mean score_hat is 23.48435813188553
+2019-05-28 23:51:55,737 - DEBUG : Current mean score_golden is -0.02603972121141851
+2019-05-28 23:52:06,477 - DEBUG : Now at 7807th data in epoch 0
+2019-05-28 23:52:06,480 - DEBUG : Current mean loss for train data is 23.626684606075287
+2019-05-28 23:52:06,483 - DEBUG : Current mean score_hat is 20.33611649274826
+2019-05-28 23:52:06,494 - DEBUG : Current mean score_golden is -2.2905680406838655
+2019-05-28 23:52:14,416 - DEBUG : Now at 4031th data in epoch 0
+2019-05-28 23:52:14,420 - DEBUG : Current mean loss for train data is 26.950009159743786
+2019-05-28 23:52:14,423 - DEBUG : Current mean score_hat is 25.946175254881382
+2019-05-28 23:52:14,432 - DEBUG : Current mean score_golden is -0.003833940252661705
+2019-05-28 23:52:24,405 - DEBUG : Now at 7839th data in epoch 0
+2019-05-28 23:52:24,430 - DEBUG : Current mean loss for train data is 25.81436860561371
+2019-05-28 23:52:24,456 - DEBUG : Current mean score_hat is 22.2887502014637
+2019-05-28 23:52:24,488 - DEBUG : Current mean score_golden is -2.525618242099881
+2019-05-28 23:52:29,018 - DEBUG : Now at 4063th data in epoch 0
+2019-05-28 23:52:29,027 - DEBUG : Current mean loss for train data is 22.258879497647285
+2019-05-28 23:52:29,034 - DEBUG : Current mean score_hat is 21.21496492624283
+2019-05-28 23:52:29,043 - DEBUG : Current mean score_golden is -0.04391468781977892
+2019-05-28 23:52:38,481 - DEBUG : Now at 7871th data in epoch 0
+2019-05-28 23:52:38,483 - DEBUG : Current mean loss for train data is 21.34481057524681
+2019-05-28 23:52:38,485 - DEBUG : Current mean score_hat is 18.24968783557415
+2019-05-28 23:52:38,497 - DEBUG : Current mean score_golden is -2.095122942700982
+2019-05-28 23:52:45,382 - DEBUG : Now at 4095th data in epoch 0
+2019-05-28 23:52:45,389 - DEBUG : Current mean loss for train data is 23.542966574430466
+2019-05-28 23:52:45,393 - DEBUG : Current mean score_hat is 22.503370016813278
+2019-05-28 23:52:45,408 - DEBUG : Current mean score_golden is -0.03959632315672934
+2019-05-28 23:53:01,405 - DEBUG : Now at 7903th data in epoch 0
+2019-05-28 23:53:01,410 - DEBUG : Current mean loss for train data is 27.03352577984333
+2019-05-28 23:53:01,413 - DEBUG : Current mean score_hat is 23.349264428019524
+2019-05-28 23:53:01,419 - DEBUG : Current mean score_golden is -2.684261154383421
+2019-05-28 23:53:05,220 - DEBUG : Now at 4127th data in epoch 0
+2019-05-28 23:53:05,222 - DEBUG : Current mean loss for train data is 24.481823325157166
+2019-05-28 23:53:05,227 - DEBUG : Current mean score_hat is 23.442043483257294
+2019-05-28 23:53:05,231 - DEBUG : Current mean score_golden is -0.03977996902540326
+2019-05-28 23:53:16,590 - DEBUG : Now at 7935th data in epoch 0
+2019-05-28 23:53:16,606 - DEBUG : Current mean loss for train data is 22.003760546445847
+2019-05-28 23:53:16,610 - DEBUG : Current mean score_hat is 18.886615574359894
+2019-05-28 23:53:16,612 - DEBUG : Current mean score_golden is -2.117145024240017
+2019-05-28 23:53:23,004 - DEBUG : Now at 4159th data in epoch 0
+2019-05-28 23:53:23,019 - DEBUG : Current mean loss for train data is 26.574532389640808
+2019-05-28 23:53:23,044 - DEBUG : Current mean score_hat is 25.54339036345482
+2019-05-28 23:53:23,055 - DEBUG : Current mean score_golden is -0.031142064835876226
+2019-05-28 23:53:34,607 - DEBUG : Now at 7967th data in epoch 0
+2019-05-28 23:53:34,616 - DEBUG : Current mean loss for train data is 25.252283334732056
+2019-05-28 23:53:34,618 - DEBUG : Current mean score_hat is 21.806934893131256
+2019-05-28 23:53:34,630 - DEBUG : Current mean score_golden is -2.445348549634218
+2019-05-28 23:53:40,922 - DEBUG : Now at 4191th data in epoch 0
+2019-05-28 23:53:40,925 - DEBUG : Current mean loss for train data is 26.166358411312103
+2019-05-28 23:53:40,928 - DEBUG : Current mean score_hat is 25.17924240231514
+2019-05-28 23:53:40,939 - DEBUG : Current mean score_golden is 0.01288408157415688
+2019-05-28 23:53:53,065 - DEBUG : Now at 7999th data in epoch 0
+2019-05-28 23:53:53,075 - DEBUG : Current mean loss for train data is 26.53357882797718
+2019-05-28 23:53:53,080 - DEBUG : Current mean score_hat is 22.990259006619453
+2019-05-28 23:53:53,094 - DEBUG : Current mean score_golden is -2.5433198008686304
+2019-05-28 23:53:54,816 - DEBUG : Now at 4223th data in epoch 0
+2019-05-28 23:53:54,818 - DEBUG : Current mean loss for train data is 20.945809423923492
+2019-05-28 23:53:54,820 - DEBUG : Current mean score_hat is 19.951991200447083
+2019-05-28 23:53:54,829 - DEBUG : Current mean score_golden is 0.0061815036460757256
+2019-05-28 23:54:08,503 - DEBUG : Now at 8031th data in epoch 0
+2019-05-28 23:54:08,505 - DEBUG : Current mean loss for train data is 23.251865550875664
+2019-05-28 23:54:08,507 - DEBUG : Current mean score_hat is 20.027624160051346
+2019-05-28 23:54:08,516 - DEBUG : Current mean score_golden is -2.2242415258660913
+2019-05-28 23:54:15,206 - DEBUG : Now at 4255th data in epoch 0
+2019-05-28 23:54:15,233 - DEBUG : Current mean loss for train data is 25.323475688695908
+2019-05-28 23:54:15,257 - DEBUG : Current mean score_hat is 24.38616292923689
+2019-05-28 23:54:15,262 - DEBUG : Current mean score_golden is 0.06268720515072346
+2019-05-28 23:54:30,837 - DEBUG : Now at 4287th data in epoch 0
+2019-05-28 23:54:30,852 - DEBUG : Current mean loss for train data is 24.10381180047989
+2019-05-28 23:54:30,862 - DEBUG : Current mean score_hat is 23.15797759592533
+2019-05-28 23:54:30,873 - DEBUG : Current mean score_golden is 0.0541658631991595
+2019-05-28 23:54:35,736 - DEBUG : Now at 8063th data in epoch 0
+2019-05-28 23:54:35,739 - DEBUG : Current mean loss for train data is 31.348492920398712
+2019-05-28 23:54:35,741 - DEBUG : Current mean score_hat is 27.342139393091202
+2019-05-28 23:54:35,754 - DEBUG : Current mean score_golden is -3.00635351985693
+2019-05-28 23:54:45,113 - DEBUG : Now at 4319th data in epoch 0
+2019-05-28 23:54:45,124 - DEBUG : Current mean loss for train data is 23.009228631854057
+2019-05-28 23:54:45,147 - DEBUG : Current mean score_hat is 22.0736645758152
+2019-05-28 23:54:45,159 - DEBUG : Current mean score_golden is 0.06443599914200604
+2019-05-28 23:54:56,713 - DEBUG : Now at 8095th data in epoch 0
+2019-05-28 23:54:56,716 - DEBUG : Current mean loss for train data is 28.00299210846424
+2019-05-28 23:54:56,718 - DEBUG : Current mean score_hat is 24.29591055214405
+2019-05-28 23:54:56,731 - DEBUG : Current mean score_golden is -2.707081424072385
+2019-05-28 23:55:04,293 - DEBUG : Now at 4351th data in epoch 0
+2019-05-28 23:55:04,296 - DEBUG : Current mean loss for train data is 26.199874877929688
+2019-05-28 23:55:04,299 - DEBUG : Current mean score_hat is 25.240709137171507
+2019-05-28 23:55:04,308 - DEBUG : Current mean score_golden is 0.04083423363044858
+2019-05-28 23:55:12,653 - DEBUG : Now at 8127th data in epoch 0
+2019-05-28 23:55:12,656 - DEBUG : Current mean loss for train data is 24.285137116909027
+2019-05-28 23:55:12,660 - DEBUG : Current mean score_hat is 20.935437947511673
+2019-05-28 23:55:12,679 - DEBUG : Current mean score_golden is -2.349699119105935
+2019-05-28 23:55:26,377 - DEBUG : Now at 4383th data in epoch 0
+2019-05-28 23:55:26,380 - DEBUG : Current mean loss for train data is 30.48312756419182
+2019-05-28 23:55:26,383 - DEBUG : Current mean score_hat is 29.4917613863945
+2019-05-28 23:55:26,391 - DEBUG : Current mean score_golden is 0.008633472258225083
+2019-05-28 23:55:29,065 - DEBUG : Now at 8159th data in epoch 0
+2019-05-28 23:55:29,070 - DEBUG : Current mean loss for train data is 24.972959518432617
+2019-05-28 23:55:29,074 - DEBUG : Current mean score_hat is 21.538780383765697
+2019-05-28 23:55:29,097 - DEBUG : Current mean score_golden is -2.4341790545731783
+2019-05-28 23:55:44,798 - DEBUG : Now at 8191th data in epoch 0
+2019-05-28 23:55:44,804 - DEBUG : Current mean loss for train data is 24.62666028738022
+2019-05-28 23:55:44,807 - DEBUG : Current mean score_hat is 21.24111372232437
+2019-05-28 23:55:44,818 - DEBUG : Current mean score_golden is -2.3855465594679117
+2019-05-28 23:55:49,445 - DEBUG : Now at 4415th data in epoch 0
+2019-05-28 23:55:49,449 - DEBUG : Current mean loss for train data is 30.266992449760437
+2019-05-28 23:55:49,451 - DEBUG : Current mean score_hat is 29.325760647654533
+2019-05-28 23:55:49,454 - DEBUG : Current mean score_golden is 0.058767931535840034
+2019-05-28 23:56:02,331 - DEBUG : Now at 8223th data in epoch 0
+2019-05-28 23:56:02,359 - DEBUG : Current mean loss for train data is 26.254958748817444
+2019-05-28 23:56:02,381 - DEBUG : Current mean score_hat is 22.69709825515747
+2019-05-28 23:56:02,405 - DEBUG : Current mean score_golden is -2.557860406115651
+2019-05-28 23:56:13,379 - DEBUG : Now at 4447th data in epoch 0
+2019-05-28 23:56:13,384 - DEBUG : Current mean loss for train data is 29.357626527547836
+2019-05-28 23:56:13,392 - DEBUG : Current mean score_hat is 28.366768911480904
+2019-05-28 23:56:13,411 - DEBUG : Current mean score_golden is 0.009142605355009437
+2019-05-28 23:56:32,021 - DEBUG : Now at 8255th data in epoch 0
+2019-05-28 23:56:32,041 - DEBUG : Current mean loss for train data is 29.659380346536636
+2019-05-28 23:56:32,083 - DEBUG : Current mean score_hat is 25.769347563385963
+2019-05-28 23:56:32,115 - DEBUG : Current mean score_golden is -2.8900329302996397
+2019-05-28 23:56:37,317 - DEBUG : Now at 4479th data in epoch 0
+2019-05-28 23:56:37,323 - DEBUG : Current mean loss for train data is 24.822192296385765
+2019-05-28 23:56:37,326 - DEBUG : Current mean score_hat is 23.872206807136536
+2019-05-28 23:56:37,333 - DEBUG : Current mean score_golden is 0.05001448723487556
+2019-05-28 23:56:50,757 - DEBUG : Now at 4511th data in epoch 0
+2019-05-28 23:56:50,768 - DEBUG : Current mean loss for train data is 22.070561915636063
+2019-05-28 23:56:50,770 - DEBUG : Current mean score_hat is 21.111718401312828
+2019-05-28 23:56:50,775 - DEBUG : Current mean score_golden is 0.04115651594474912
+2019-05-28 23:56:52,364 - DEBUG : Now at 8287th data in epoch 0
+2019-05-28 23:56:52,373 - DEBUG : Current mean loss for train data is 26.939188331365585
+2019-05-28 23:56:52,383 - DEBUG : Current mean score_hat is 23.293579429388046
+2019-05-28 23:56:52,392 - DEBUG : Current mean score_golden is -2.6456089168787003
+2019-05-28 23:57:06,210 - DEBUG : Now at 4543th data in epoch 0
+2019-05-28 23:57:06,212 - DEBUG : Current mean loss for train data is 22.19627843797207
+2019-05-28 23:57:06,216 - DEBUG : Current mean score_hat is 21.237054511904716
+2019-05-28 23:57:06,222 - DEBUG : Current mean score_golden is 0.04077583970502019
+2019-05-28 23:57:12,707 - DEBUG : Now at 8319th data in epoch 0
+2019-05-28 23:57:12,718 - DEBUG : Current mean loss for train data is 24.65813982486725
+2019-05-28 23:57:12,755 - DEBUG : Current mean score_hat is 21.206187918782234
+2019-05-28 23:57:12,801 - DEBUG : Current mean score_golden is -2.4519520606845617
+2019-05-28 23:57:25,625 - DEBUG : Now at 4575th data in epoch 0
+2019-05-28 23:57:25,628 - DEBUG : Current mean loss for train data is 23.383515894412994
+2019-05-28 23:57:25,634 - DEBUG : Current mean score_hat is 22.46266332268715
+2019-05-28 23:57:25,644 - DEBUG : Current mean score_golden is 0.07914714538492262
+2019-05-28 23:57:34,532 - DEBUG : Now at 8351th data in epoch 0
+2019-05-28 23:57:34,534 - DEBUG : Current mean loss for train data is 27.908555448055267
+2019-05-28 23:57:34,536 - DEBUG : Current mean score_hat is 24.126376822590828
+2019-05-28 23:57:34,544 - DEBUG : Current mean score_golden is -2.7821786236017942
+2019-05-28 23:57:42,212 - DEBUG : Now at 4607th data in epoch 0
+2019-05-28 23:57:42,221 - DEBUG : Current mean loss for train data is 24.354304611682892
+2019-05-28 23:57:42,226 - DEBUG : Current mean score_hat is 23.45479980111122
+2019-05-28 23:57:42,231 - DEBUG : Current mean score_golden is 0.10049533401615918
+2019-05-28 23:57:52,252 - DEBUG : Now at 8383th data in epoch 0
+2019-05-28 23:57:52,254 - DEBUG : Current mean loss for train data is 26.033131569623947
+2019-05-28 23:57:52,257 - DEBUG : Current mean score_hat is 22.475390627980232
+2019-05-28 23:57:52,265 - DEBUG : Current mean score_golden is -2.5577409956604242
+2019-05-28 23:58:04,375 - DEBUG : Now at 4639th data in epoch 0
+2019-05-28 23:58:04,378 - DEBUG : Current mean loss for train data is 27.607747197151184
+2019-05-28 23:58:04,383 - DEBUG : Current mean score_hat is 26.748448371887207
+2019-05-28 23:58:04,388 - DEBUG : Current mean score_golden is 0.14070128567982465
+2019-05-28 23:58:07,266 - DEBUG : Now at 8415th data in epoch 0
+2019-05-28 23:58:07,269 - DEBUG : Current mean loss for train data is 22.314191095530987
+2019-05-28 23:58:07,271 - DEBUG : Current mean score_hat is 19.0842397660017
+2019-05-28 23:58:07,278 - DEBUG : Current mean score_golden is -2.2299515968188643
+2019-05-28 23:58:23,586 - DEBUG : Now at 8447th data in epoch 0
+2019-05-28 23:58:23,588 - DEBUG : Current mean loss for train data is 24.753649652004242
+2019-05-28 23:58:23,590 - DEBUG : Current mean score_hat is 21.245019763708115
+2019-05-28 23:58:23,605 - DEBUG : Current mean score_golden is -2.5086299404501915
+2019-05-28 23:58:29,563 - DEBUG : Now at 4671th data in epoch 0
+2019-05-28 23:58:29,567 - DEBUG : Current mean loss for train data is 29.545297876000404
+2019-05-28 23:58:29,569 - DEBUG : Current mean score_hat is 28.73477555066347
+2019-05-28 23:58:29,578 - DEBUG : Current mean score_golden is 0.1894775356631726
+2019-05-28 23:58:39,115 - DEBUG : Now at 8479th data in epoch 0
+2019-05-28 23:58:39,118 - DEBUG : Current mean loss for train data is 24.00058764219284
+2019-05-28 23:58:39,121 - DEBUG : Current mean score_hat is 20.56194381415844
+2019-05-28 23:58:39,127 - DEBUG : Current mean score_golden is -2.4386439099907875
+2019-05-28 23:58:52,147 - DEBUG : Now at 4703th data in epoch 0
+2019-05-28 23:58:52,158 - DEBUG : Current mean loss for train data is 30.359097182750702
+2019-05-28 23:58:52,172 - DEBUG : Current mean score_hat is 29.5489814132452
+2019-05-28 23:58:52,180 - DEBUG : Current mean score_golden is 0.18988444725982845
+2019-05-28 23:58:54,752 - DEBUG : Now at 8511th data in epoch 0
+2019-05-28 23:58:54,777 - DEBUG : Current mean loss for train data is 23.46985276043415
+2019-05-28 23:58:54,785 - DEBUG : Current mean score_hat is 20.060628570616245
+2019-05-28 23:58:54,802 - DEBUG : Current mean score_golden is -2.409224291332066
+2019-05-28 23:59:09,713 - DEBUG : Now at 8543th data in epoch 0
+2019-05-28 23:59:09,717 - DEBUG : Current mean loss for train data is 21.721707046031952
+2019-05-28 23:59:09,722 - DEBUG : Current mean score_hat is 18.483773984014988
+2019-05-28 23:59:09,724 - DEBUG : Current mean score_golden is -2.2379329102113843
+2019-05-28 23:59:13,501 - DEBUG : Now at 4735th data in epoch 0
+2019-05-28 23:59:13,511 - DEBUG : Current mean loss for train data is 29.167374432086945
+2019-05-28 23:59:13,515 - DEBUG : Current mean score_hat is 28.313603103160858
+2019-05-28 23:59:13,521 - DEBUG : Current mean score_golden is 0.14622883475385606
+2019-05-28 23:59:28,951 - DEBUG : Now at 8575th data in epoch 0
+2019-05-28 23:59:28,968 - DEBUG : Current mean loss for train data is 26.440510153770447
+2019-05-28 23:59:28,977 - DEBUG : Current mean score_hat is 22.707513980567455
+2019-05-28 23:59:28,995 - DEBUG : Current mean score_golden is -2.7329959021881223
+2019-05-28 23:59:34,762 - DEBUG : Now at 4767th data in epoch 0
+2019-05-28 23:59:34,764 - DEBUG : Current mean loss for train data is 27.88676592707634
+2019-05-28 23:59:34,767 - DEBUG : Current mean score_hat is 27.040342330932617
+2019-05-28 23:59:34,770 - DEBUG : Current mean score_golden is 0.15357636171393096
+2019-05-28 23:59:46,497 - DEBUG : Now at 8607th data in epoch 0
+2019-05-28 23:59:46,499 - DEBUG : Current mean loss for train data is 24.81304371356964
+2019-05-28 23:59:46,502 - DEBUG : Current mean score_hat is 21.278710454702377
+2019-05-28 23:59:46,511 - DEBUG : Current mean score_golden is -2.5343331545591354
+2019-05-28 23:59:58,329 - DEBUG : Now at 4799th data in epoch 0
+2019-05-28 23:59:58,331 - DEBUG : Current mean loss for train data is 25.511210560798645
+2019-05-28 23:59:58,334 - DEBUG : Current mean score_hat is 24.66401118040085
+2019-05-28 23:59:58,342 - DEBUG : Current mean score_golden is 0.1528003492858261
+2019-05-29 00:00:09,064 - DEBUG : Now at 8639th data in epoch 0
+2019-05-29 00:00:09,088 - DEBUG : Current mean loss for train data is 25.126690983772278
+2019-05-29 00:00:09,093 - DEBUG : Current mean score_hat is 21.53960883617401
+2019-05-29 00:00:09,101 - DEBUG : Current mean score_golden is -2.5870820824056864
+2019-05-29 00:00:17,065 - DEBUG : Now at 4831th data in epoch 0
+2019-05-29 00:00:17,084 - DEBUG : Current mean loss for train data is 26.573510065674782
+2019-05-29 00:00:17,092 - DEBUG : Current mean score_hat is 25.744733974337578
+2019-05-29 00:00:17,107 - DEBUG : Current mean score_golden is 0.17122372798621655
+2019-05-29 00:00:24,566 - DEBUG : Now at 8671th data in epoch 0
+2019-05-29 00:00:24,569 - DEBUG : Current mean loss for train data is 23.813901871442795
+2019-05-29 00:00:24,578 - DEBUG : Current mean score_hat is 20.359815537929535
+2019-05-29 00:00:24,580 - DEBUG : Current mean score_golden is -2.4540864191949368
+2019-05-29 00:00:33,951 - DEBUG : Now at 4863th data in epoch 0
+2019-05-29 00:00:33,953 - DEBUG : Current mean loss for train data is 23.448170319199562
+2019-05-29 00:00:33,954 - DEBUG : Current mean score_hat is 22.573784813284874
+2019-05-29 00:00:33,960 - DEBUG : Current mean score_golden is 0.12561447243206203
+2019-05-29 00:00:41,327 - DEBUG : Now at 8703th data in epoch 0
+2019-05-29 00:00:41,330 - DEBUG : Current mean loss for train data is 25.532407701015472
+2019-05-29 00:00:41,331 - DEBUG : Current mean score_hat is 21.893521457910538
+2019-05-29 00:00:41,335 - DEBUG : Current mean score_golden is -2.638886161148548
+2019-05-29 00:00:52,871 - DEBUG : Now at 4895th data in epoch 0
+2019-05-29 00:00:52,876 - DEBUG : Current mean loss for train data is 26.011372201144695
+2019-05-29 00:00:52,879 - DEBUG : Current mean score_hat is 25.174854423850775
+2019-05-29 00:00:52,885 - DEBUG : Current mean score_golden is 0.16348197450861335
+2019-05-29 00:01:02,300 - DEBUG : Now at 8735th data in epoch 0
+2019-05-29 00:01:02,304 - DEBUG : Current mean loss for train data is 29.50103461742401
+2019-05-29 00:01:02,308 - DEBUG : Current mean score_hat is 25.394156455993652
+2019-05-29 00:01:02,321 - DEBUG : Current mean score_golden is -3.106878187507391
+2019-05-29 00:01:09,685 - DEBUG : Now at 4927th data in epoch 0
+2019-05-29 00:01:09,694 - DEBUG : Current mean loss for train data is 24.63578788936138
+2019-05-29 00:01:09,699 - DEBUG : Current mean score_hat is 23.82227575033903
+2019-05-29 00:01:09,714 - DEBUG : Current mean score_golden is 0.186487803934142
+2019-05-29 00:01:22,495 - DEBUG : Now at 4959th data in epoch 0
+2019-05-29 00:01:22,498 - DEBUG : Current mean loss for train data is 19.882817968726158
+2019-05-29 00:01:22,505 - DEBUG : Current mean score_hat is 19.02732791006565
+2019-05-29 00:01:22,512 - DEBUG : Current mean score_golden is 0.14451009617187083
+2019-05-29 00:01:24,333 - DEBUG : Now at 8767th data in epoch 0
+2019-05-29 00:01:24,339 - DEBUG : Current mean loss for train data is 28.533137679100037
+2019-05-29 00:01:24,354 - DEBUG : Current mean score_hat is 24.541656106710434
+2019-05-29 00:01:24,374 - DEBUG : Current mean score_golden is -2.9914815686643124
+2019-05-29 00:01:42,411 - DEBUG : Now at 4991th data in epoch 0
+2019-05-29 00:01:42,417 - DEBUG : Current mean loss for train data is 26.229107186198235
+2019-05-29 00:01:42,419 - DEBUG : Current mean score_hat is 25.470824494957924
+2019-05-29 00:01:42,431 - DEBUG : Current mean score_golden is 0.24171764915809035
+2019-05-29 00:01:44,639 - DEBUG : Now at 8799th data in epoch 0
+2019-05-29 00:01:44,643 - DEBUG : Current mean loss for train data is 27.844398707151413
+2019-05-29 00:01:44,649 - DEBUG : Current mean score_hat is 23.947492972016335
+2019-05-29 00:01:44,662 - DEBUG : Current mean score_golden is -2.8969055209308863
+2019-05-29 00:02:05,059 - DEBUG : Now at 5023th data in epoch 0
+2019-05-29 00:02:05,078 - DEBUG : Now at 8831th data in epoch 0
+2019-05-29 00:02:05,071 - DEBUG : Current mean loss for train data is 28.730036556720734
+2019-05-29 00:02:05,087 - DEBUG : Current mean loss for train data is 28.375337556004524
+2019-05-29 00:02:05,088 - DEBUG : Current mean score_hat is 28.030984103679657
+2019-05-29 00:02:05,091 - DEBUG : Current mean score_hat is 24.45624367892742
+2019-05-29 00:02:05,092 - DEBUG : Current mean score_golden is 0.30094739492051303
+2019-05-29 00:02:05,100 - DEBUG : Current mean score_golden is -2.9190939106047153
+2019-05-29 00:02:20,976 - DEBUG : Now at 5055th data in epoch 0
+2019-05-29 00:02:20,982 - DEBUG : Current mean loss for train data is 23.88328781723976
+2019-05-29 00:02:20,991 - DEBUG : Current mean score_hat is 23.125307261943817
+2019-05-29 00:02:21,000 - DEBUG : Current mean score_golden is 0.2420196239836514
+2019-05-29 00:02:21,570 - DEBUG : Now at 8863th data in epoch 0
+2019-05-29 00:02:21,573 - DEBUG : Current mean loss for train data is 24.56303706765175
+2019-05-29 00:02:21,576 - DEBUG : Current mean score_hat is 21.03365632891655
+2019-05-29 00:02:21,588 - DEBUG : Current mean score_golden is -2.5293809100985527
+2019-05-29 00:02:37,952 - DEBUG : Now at 5087th data in epoch 0
+2019-05-29 00:02:37,958 - DEBUG : Current mean loss for train data is 24.47827857732773
+2019-05-29 00:02:37,961 - DEBUG : Current mean score_hat is 23.735658392310143
+2019-05-29 00:02:37,964 - DEBUG : Current mean score_golden is 0.2573797581717372
+2019-05-29 00:02:39,388 - DEBUG : Now at 8895th data in epoch 0
+2019-05-29 00:02:39,397 - DEBUG : Current mean loss for train data is 25.687969356775284
+2019-05-29 00:02:39,398 - DEBUG : Current mean score_hat is 22.057436108589172
+2019-05-29 00:02:39,406 - DEBUG : Current mean score_golden is -2.6305330842733383
+2019-05-29 00:02:55,423 - DEBUG : Now at 5119th data in epoch 0
+2019-05-29 00:02:55,426 - DEBUG : Current mean loss for train data is 24.854335516691208
+2019-05-29 00:02:55,436 - DEBUG : Current mean score_hat is 24.08696523308754
+2019-05-29 00:02:55,442 - DEBUG : Current mean score_golden is 0.2326298695988953
+2019-05-29 00:02:55,568 - DEBUG : Now at 8927th data in epoch 0
+2019-05-29 00:02:55,578 - DEBUG : Current mean loss for train data is 23.812573164701462
+2019-05-29 00:02:55,588 - DEBUG : Current mean score_hat is 20.366922438144684
+2019-05-29 00:02:55,598 - DEBUG : Current mean score_golden is -2.445650838315487
+2019-05-29 00:03:15,671 - DEBUG : Now at 8959th data in epoch 0
+2019-05-29 00:03:15,696 - DEBUG : Current mean loss for train data is 24.4994438290596
+2019-05-29 00:03:15,706 - DEBUG : Current mean score_hat is 20.980722532141954
+2019-05-29 00:03:15,741 - DEBUG : Current mean score_golden is -2.5187211758457124
+2019-05-29 00:03:17,369 - DEBUG : Now at 5151th data in epoch 0
+2019-05-29 00:03:17,388 - DEBUG : Current mean loss for train data is 25.447873935103416
+2019-05-29 00:03:17,402 - DEBUG : Current mean score_hat is 24.695770129561424
+2019-05-29 00:03:17,409 - DEBUG : Current mean score_golden is 0.24789647851139307
+2019-05-29 00:03:33,662 - DEBUG : Now at 5183th data in epoch 0
+2019-05-29 00:03:33,692 - DEBUG : Current mean loss for train data is 23.538581907749176
+2019-05-29 00:03:33,708 - DEBUG : Current mean score_hat is 22.771574810147285
+2019-05-29 00:03:33,723 - DEBUG : Current mean score_golden is 0.232993105892092
+2019-05-29 00:03:33,735 - DEBUG : Now at 8991th data in epoch 0
+2019-05-29 00:03:33,745 - DEBUG : Current mean loss for train data is 24.06254543364048
+2019-05-29 00:03:33,749 - DEBUG : Current mean score_hat is 20.606492906808853
+2019-05-29 00:03:33,758 - DEBUG : Current mean score_golden is -2.456052552908659
+2019-05-29 00:03:51,033 - DEBUG : Now at 9023th data in epoch 0
+2019-05-29 00:03:51,044 - DEBUG : Current mean loss for train data is 25.281520158052444
+2019-05-29 00:03:51,064 - DEBUG : Current mean score_hat is 21.699235141277313
+2019-05-29 00:03:51,073 - DEBUG : Current mean score_golden is -2.5822850167751312
+2019-05-29 00:03:52,581 - DEBUG : Now at 5215th data in epoch 0
+2019-05-29 00:03:52,583 - DEBUG : Current mean loss for train data is 25.633897721767426
+2019-05-29 00:03:52,588 - DEBUG : Current mean score_hat is 24.884969130158424
+2019-05-29 00:03:52,594 - DEBUG : Current mean score_golden is 0.2510713904630393
+2019-05-29 00:04:07,708 - DEBUG : Now at 9055th data in epoch 0
+2019-05-29 00:04:07,713 - DEBUG : Current mean loss for train data is 24.59393635392189
+2019-05-29 00:04:07,715 - DEBUG : Current mean score_hat is 21.097854986786842
+2019-05-29 00:04:07,718 - DEBUG : Current mean score_golden is -2.496081367135048
+2019-05-29 00:04:08,291 - DEBUG : Now at 5247th data in epoch 0
+2019-05-29 00:04:08,297 - DEBUG : Current mean loss for train data is 23.037834227085114
+2019-05-29 00:04:08,304 - DEBUG : Current mean score_hat is 22.27294984459877
+2019-05-29 00:04:08,307 - DEBUG : Current mean score_golden is 0.23511556442826986
+2019-05-29 00:04:24,785 - DEBUG : Now at 9087th data in epoch 0
+2019-05-29 00:04:24,789 - DEBUG : Current mean loss for train data is 24.374761015176773
+2019-05-29 00:04:24,792 - DEBUG : Current mean score_hat is 20.913057878613472
+2019-05-29 00:04:24,805 - DEBUG : Current mean score_golden is -2.4617031076923013
+2019-05-29 00:04:25,949 - DEBUG : Now at 5279th data in epoch 0
+2019-05-29 00:04:25,952 - DEBUG : Current mean loss for train data is 25.16624078154564
+2019-05-29 00:04:25,954 - DEBUG : Current mean score_hat is 24.44210582971573
+2019-05-29 00:04:25,962 - DEBUG : Current mean score_golden is 0.2758648507297039
+2019-05-29 00:04:44,652 - DEBUG : Now at 9119th data in epoch 0
+2019-05-29 00:04:44,656 - DEBUG : Current mean loss for train data is 26.937850281596184
+2019-05-29 00:04:44,660 - DEBUG : Current mean score_hat is 23.21384660899639
+2019-05-29 00:04:44,679 - DEBUG : Current mean score_golden is -2.7240036269649863
+2019-05-29 00:04:46,957 - DEBUG : Now at 5311th data in epoch 0
+2019-05-29 00:04:46,960 - DEBUG : Current mean loss for train data is 26.385296046733856
+2019-05-29 00:04:46,963 - DEBUG : Current mean score_hat is 25.68601107597351
+2019-05-29 00:04:46,975 - DEBUG : Current mean score_golden is 0.30071515520103276
+2019-05-29 00:05:00,770 - DEBUG : Now at 9151th data in epoch 0
+2019-05-29 00:05:00,780 - DEBUG : Current mean loss for train data is 23.499684616923332
+2019-05-29 00:05:00,784 - DEBUG : Current mean score_hat is 20.14075082540512
+2019-05-29 00:05:00,795 - DEBUG : Current mean score_golden is -2.3589337337762117
+2019-05-29 00:05:12,042 - DEBUG : Now at 5343th data in epoch 0
+2019-05-29 00:05:12,052 - DEBUG : Current mean loss for train data is 30.353786647319794
+2019-05-29 00:05:12,058 - DEBUG : Current mean score_hat is 29.771255522966385
+2019-05-29 00:05:12,070 - DEBUG : Current mean score_golden is 0.4174690991640091
+2019-05-29 00:05:13,335 - DEBUG : Now at 9183th data in epoch 0
+2019-05-29 00:05:13,360 - DEBUG : Current mean loss for train data is 19.250081062316895
+2019-05-29 00:05:13,374 - DEBUG : Current mean score_hat is 16.330590575933456
+2019-05-29 00:05:13,405 - DEBUG : Current mean score_golden is -1.9194904435425997
+2019-05-29 00:05:30,193 - DEBUG : Now at 9215th data in epoch 0
+2019-05-29 00:05:30,197 - DEBUG : Current mean loss for train data is 23.03144946694374
+2019-05-29 00:05:30,206 - DEBUG : Current mean score_hat is 19.71506318449974
+2019-05-29 00:05:30,220 - DEBUG : Current mean score_golden is -2.3163864221423864
+2019-05-29 00:05:38,800 - DEBUG : Now at 5375th data in epoch 0
+2019-05-29 00:05:38,802 - DEBUG : Current mean loss for train data is 30.416459262371063
+2019-05-29 00:05:38,806 - DEBUG : Current mean score_hat is 29.86873286962509
+2019-05-29 00:05:38,812 - DEBUG : Current mean score_golden is 0.45227359887212515
+2019-05-29 00:05:45,732 - DEBUG : Now at 9247th data in epoch 0
+2019-05-29 00:05:45,755 - DEBUG : Current mean loss for train data is 21.720295876264572
+2019-05-29 00:05:45,762 - DEBUG : Current mean score_hat is 18.579591979272664
+2019-05-29 00:05:45,769 - DEBUG : Current mean score_golden is -2.1407038075849414
+2019-05-29 00:05:59,703 - DEBUG : Now at 9279th data in epoch 0
+2019-05-29 00:05:59,708 - DEBUG : Current mean loss for train data is 20.59478424489498
+2019-05-29 00:05:59,716 - DEBUG : Current mean score_hat is 17.51447407901287
+2019-05-29 00:05:59,737 - DEBUG : Current mean score_golden is -2.080310257151723
+2019-05-29 00:06:03,364 - DEBUG : Now at 5407th data in epoch 0
+2019-05-29 00:06:03,367 - DEBUG : Current mean loss for train data is 30.76010450720787
+2019-05-29 00:06:03,369 - DEBUG : Current mean score_hat is 30.244058698415756
+2019-05-29 00:06:03,373 - DEBUG : Current mean score_golden is 0.48395409411750734
+2019-05-29 00:06:17,514 - DEBUG : Now at 9311th data in epoch 0
+2019-05-29 00:06:17,517 - DEBUG : Current mean loss for train data is 25.125301390886307
+2019-05-29 00:06:17,521 - DEBUG : Current mean score_hat is 21.59144476056099
+2019-05-29 00:06:17,526 - DEBUG : Current mean score_golden is -2.5338565800338984
+2019-05-29 00:06:23,934 - DEBUG : Now at 5439th data in epoch 0
+2019-05-29 00:06:23,941 - DEBUG : Current mean loss for train data is 27.319125846028328
+2019-05-29 00:06:23,946 - DEBUG : Current mean score_hat is 26.76038920879364
+2019-05-29 00:06:23,963 - DEBUG : Current mean score_golden is 0.4412631490267813
+2019-05-29 00:06:32,549 - DEBUG : Now at 9343th data in epoch 0
+2019-05-29 00:06:32,565 - DEBUG : Current mean loss for train data is 22.24987007677555
+2019-05-29 00:06:32,582 - DEBUG : Current mean score_hat is 19.061552673578262
+2019-05-29 00:06:32,588 - DEBUG : Current mean score_golden is -2.1883174497634172
+2019-05-29 00:06:36,631 - DEBUG : Now at 5471th data in epoch 0
+2019-05-29 00:06:36,635 - DEBUG : Current mean loss for train data is 19.098806083202362
+2019-05-29 00:06:36,637 - DEBUG : Current mean score_hat is 18.39079389721155
+2019-05-29 00:06:36,646 - DEBUG : Current mean score_golden is 0.29198769945651293
+2019-05-29 00:06:53,250 - DEBUG : Now at 5503th data in epoch 0
+2019-05-29 00:06:53,254 - DEBUG : Current mean loss for train data is 24.848930537700653
+2019-05-29 00:06:53,258 - DEBUG : Current mean score_hat is 24.2542342543602
+2019-05-29 00:06:53,267 - DEBUG : Current mean score_golden is 0.40530379535630345
+2019-05-29 00:06:54,729 - DEBUG : Now at 9375th data in epoch 0
+2019-05-29 00:06:54,743 - DEBUG : Current mean loss for train data is 29.125094950199127
+2019-05-29 00:06:54,765 - DEBUG : Current mean score_hat is 25.16611237823963
+2019-05-29 00:06:54,776 - DEBUG : Current mean score_golden is -2.9589825682342052
+2019-05-29 00:07:15,581 - DEBUG : Now at 5535th data in epoch 0
+2019-05-29 00:07:15,585 - DEBUG : Current mean loss for train data is 29.883930385112762
+2019-05-29 00:07:15,588 - DEBUG : Current mean score_hat is 29.40242087841034
+2019-05-29 00:07:15,598 - DEBUG : Current mean score_golden is 0.5184904984198511
+2019-05-29 00:07:23,118 - DEBUG : Now at 9407th data in epoch 0
+2019-05-29 00:07:23,121 - DEBUG : Current mean loss for train data is 35.3460898399353
+2019-05-29 00:07:23,123 - DEBUG : Current mean score_hat is 30.76916028559208
+2019-05-29 00:07:23,135 - DEBUG : Current mean score_golden is -3.5769294686615467
+2019-05-29 00:07:37,475 - DEBUG : Now at 9439th data in epoch 0
+2019-05-29 00:07:37,495 - DEBUG : Current mean loss for train data is 19.90735202282667
+2019-05-29 00:07:37,503 - DEBUG : Current mean score_hat is 16.92434502625838
+2019-05-29 00:07:37,513 - DEBUG : Current mean score_golden is -1.9830071334727108
+2019-05-29 00:07:39,085 - DEBUG : Now at 5567th data in epoch 0
+2019-05-29 00:07:39,090 - DEBUG : Current mean loss for train data is 29.977387130260468
+2019-05-29 00:07:39,096 - DEBUG : Current mean score_hat is 29.477745056152344
+2019-05-29 00:07:39,106 - DEBUG : Current mean score_golden is 0.5003580569755286
+2019-05-29 00:07:55,032 - DEBUG : Now at 9471th data in epoch 0
+2019-05-29 00:07:55,035 - DEBUG : Current mean loss for train data is 25.28181093931198
+2019-05-29 00:07:55,038 - DEBUG : Current mean score_hat is 21.76533866673708
+2019-05-29 00:07:55,056 - DEBUG : Current mean score_golden is -2.5164723824709654
+2019-05-29 00:07:56,626 - DEBUG : Now at 5599th data in epoch 0
+2019-05-29 00:07:56,630 - DEBUG : Current mean loss for train data is 25.850057274103165
+2019-05-29 00:07:56,634 - DEBUG : Current mean score_hat is 25.284406557679176
+2019-05-29 00:07:56,640 - DEBUG : Current mean score_golden is 0.43434903770685196
+2019-05-29 00:08:12,340 - DEBUG : Now at 9503th data in epoch 0
+2019-05-29 00:08:12,346 - DEBUG : Current mean loss for train data is 23.37635751068592
+2019-05-29 00:08:12,350 - DEBUG : Current mean score_hat is 20.034322410821915
+2019-05-29 00:08:12,364 - DEBUG : Current mean score_golden is -2.3420350048691034
+2019-05-29 00:08:12,769 - DEBUG : Now at 5631th data in epoch 0
+2019-05-29 00:08:12,781 - DEBUG : Current mean loss for train data is 23.00528457760811
+2019-05-29 00:08:12,805 - DEBUG : Current mean score_hat is 22.415285229682922
+2019-05-29 00:08:12,817 - DEBUG : Current mean score_golden is 0.41000072564929724
+2019-05-29 00:08:28,618 - DEBUG : Now at 5663th data in epoch 0
+2019-05-29 00:08:28,623 - DEBUG : Current mean loss for train data is 23.53800556063652
+2019-05-29 00:08:28,627 - DEBUG : Current mean score_hat is 22.998250424861908
+2019-05-29 00:08:28,638 - DEBUG : Current mean score_golden is 0.4602448372170329
+2019-05-29 00:08:31,268 - DEBUG : Now at 9535th data in epoch 0
+2019-05-29 00:08:31,289 - DEBUG : Current mean loss for train data is 25.96840664744377
+2019-05-29 00:08:31,300 - DEBUG : Current mean score_hat is 22.369290731847286
+2019-05-29 00:08:31,309 - DEBUG : Current mean score_golden is -2.5991159342229366
+2019-05-29 00:08:41,170 - DEBUG : Now at 5695th data in epoch 0
+2019-05-29 00:08:41,175 - DEBUG : Current mean loss for train data is 20.067329913377762
+2019-05-29 00:08:41,179 - DEBUG : Current mean score_hat is 19.4726036824286
+2019-05-29 00:08:41,188 - DEBUG : Current mean score_golden is 0.40527383517473936
+2019-05-29 00:08:46,884 - DEBUG : Now at 9567th data in epoch 0
+2019-05-29 00:08:46,889 - DEBUG : Current mean loss for train data is 23.43766276538372
+2019-05-29 00:08:46,901 - DEBUG : Current mean score_hat is 20.078366473317146
+2019-05-29 00:08:46,918 - DEBUG : Current mean score_golden is -2.359296303242445
+2019-05-29 00:09:00,765 - DEBUG : Now at 5727th data in epoch 0
+2019-05-29 00:09:00,784 - DEBUG : Current mean loss for train data is 27.008454650640488
+2019-05-29 00:09:00,794 - DEBUG : Current mean score_hat is 26.621221601963043
+2019-05-29 00:09:00,799 - DEBUG : Current mean score_golden is 0.612767044454813
+2019-05-29 00:09:03,660 - DEBUG : Now at 9599th data in epoch 0
+2019-05-29 00:09:03,663 - DEBUG : Current mean loss for train data is 24.031139060854912
+2019-05-29 00:09:03,668 - DEBUG : Current mean score_hat is 20.58619274199009
+2019-05-29 00:09:03,690 - DEBUG : Current mean score_golden is -2.444946264848113
+2019-05-29 00:09:17,461 - DEBUG : Now at 5759th data in epoch 0
+2019-05-29 00:09:17,484 - DEBUG : Current mean loss for train data is 24.2269067466259
+2019-05-29 00:09:17,489 - DEBUG : Current mean score_hat is 23.768845051527023
+2019-05-29 00:09:17,497 - DEBUG : Current mean score_golden is 0.5419383449479938
+2019-05-29 00:09:25,538 - DEBUG : Now at 9631th data in epoch 0
+2019-05-29 00:09:25,541 - DEBUG : Current mean loss for train data is 28.500638410449028
+2019-05-29 00:09:25,545 - DEBUG : Current mean score_hat is 24.616386905312538
+2019-05-29 00:09:25,551 - DEBUG : Current mean score_golden is -2.8842515163123608
+2019-05-29 00:09:33,975 - DEBUG : Now at 5791th data in epoch 0
+2019-05-29 00:09:33,976 - DEBUG : Current mean loss for train data is 23.788269340991974
+2019-05-29 00:09:33,979 - DEBUG : Current mean score_hat is 23.32074448466301
+2019-05-29 00:09:33,994 - DEBUG : Current mean score_golden is 0.5324752125889063
+2019-05-29 00:09:48,807 - DEBUG : Now at 9663th data in epoch 0
+2019-05-29 00:09:48,809 - DEBUG : Current mean loss for train data is 30.47046709060669
+2019-05-29 00:09:48,811 - DEBUG : Current mean score_hat is 26.384430646896362
+2019-05-29 00:09:48,828 - DEBUG : Current mean score_golden is -3.0860363822430372
+2019-05-29 00:09:52,291 - DEBUG : Now at 5823th data in epoch 0
+2019-05-29 00:09:52,295 - DEBUG : Current mean loss for train data is 25.9749698638916
+2019-05-29 00:09:52,323 - DEBUG : Current mean score_hat is 25.57859256863594
+2019-05-29 00:09:52,330 - DEBUG : Current mean score_golden is 0.6036227568984032
+2019-05-29 00:10:03,901 - DEBUG : Now at 9695th data in epoch 0
+2019-05-29 00:10:03,911 - DEBUG : Current mean loss for train data is 21.81233038008213
+2019-05-29 00:10:03,923 - DEBUG : Current mean score_hat is 18.589833424426615
+2019-05-29 00:10:03,939 - DEBUG : Current mean score_golden is -2.222497085109353
+2019-05-29 00:10:07,127 - DEBUG : Now at 5855th data in epoch 0
+2019-05-29 00:10:07,132 - DEBUG : Current mean loss for train data is 21.629546627402306
+2019-05-29 00:10:07,136 - DEBUG : Current mean score_hat is 21.11330457031727
+2019-05-29 00:10:07,145 - DEBUG : Current mean score_golden is 0.4837580050807446
+2019-05-29 00:10:20,977 - DEBUG : Now at 5887th data in epoch 0
+2019-05-29 00:10:20,991 - DEBUG : Current mean loss for train data is 20.973357066512108
+2019-05-29 00:10:21,012 - DEBUG : Current mean score_hat is 20.457248359918594
+2019-05-29 00:10:21,025 - DEBUG : Current mean score_golden is 0.48389120236970484
+2019-05-29 00:10:22,331 - DEBUG : Now at 9727th data in epoch 0
+2019-05-29 00:10:22,333 - DEBUG : Current mean loss for train data is 26.09452086687088
+2019-05-29 00:10:22,336 - DEBUG : Current mean score_hat is 22.418108731508255
+2019-05-29 00:10:22,345 - DEBUG : Current mean score_golden is -2.676412306725979
+2019-05-29 00:10:36,029 - DEBUG : Now at 5919th data in epoch 0
+2019-05-29 00:10:36,031 - DEBUG : Current mean loss for train data is 22.72368997335434
+2019-05-29 00:10:36,046 - DEBUG : Current mean score_hat is 22.275392442941666
+2019-05-29 00:10:36,063 - DEBUG : Current mean score_golden is 0.5517024989239872
+2019-05-29 00:10:40,628 - DEBUG : Now at 9759th data in epoch 0
+2019-05-29 00:10:40,634 - DEBUG : Current mean loss for train data is 25.469111740589142
+2019-05-29 00:10:40,636 - DEBUG : Current mean score_hat is 21.903195947408676
+2019-05-29 00:10:40,644 - DEBUG : Current mean score_golden is -2.565915659070015
+2019-05-29 00:10:49,800 - DEBUG : Now at 5951th data in epoch 0
+2019-05-29 00:10:49,803 - DEBUG : Current mean loss for train data is 21.19198352098465
+2019-05-29 00:10:49,807 - DEBUG : Current mean score_hat is 20.703978672623634
+2019-05-29 00:10:49,816 - DEBUG : Current mean score_golden is 0.5119951760862023
+2019-05-29 00:10:57,963 - DEBUG : Now at 9791th data in epoch 0
+2019-05-29 00:10:57,966 - DEBUG : Current mean loss for train data is 24.9376183450222
+2019-05-29 00:10:57,975 - DEBUG : Current mean score_hat is 21.420547656714916
+2019-05-29 00:10:57,993 - DEBUG : Current mean score_golden is -2.5170709071680903
+2019-05-29 00:11:11,930 - DEBUG : Now at 5983th data in epoch 0
+2019-05-29 00:11:11,933 - DEBUG : Current mean loss for train data is 28.569979071617126
+2019-05-29 00:11:11,936 - DEBUG : Current mean score_hat is 28.297434955835342
+2019-05-29 00:11:11,943 - DEBUG : Current mean score_golden is 0.7274557929486036
+2019-05-29 00:11:16,225 - DEBUG : Now at 9823th data in epoch 0
+2019-05-29 00:11:16,229 - DEBUG : Current mean loss for train data is 24.470246985554695
+2019-05-29 00:11:16,234 - DEBUG : Current mean score_hat is 21.038076616823673
+2019-05-29 00:11:16,259 - DEBUG : Current mean score_golden is -2.432170576415956
+2019-05-29 00:11:33,100 - DEBUG : Now at 6015th data in epoch 0
+2019-05-29 00:11:33,103 - DEBUG : Current mean loss for train data is 27.975300759077072
+2019-05-29 00:11:33,106 - DEBUG : Current mean score_hat is 27.699068009853363
+2019-05-29 00:11:33,109 - DEBUG : Current mean score_golden is 0.7237674221396446
+2019-05-29 00:11:34,599 - DEBUG : Now at 9855th data in epoch 0
+2019-05-29 00:11:34,609 - DEBUG : Current mean loss for train data is 26.155331760644913
+2019-05-29 00:11:34,640 - DEBUG : Current mean score_hat is 22.502182096242905
+2019-05-29 00:11:34,647 - DEBUG : Current mean score_golden is -2.6531494660302997
+2019-05-29 00:11:44,886 - DEBUG : Now at 6047th data in epoch 0
+2019-05-29 00:11:44,890 - DEBUG : Current mean loss for train data is 19.441381990909576
+2019-05-29 00:11:44,894 - DEBUG : Current mean score_hat is 18.90877664089203
+2019-05-29 00:11:44,899 - DEBUG : Current mean score_golden is 0.4673944846726954
+2019-05-29 00:11:54,314 - DEBUG : Now at 9887th data in epoch 0
+2019-05-29 00:11:54,332 - DEBUG : Current mean loss for train data is 26.78147530555725
+2019-05-29 00:11:54,348 - DEBUG : Current mean score_hat is 23.038249760866165
+2019-05-29 00:11:54,361 - DEBUG : Current mean score_golden is -2.7432252932339907
+2019-05-29 00:11:58,921 - DEBUG : Now at 6079th data in epoch 0
+2019-05-29 00:11:58,925 - DEBUG : Current mean loss for train data is 21.75477384030819
+2019-05-29 00:11:58,929 - DEBUG : Current mean score_hat is 21.314039662480354
+2019-05-29 00:11:58,937 - DEBUG : Current mean score_golden is 0.559265875723213
+2019-05-29 00:12:13,820 - DEBUG : Now at 9919th data in epoch 0
+2019-05-29 00:12:13,853 - DEBUG : Current mean loss for train data is 26.406759425997734
+2019-05-29 00:12:13,859 - DEBUG : Current mean score_hat is 22.69035565853119
+2019-05-29 00:12:13,869 - DEBUG : Current mean score_golden is -2.7164037954062223
+2019-05-29 00:12:16,638 - DEBUG : Now at 6111th data in epoch 0
+2019-05-29 00:12:16,641 - DEBUG : Current mean loss for train data is 25.693823859095573
+2019-05-29 00:12:16,643 - DEBUG : Current mean score_hat is 25.38774138689041
+2019-05-29 00:12:16,645 - DEBUG : Current mean score_golden is 0.6939174802973866
+2019-05-29 00:12:30,494 - DEBUG : Now at 9951th data in epoch 0
+2019-05-29 00:12:30,498 - DEBUG : Current mean loss for train data is 25.156111508607864
+2019-05-29 00:12:30,500 - DEBUG : Current mean score_hat is 21.57078391313553
+2019-05-29 00:12:30,512 - DEBUG : Current mean score_golden is -2.5853276439011097
+2019-05-29 00:12:34,631 - DEBUG : Now at 6143th data in epoch 0
+2019-05-29 00:12:34,634 - DEBUG : Current mean loss for train data is 25.41167713701725
+2019-05-29 00:12:34,636 - DEBUG : Current mean score_hat is 25.10886612534523
+2019-05-29 00:12:34,643 - DEBUG : Current mean score_golden is 0.6971887263935059
+2019-05-29 00:12:46,534 - DEBUG : Now at 9983th data in epoch 0
+2019-05-29 00:12:46,536 - DEBUG : Current mean loss for train data is 23.812916219234467
+2019-05-29 00:12:46,539 - DEBUG : Current mean score_hat is 20.35612639784813
+2019-05-29 00:12:46,563 - DEBUG : Current mean score_golden is -2.4567896025255322
+2019-05-29 00:12:59,780 - DEBUG : Now at 10015th data in epoch 0
+2019-05-29 00:12:59,783 - DEBUG : Current mean loss for train data is 21.219188258051872
+2019-05-29 00:12:59,793 - DEBUG : Current mean score_hat is 18.046222552657127
+2019-05-29 00:12:59,808 - DEBUG : Current mean score_golden is -2.1729656979441643
+2019-05-29 00:13:03,791 - DEBUG : Now at 6175th data in epoch 0
+2019-05-29 00:13:03,797 - DEBUG : Current mean loss for train data is 32.16462855041027
+2019-05-29 00:13:03,805 - DEBUG : Current mean score_hat is 32.0734234303236
+2019-05-29 00:13:03,814 - DEBUG : Current mean score_golden is 0.9087947839871049
+2019-05-29 00:13:16,809 - DEBUG : Now at 10047th data in epoch 0
+2019-05-29 00:13:16,826 - DEBUG : Current mean loss for train data is 24.531659618020058
+2019-05-29 00:13:16,832 - DEBUG : Current mean score_hat is 20.99174354970455
+2019-05-29 00:13:16,847 - DEBUG : Current mean score_golden is -2.5399160031229258
+2019-05-29 00:13:20,756 - DEBUG : Now at 6207th data in epoch 0
+2019-05-29 00:13:20,760 - DEBUG : Current mean loss for train data is 23.194018632173538
+2019-05-29 00:13:20,762 - DEBUG : Current mean score_hat is 22.84890377521515
+2019-05-29 00:13:20,775 - DEBUG : Current mean score_golden is 0.6548849698156118
+2019-05-29 00:13:31,339 - DEBUG : Now at 10079th data in epoch 0
+2019-05-29 00:13:31,343 - DEBUG : Current mean loss for train data is 21.06338781118393
+2019-05-29 00:13:31,344 - DEBUG : Current mean score_hat is 17.894394993782043
+2019-05-29 00:13:31,350 - DEBUG : Current mean score_golden is -2.168992780148983
+2019-05-29 00:13:40,012 - DEBUG : Now at 6239th data in epoch 0
+2019-05-29 00:13:40,014 - DEBUG : Current mean loss for train data is 26.069320783019066
+2019-05-29 00:13:40,018 - DEBUG : Current mean score_hat is 25.826609894633293
+2019-05-29 00:13:40,024 - DEBUG : Current mean score_golden is 0.7572892357129604
+2019-05-29 00:13:54,471 - DEBUG : Now at 10111th data in epoch 0
+2019-05-29 00:13:54,508 - DEBUG : Current mean loss for train data is 27.719353541731834
+2019-05-29 00:13:54,513 - DEBUG : Current mean score_hat is 23.829992309212685
+2019-05-29 00:13:54,546 - DEBUG : Current mean score_golden is -2.8893611691892147
+2019-05-29 00:13:56,912 - DEBUG : Now at 6271th data in epoch 0
+2019-05-29 00:13:56,915 - DEBUG : Current mean loss for train data is 25.41652324795723
+2019-05-29 00:13:56,918 - DEBUG : Current mean score_hat is 25.1695054769516
+2019-05-29 00:13:56,924 - DEBUG : Current mean score_golden is 0.7529820832423866
+2019-05-29 00:14:08,169 - DEBUG : Now at 10143th data in epoch 0
+2019-05-29 00:14:08,173 - DEBUG : Current mean loss for train data is 21.12660948932171
+2019-05-29 00:14:08,176 - DEBUG : Current mean score_hat is 17.956923708319664
+2019-05-29 00:14:08,186 - DEBUG : Current mean score_golden is -2.169685611501336
+2019-05-29 00:14:14,055 - DEBUG : Now at 6303th data in epoch 0
+2019-05-29 00:14:14,058 - DEBUG : Current mean loss for train data is 24.229244381189346
+2019-05-29 00:14:14,062 - DEBUG : Current mean score_hat is 23.950710713863373
+2019-05-29 00:14:14,072 - DEBUG : Current mean score_golden is 0.7214663652703166
+2019-05-29 00:14:24,468 - DEBUG : Now at 10175th data in epoch 0
+2019-05-29 00:14:24,475 - DEBUG : Current mean loss for train data is 23.5939082801342
+2019-05-29 00:14:24,478 - DEBUG : Current mean score_hat is 20.147886618971825
+2019-05-29 00:14:24,486 - DEBUG : Current mean score_golden is -2.446021629497409
+2019-05-29 00:14:31,918 - DEBUG : Now at 6335th data in epoch 0
+2019-05-29 00:14:31,942 - DEBUG : Current mean loss for train data is 25.042168706655502
+2019-05-29 00:14:31,946 - DEBUG : Current mean score_hat is 24.826058477163315
+2019-05-29 00:14:31,953 - DEBUG : Current mean score_golden is 0.7838898999616504
+2019-05-29 00:14:38,325 - DEBUG : Now at 10207th data in epoch 0
+2019-05-29 00:14:38,331 - DEBUG : Current mean loss for train data is 21.625512018799782
+2019-05-29 00:14:38,333 - DEBUG : Current mean score_hat is 18.40133313089609
+2019-05-29 00:14:38,339 - DEBUG : Current mean score_golden is -2.2241787994280457
+2019-05-29 00:14:55,766 - DEBUG : Now at 10239th data in epoch 0
+2019-05-29 00:14:55,769 - DEBUG : Current mean loss for train data is 24.90537330508232
+2019-05-29 00:14:55,788 - DEBUG : Current mean score_hat is 21.345142364501953
+2019-05-29 00:14:55,804 - DEBUG : Current mean score_golden is -2.5602310094982386
+2019-05-29 00:14:57,442 - DEBUG : Now at 6367th data in epoch 0
+2019-05-29 00:14:57,445 - DEBUG : Current mean loss for train data is 30.887373507022858
+2019-05-29 00:14:57,448 - DEBUG : Current mean score_hat is 30.896589159965515
+2019-05-29 00:14:57,451 - DEBUG : Current mean score_golden is 1.0092155942693353
+2019-05-29 00:15:16,780 - DEBUG : Now at 10271th data in epoch 0
+2019-05-29 00:15:16,826 - DEBUG : Current mean loss for train data is 26.7498097717762
+2019-05-29 00:15:16,842 - DEBUG : Current mean score_hat is 23.009039357304573
+2019-05-29 00:15:16,887 - DEBUG : Current mean score_golden is -2.7407705411314964
+2019-05-29 00:15:19,838 - DEBUG : Now at 6399th data in epoch 0
+2019-05-29 00:15:19,844 - DEBUG : Current mean loss for train data is 25.97719782590866
+2019-05-29 00:15:19,846 - DEBUG : Current mean score_hat is 25.823966830968857
+2019-05-29 00:15:19,854 - DEBUG : Current mean score_golden is 0.8467689668759704
+2019-05-29 00:15:37,662 - DEBUG : Now at 10303th data in epoch 0
+2019-05-29 00:15:37,664 - DEBUG : Current mean loss for train data is 26.375236839056015
+2019-05-29 00:15:37,667 - DEBUG : Current mean score_hat is 22.688484489917755
+2019-05-29 00:15:37,678 - DEBUG : Current mean score_golden is -2.6867524664849043
+2019-05-29 00:15:39,614 - DEBUG : Now at 6431th data in epoch 0
+2019-05-29 00:15:39,617 - DEBUG : Current mean loss for train data is 26.164874523878098
+2019-05-29 00:15:39,620 - DEBUG : Current mean score_hat is 26.027823194861412
+2019-05-29 00:15:39,626 - DEBUG : Current mean score_golden is 0.8629486002027988
+2019-05-29 00:15:53,041 - DEBUG : Now at 10335th data in epoch 0
+2019-05-29 00:15:53,044 - DEBUG : Current mean loss for train data is 23.313149601221085
+2019-05-29 00:15:53,054 - DEBUG : Current mean score_hat is 19.97223287820816
+2019-05-29 00:15:53,076 - DEBUG : Current mean score_golden is -2.340916598215699
+2019-05-29 00:15:59,387 - DEBUG : Now at 6463th data in epoch 0
+2019-05-29 00:15:59,393 - DEBUG : Current mean loss for train data is 26.22922232747078
+2019-05-29 00:15:59,395 - DEBUG : Current mean score_hat is 26.118713155388832
+2019-05-29 00:15:59,401 - DEBUG : Current mean score_golden is 0.8894909014925361
+2019-05-29 00:16:07,726 - DEBUG : Now at 10367th data in epoch 0
+2019-05-29 00:16:07,751 - DEBUG : Current mean loss for train data is 23.062326341867447
+2019-05-29 00:16:07,755 - DEBUG : Current mean score_hat is 19.746549367904663
+2019-05-29 00:16:07,762 - DEBUG : Current mean score_golden is -2.315776716917753
+2019-05-29 00:16:16,022 - DEBUG : Now at 6495th data in epoch 0
+2019-05-29 00:16:16,037 - DEBUG : Current mean loss for train data is 24.35180501639843
+2019-05-29 00:16:16,046 - DEBUG : Current mean score_hat is 24.20103994011879
+2019-05-29 00:16:16,057 - DEBUG : Current mean score_golden is 0.8492347681894898
+2019-05-29 00:16:27,553 - DEBUG : Now at 10399th data in epoch 0
+2019-05-29 00:16:27,556 - DEBUG : Current mean loss for train data is 27.09269806742668
+2019-05-29 00:16:27,561 - DEBUG : Current mean score_hat is 23.354128777980804
+2019-05-29 00:16:27,578 - DEBUG : Current mean score_golden is -2.7385692466050386
+2019-05-29 00:16:33,686 - DEBUG : Now at 6527th data in epoch 0
+2019-05-29 00:16:33,692 - DEBUG : Current mean loss for train data is 25.53921040892601
+2019-05-29 00:16:33,694 - DEBUG : Current mean score_hat is 25.477292448282242
+2019-05-29 00:16:33,704 - DEBUG : Current mean score_golden is 0.9380819741636515
+2019-05-29 00:16:45,432 - DEBUG : Now at 10431th data in epoch 0
+2019-05-29 00:16:45,436 - DEBUG : Current mean loss for train data is 25.593239188194275
+2019-05-29 00:16:45,440 - DEBUG : Current mean score_hat is 22.020267844200134
+2019-05-29 00:16:45,456 - DEBUG : Current mean score_golden is -2.572971310466528
+2019-05-29 00:16:48,257 - DEBUG : Now at 6559th data in epoch 0
+2019-05-29 00:16:48,261 - DEBUG : Current mean loss for train data is 22.50672933459282
+2019-05-29 00:16:48,263 - DEBUG : Current mean score_hat is 22.319473549723625
+2019-05-29 00:16:48,274 - DEBUG : Current mean score_golden is 0.8127442756667733
+2019-05-29 00:17:07,611 - DEBUG : Now at 10463th data in epoch 0
+2019-05-29 00:17:07,621 - DEBUG : Current mean loss for train data is 28.656830981373787
+2019-05-29 00:17:07,624 - DEBUG : Current mean score_hat is 24.796917602419853
+2019-05-29 00:17:07,634 - DEBUG : Current mean score_golden is -2.8599132979288697
+2019-05-29 00:17:09,659 - DEBUG : Now at 6591th data in epoch 0
+2019-05-29 00:17:09,662 - DEBUG : Current mean loss for train data is 29.574423998594284
+2019-05-29 00:17:09,665 - DEBUG : Current mean score_hat is 29.698951691389084
+2019-05-29 00:17:09,679 - DEBUG : Current mean score_golden is 1.124527889303863
+2019-05-29 00:17:25,139 - DEBUG : Now at 10495th data in epoch 0
+2019-05-29 00:17:25,165 - DEBUG : Current mean loss for train data is 24.000616267323494
+2019-05-29 00:17:25,173 - DEBUG : Current mean score_hat is 20.614124916493893
+2019-05-29 00:17:25,180 - DEBUG : Current mean score_golden is -2.386491254903376
+2019-05-29 00:17:27,780 - DEBUG : Now at 6623th data in epoch 0
+2019-05-29 00:17:27,783 - DEBUG : Current mean loss for train data is 25.007422015070915
+2019-05-29 00:17:27,787 - DEBUG : Current mean score_hat is 24.958621129393578
+2019-05-29 00:17:27,795 - DEBUG : Current mean score_golden is 0.9511988456360996
+2019-05-29 00:17:39,747 - DEBUG : Now at 10527th data in epoch 0
+2019-05-29 00:17:39,752 - DEBUG : Current mean loss for train data is 20.625662997364998
+2019-05-29 00:17:39,757 - DEBUG : Current mean score_hat is 17.579132974147797
+2019-05-29 00:17:39,773 - DEBUG : Current mean score_golden is -2.046529931947589
+2019-05-29 00:17:49,003 - DEBUG : Now at 6655th data in epoch 0
+2019-05-29 00:17:49,005 - DEBUG : Current mean loss for train data is 28.602561712265015
+2019-05-29 00:17:49,008 - DEBUG : Current mean score_hat is 28.69643971323967
+2019-05-29 00:17:49,011 - DEBUG : Current mean score_golden is 1.0938780643045902
+2019-05-29 00:17:54,593 - DEBUG : Now at 10559th data in epoch 0
+2019-05-29 00:17:54,597 - DEBUG : Current mean loss for train data is 21.843229331076145
+2019-05-29 00:17:54,600 - DEBUG : Current mean score_hat is 18.685606189072132
+2019-05-29 00:17:54,618 - DEBUG : Current mean score_golden is -2.157623188570142
+2019-05-29 00:18:07,749 - DEBUG : Now at 6687th data in epoch 0
+2019-05-29 00:18:07,756 - DEBUG : Current mean loss for train data is 25.789693355560303
+2019-05-29 00:18:07,780 - DEBUG : Current mean score_hat is 25.740423560142517
+2019-05-29 00:18:07,789 - DEBUG : Current mean score_golden is 0.9507300881668925
+2019-05-29 00:18:10,981 - DEBUG : Now at 10591th data in epoch 0
+2019-05-29 00:18:10,984 - DEBUG : Current mean loss for train data is 24.718992084264755
+2019-05-29 00:18:10,986 - DEBUG : Current mean score_hat is 21.2344953417778
+2019-05-29 00:18:11,003 - DEBUG : Current mean score_golden is -2.48449625633657
+2019-05-29 00:18:27,832 - DEBUG : Now at 6719th data in epoch 0
+2019-05-29 00:18:27,838 - DEBUG : Current mean loss for train data is 26.00716057419777
+2019-05-29 00:18:27,849 - DEBUG : Current mean score_hat is 25.943017289042473
+2019-05-29 00:18:27,865 - DEBUG : Current mean score_golden is 0.9358566333539784
+2019-05-29 00:18:28,192 - DEBUG : Now at 10623th data in epoch 0
+2019-05-29 00:18:28,195 - DEBUG : Current mean loss for train data is 23.93798691034317
+2019-05-29 00:18:28,204 - DEBUG : Current mean score_hat is 20.54023464024067
+2019-05-29 00:18:28,234 - DEBUG : Current mean score_golden is -2.397752230986953
+2019-05-29 00:18:43,643 - DEBUG : Now at 10655th data in epoch 0
+2019-05-29 00:18:43,645 - DEBUG : Current mean loss for train data is 21.406364656984806
+2019-05-29 00:18:43,648 - DEBUG : Current mean score_hat is 18.289916548877954
+2019-05-29 00:18:43,674 - DEBUG : Current mean score_golden is -2.1164481854066253
+2019-05-29 00:18:50,309 - DEBUG : Now at 6751th data in epoch 0
+2019-05-29 00:18:50,321 - DEBUG : Current mean loss for train data is 28.352084428071976
+2019-05-29 00:18:50,342 - DEBUG : Current mean score_hat is 28.40010666847229
+2019-05-29 00:18:50,352 - DEBUG : Current mean score_golden is 1.0480220317840576
+2019-05-29 00:19:05,333 - DEBUG : Now at 10687th data in epoch 0
+2019-05-29 00:19:05,340 - DEBUG : Current mean loss for train data is 27.593701273202896
+2019-05-29 00:19:05,348 - DEBUG : Current mean score_hat is 23.81850728392601
+2019-05-29 00:19:05,362 - DEBUG : Current mean score_golden is -2.7751939557492733
+2019-05-29 00:19:12,633 - DEBUG : Now at 6783th data in epoch 0
+2019-05-29 00:19:12,658 - DEBUG : Current mean loss for train data is 28.257286697626114
+2019-05-29 00:19:12,676 - DEBUG : Current mean score_hat is 28.315089404582977
+2019-05-29 00:19:12,684 - DEBUG : Current mean score_golden is 1.0578026985749602
+2019-05-29 00:19:19,221 - DEBUG : Now at 10719th data in epoch 0
+2019-05-29 00:19:19,236 - DEBUG : Current mean loss for train data is 21.062206223607063
+2019-05-29 00:19:19,256 - DEBUG : Current mean score_hat is 17.986141994595528
+2019-05-29 00:19:19,266 - DEBUG : Current mean score_golden is -2.0760643407702446
+2019-05-29 00:19:30,612 - DEBUG : Now at 6815th data in epoch 0
+2019-05-29 00:19:30,614 - DEBUG : Current mean loss for train data is 25.162498861551285
+2019-05-29 00:19:30,616 - DEBUG : Current mean score_hat is 25.08166891336441
+2019-05-29 00:19:30,628 - DEBUG : Current mean score_golden is 0.9191701216623187
+2019-05-29 00:19:37,277 - DEBUG : Now at 10751th data in epoch 0
+2019-05-29 00:19:37,308 - DEBUG : Current mean loss for train data is 25.936550989747047
+2019-05-29 00:19:37,326 - DEBUG : Current mean score_hat is 22.320939429104328
+2019-05-29 00:19:37,337 - DEBUG : Current mean score_golden is -2.6156116807833314
+2019-05-29 00:19:52,607 - DEBUG : Now at 6847th data in epoch 0
+2019-05-29 00:19:52,609 - DEBUG : Current mean loss for train data is 28.351587921380997
+2019-05-29 00:19:52,612 - DEBUG : Current mean score_hat is 28.41068410873413
+2019-05-29 00:19:52,617 - DEBUG : Current mean score_golden is 1.059096115641296
+2019-05-29 00:19:53,308 - DEBUG : Now at 10783th data in epoch 0
+2019-05-29 00:19:53,324 - DEBUG : Current mean loss for train data is 23.6871055662632
+2019-05-29 00:19:53,334 - DEBUG : Current mean score_hat is 20.286603301763535
+2019-05-29 00:19:53,350 - DEBUG : Current mean score_golden is -2.4005024768412113
+2019-05-29 00:20:12,157 - DEBUG : Now at 6879th data in epoch 0
+2019-05-29 00:20:12,161 - DEBUG : Current mean loss for train data is 25.81830385327339
+2019-05-29 00:20:12,165 - DEBUG : Current mean score_hat is 25.808354407548904
+2019-05-29 00:20:12,178 - DEBUG : Current mean score_golden is 0.9900507358834147
+2019-05-29 00:20:12,758 - DEBUG : Now at 10815th data in epoch 0
+2019-05-29 00:20:12,760 - DEBUG : Current mean loss for train data is 27.124455392360687
+2019-05-29 00:20:12,770 - DEBUG : Current mean score_hat is 23.35791328549385
+2019-05-29 00:20:12,786 - DEBUG : Current mean score_golden is -2.766541812568903
+2019-05-29 00:20:26,608 - DEBUG : Now at 6911th data in epoch 0
+2019-05-29 00:20:26,614 - DEBUG : Current mean loss for train data is 21.754978597164154
+2019-05-29 00:20:26,624 - DEBUG : Current mean score_hat is 21.57370798289776
+2019-05-29 00:20:26,641 - DEBUG : Current mean score_golden is 0.818729461170733
+2019-05-29 00:20:27,119 - DEBUG : Now at 10847th data in epoch 0
+2019-05-29 00:20:27,121 - DEBUG : Current mean loss for train data is 22.437461465597153
+2019-05-29 00:20:27,124 - DEBUG : Current mean score_hat is 19.154229804873466
+2019-05-29 00:20:27,127 - DEBUG : Current mean score_golden is -2.283231630921364
+2019-05-29 00:20:44,631 - DEBUG : Now at 10879th data in epoch 0
+2019-05-29 00:20:44,633 - DEBUG : Current mean loss for train data is 25.40650898218155
+2019-05-29 00:20:44,635 - DEBUG : Current mean score_hat is 21.816280022263527
+2019-05-29 00:20:44,639 - DEBUG : Current mean score_golden is -2.590228984132409
+2019-05-29 00:20:49,014 - DEBUG : Now at 6943th data in epoch 0
+2019-05-29 00:20:49,017 - DEBUG : Current mean loss for train data is 28.571261525154114
+2019-05-29 00:20:49,021 - DEBUG : Current mean score_hat is 28.69137901812792
+2019-05-29 00:20:49,029 - DEBUG : Current mean score_golden is 1.1201175013557076
+2019-05-29 00:21:06,251 - DEBUG : Now at 10911th data in epoch 0
+2019-05-29 00:21:06,264 - DEBUG : Current mean loss for train data is 28.968933016061783
+2019-05-29 00:21:06,268 - DEBUG : Current mean score_hat is 25.031292781233788
+2019-05-29 00:21:06,277 - DEBUG : Current mean score_golden is -2.93764022924006
+2019-05-29 00:21:09,774 - DEBUG : Now at 6975th data in epoch 0
+2019-05-29 00:21:09,777 - DEBUG : Current mean loss for train data is 28.444676339626312
+2019-05-29 00:21:09,779 - DEBUG : Current mean score_hat is 28.611784249544144
+2019-05-29 00:21:09,786 - DEBUG : Current mean score_golden is 1.1671079210937023
+2019-05-29 00:21:25,446 - DEBUG : Now at 7007th data in epoch 0
+2019-05-29 00:21:25,456 - DEBUG : Current mean loss for train data is 23.254333958029747
+2019-05-29 00:21:25,460 - DEBUG : Current mean score_hat is 23.179675340652466
+2019-05-29 00:21:25,465 - DEBUG : Current mean score_golden is 0.9253414161503315
+2019-05-29 00:21:27,812 - DEBUG : Now at 10943th data in epoch 0
+2019-05-29 00:21:27,816 - DEBUG : Current mean loss for train data is 28.87548977136612
+2019-05-29 00:21:27,821 - DEBUG : Current mean score_hat is 24.94342592358589
+2019-05-29 00:21:27,828 - DEBUG : Current mean score_golden is -2.932063739746809
+2019-05-29 00:21:39,252 - DEBUG : Now at 7039th data in epoch 0
+2019-05-29 00:21:39,257 - DEBUG : Current mean loss for train data is 21.161452263593674
+2019-05-29 00:21:39,259 - DEBUG : Current mean score_hat is 20.989907026290894
+2019-05-29 00:21:39,270 - DEBUG : Current mean score_golden is 0.828454707749188
+2019-05-29 00:21:48,879 - DEBUG : Now at 10975th data in epoch 0
+2019-05-29 00:21:48,882 - DEBUG : Current mean loss for train data is 28.28159809112549
+2019-05-29 00:21:48,885 - DEBUG : Current mean score_hat is 24.39115336537361
+2019-05-29 00:21:48,896 - DEBUG : Current mean score_golden is -2.8904446456581354
+2019-05-29 00:21:56,039 - DEBUG : Now at 7071th data in epoch 0
+2019-05-29 00:21:56,068 - DEBUG : Current mean loss for train data is 24.130847290158272
+2019-05-29 00:21:56,084 - DEBUG : Current mean score_hat is 24.142737403512
+2019-05-29 00:21:56,095 - DEBUG : Current mean score_golden is 1.0118900672532618
+2019-05-29 00:22:03,566 - DEBUG : Now at 11007th data in epoch 0
+2019-05-29 00:22:03,569 - DEBUG : Current mean loss for train data is 22.43737119436264
+2019-05-29 00:22:03,574 - DEBUG : Current mean score_hat is 19.148927345871925
+2019-05-29 00:22:03,588 - DEBUG : Current mean score_golden is -2.2884437423199415
+2019-05-29 00:22:13,488 - DEBUG : Now at 7103th data in epoch 0
+2019-05-29 00:22:13,490 - DEBUG : Current mean loss for train data is 24.94204533100128
+2019-05-29 00:22:13,493 - DEBUG : Current mean score_hat is 25.0147802233696
+2019-05-29 00:22:13,500 - DEBUG : Current mean score_golden is 1.0727350674569607
+2019-05-29 00:22:19,577 - DEBUG : Now at 11039th data in epoch 0
+2019-05-29 00:22:19,599 - DEBUG : Current mean loss for train data is 23.0930233001709
+2019-05-29 00:22:19,608 - DEBUG : Current mean score_hat is 19.732530623674393
+2019-05-29 00:22:19,614 - DEBUG : Current mean score_golden is -2.3604927714914083
+2019-05-29 00:22:28,901 - DEBUG : Now at 7135th data in epoch 0
+2019-05-29 00:22:28,905 - DEBUG : Current mean loss for train data is 22.3465713262558
+2019-05-29 00:22:28,908 - DEBUG : Current mean score_hat is 22.299727216362953
+2019-05-29 00:22:28,913 - DEBUG : Current mean score_golden is 0.9531557811424136
+2019-05-29 00:22:34,133 - DEBUG : Now at 11071th data in epoch 0
+2019-05-29 00:22:34,136 - DEBUG : Current mean loss for train data is 22.65484994649887
+2019-05-29 00:22:34,141 - DEBUG : Current mean score_hat is 19.35374453663826
+2019-05-29 00:22:34,165 - DEBUG : Current mean score_golden is -2.301105633378029
+2019-05-29 00:22:48,215 - DEBUG : Now at 7167th data in epoch 0
+2019-05-29 00:22:48,221 - DEBUG : Current mean loss for train data is 25.661254972219467
+2019-05-29 00:22:48,226 - DEBUG : Current mean score_hat is 25.770119190216064
+2019-05-29 00:22:48,235 - DEBUG : Current mean score_golden is 1.108864415436983
+2019-05-29 00:22:50,950 - DEBUG : Now at 11103th data in epoch 0
+2019-05-29 00:22:50,953 - DEBUG : Current mean loss for train data is 24.96746753156185
+2019-05-29 00:22:50,957 - DEBUG : Current mean score_hat is 21.408673837780952
+2019-05-29 00:22:50,967 - DEBUG : Current mean score_golden is -2.558793665841222
+2019-05-29 00:23:06,210 - DEBUG : Now at 7199th data in epoch 0
+2019-05-29 00:23:06,217 - DEBUG : Current mean loss for train data is 25.37910395860672
+2019-05-29 00:23:06,220 - DEBUG : Current mean score_hat is 25.455904722213745
+2019-05-29 00:23:06,227 - DEBUG : Current mean score_golden is 1.0768007347360253
+2019-05-29 00:23:07,887 - DEBUG : Now at 11135th data in epoch 0
+2019-05-29 00:23:07,892 - DEBUG : Current mean loss for train data is 25.249486178159714
+2019-05-29 00:23:07,895 - DEBUG : Current mean score_hat is 21.650724977254868
+2019-05-29 00:23:07,902 - DEBUG : Current mean score_golden is -2.598761312663555
+2019-05-29 00:23:28,150 - DEBUG : Now at 7231th data in epoch 0
+2019-05-29 00:23:28,153 - DEBUG : Current mean loss for train data is 28.66125912964344
+2019-05-29 00:23:28,157 - DEBUG : Current mean score_hat is 28.89471134543419
+2019-05-29 00:23:28,164 - DEBUG : Current mean score_golden is 1.2334520530421287
+2019-05-29 00:23:29,914 - DEBUG : Now at 11167th data in epoch 0
+2019-05-29 00:23:29,917 - DEBUG : Current mean loss for train data is 28.624992415308952
+2019-05-29 00:23:29,919 - DEBUG : Current mean score_hat is 24.675680935382843
+2019-05-29 00:23:29,935 - DEBUG : Current mean score_golden is -2.949311463162303
+2019-05-29 00:23:42,095 - DEBUG : Now at 11199th data in epoch 0
+2019-05-29 00:23:42,100 - DEBUG : Current mean loss for train data is 18.968804717063904
+2019-05-29 00:23:42,102 - DEBUG : Current mean score_hat is 16.0502690076828
+2019-05-29 00:23:42,114 - DEBUG : Current mean score_golden is -1.9185359571129084
+2019-05-29 00:23:52,929 - DEBUG : Now at 7263th data in epoch 0
+2019-05-29 00:23:52,933 - DEBUG : Current mean loss for train data is 30.537121832370758
+2019-05-29 00:23:52,940 - DEBUG : Current mean score_hat is 30.842985063791275
+2019-05-29 00:23:52,945 - DEBUG : Current mean score_golden is 1.3058631625026464
+2019-05-29 00:23:57,773 - DEBUG : Now at 11231th data in epoch 0
+2019-05-29 00:23:57,793 - DEBUG : Current mean loss for train data is 22.967743813991547
+2019-05-29 00:23:57,806 - DEBUG : Current mean score_hat is 19.625612795352936
+2019-05-29 00:23:57,830 - DEBUG : Current mean score_golden is -2.342131331562996
+2019-05-29 00:24:14,146 - DEBUG : Now at 7295th data in epoch 0
+2019-05-29 00:24:14,149 - DEBUG : Current mean loss for train data is 27.816302001476288
+2019-05-29 00:24:14,158 - DEBUG : Current mean score_hat is 28.00475001335144
+2019-05-29 00:24:14,162 - DEBUG : Current mean score_golden is 1.1884481753222644
+2019-05-29 00:24:16,518 - DEBUG : Now at 11263th data in epoch 0
+2019-05-29 00:24:16,522 - DEBUG : Current mean loss for train data is 27.156162083148956
+2019-05-29 00:24:16,526 - DEBUG : Current mean score_hat is 23.319923520088196
+2019-05-29 00:24:16,536 - DEBUG : Current mean score_golden is -2.8362386487424374
+2019-05-29 00:24:32,204 - DEBUG : Now at 7327th data in epoch 0
+2019-05-29 00:24:32,209 - DEBUG : Current mean loss for train data is 25.628000617027283
+2019-05-29 00:24:32,212 - DEBUG : Current mean score_hat is 25.744711756706238
+2019-05-29 00:24:32,225 - DEBUG : Current mean score_golden is 1.1167107811197639
+2019-05-29 00:24:33,978 - DEBUG : Now at 11295th data in epoch 0
+2019-05-29 00:24:33,980 - DEBUG : Current mean loss for train data is 24.749100655317307
+2019-05-29 00:24:33,983 - DEBUG : Current mean score_hat is 21.17044097930193
+2019-05-29 00:24:33,997 - DEBUG : Current mean score_golden is -2.5786599600687623
+2019-05-29 00:24:49,896 - DEBUG : Now at 11327th data in epoch 0
+2019-05-29 00:24:49,900 - DEBUG : Current mean loss for train data is 24.218319594860077
+2019-05-29 00:24:49,903 - DEBUG : Current mean score_hat is 20.674384579062462
+2019-05-29 00:24:49,907 - DEBUG : Current mean score_golden is -2.5439347326755524
+2019-05-29 00:24:55,243 - DEBUG : Now at 7359th data in epoch 0
+2019-05-29 00:24:55,276 - DEBUG : Current mean loss for train data is 30.066566586494446
+2019-05-29 00:24:55,281 - DEBUG : Current mean score_hat is 30.39821422100067
+2019-05-29 00:24:55,297 - DEBUG : Current mean score_golden is 1.3316476121544838
+2019-05-29 00:25:05,462 - DEBUG : Now at 11359th data in epoch 0
+2019-05-29 00:25:05,466 - DEBUG : Current mean loss for train data is 22.62436218559742
+2019-05-29 00:25:05,471 - DEBUG : Current mean score_hat is 19.262318298220634
+2019-05-29 00:25:05,475 - DEBUG : Current mean score_golden is -2.3620442636311054
+2019-05-29 00:25:12,424 - DEBUG : Now at 7391th data in epoch 0
+2019-05-29 00:25:12,427 - DEBUG : Current mean loss for train data is 23.534454196691513
+2019-05-29 00:25:12,430 - DEBUG : Current mean score_hat is 23.587977185845375
+2019-05-29 00:25:12,438 - DEBUG : Current mean score_golden is 1.0535229369997978
+2019-05-29 00:25:26,460 - DEBUG : Now at 11391th data in epoch 0
+2019-05-29 00:25:26,462 - DEBUG : Current mean loss for train data is 28.531768709421158
+2019-05-29 00:25:26,465 - DEBUG : Current mean score_hat is 24.53330373764038
+2019-05-29 00:25:26,473 - DEBUG : Current mean score_golden is -2.998464610427618
+2019-05-29 00:25:31,910 - DEBUG : Now at 7423th data in epoch 0
+2019-05-29 00:25:31,915 - DEBUG : Current mean loss for train data is 26.62885871529579
+2019-05-29 00:25:31,919 - DEBUG : Current mean score_hat is 26.8593627512455
+2019-05-29 00:25:31,936 - DEBUG : Current mean score_golden is 1.2305042427033186
+2019-05-29 00:25:39,134 - DEBUG : Now at 11423th data in epoch 0
+2019-05-29 00:25:39,137 - DEBUG : Current mean loss for train data is 20.217933177947998
+2019-05-29 00:25:39,140 - DEBUG : Current mean score_hat is 17.069941639900208
+2019-05-29 00:25:39,151 - DEBUG : Current mean score_golden is -2.1479915343225002
+2019-05-29 00:25:47,577 - DEBUG : Now at 7455th data in epoch 0
+2019-05-29 00:25:47,583 - DEBUG : Current mean loss for train data is 22.846536323428154
+2019-05-29 00:25:47,594 - DEBUG : Current mean score_hat is 22.920676589012146
+2019-05-29 00:25:47,605 - DEBUG : Current mean score_golden is 1.0741401356644928
+2019-05-29 00:25:57,461 - DEBUG : Now at 11455th data in epoch 0
+2019-05-29 00:25:57,465 - DEBUG : Current mean loss for train data is 26.185395389795303
+2019-05-29 00:25:57,467 - DEBUG : Current mean score_hat is 22.43636652827263
+2019-05-29 00:25:57,473 - DEBUG : Current mean score_golden is -2.749028693884611
+2019-05-29 00:26:05,851 - DEBUG : Now at 7487th data in epoch 0
+2019-05-29 00:26:05,854 - DEBUG : Current mean loss for train data is 25.472092777490616
+2019-05-29 00:26:05,856 - DEBUG : Current mean score_hat is 25.73324617743492
+2019-05-29 00:26:05,865 - DEBUG : Current mean score_golden is 1.2611532844603062
+2019-05-29 00:26:12,289 - DEBUG : Now at 11487th data in epoch 0
+2019-05-29 00:26:12,291 - DEBUG : Current mean loss for train data is 23.311750203371048
+2019-05-29 00:26:12,300 - DEBUG : Current mean score_hat is 19.844432294368744
+2019-05-29 00:26:12,322 - DEBUG : Current mean score_golden is -2.467317868024111
+2019-05-29 00:26:20,107 - DEBUG : Now at 7519th data in epoch 0
+2019-05-29 00:26:20,110 - DEBUG : Current mean loss for train data is 21.627774506807327
+2019-05-29 00:26:20,113 - DEBUG : Current mean score_hat is 21.69042193889618
+2019-05-29 00:26:20,121 - DEBUG : Current mean score_golden is 1.0626475727185607
+2019-05-29 00:26:30,033 - DEBUG : Now at 11519th data in epoch 0
+2019-05-29 00:26:30,039 - DEBUG : Current mean loss for train data is 25.155464485287666
+2019-05-29 00:26:30,042 - DEBUG : Current mean score_hat is 21.47032728791237
+2019-05-29 00:26:30,045 - DEBUG : Current mean score_golden is -2.6851371563971043
+2019-05-29 00:26:35,614 - DEBUG : Now at 7551th data in epoch 0
+2019-05-29 00:26:35,617 - DEBUG : Current mean loss for train data is 23.72156199812889
+2019-05-29 00:26:35,619 - DEBUG : Current mean score_hat is 23.942654728889465
+2019-05-29 00:26:35,624 - DEBUG : Current mean score_golden is 1.2210927689448
+2019-05-29 00:26:48,639 - DEBUG : Now at 11551th data in epoch 0
+2019-05-29 00:26:48,642 - DEBUG : Current mean loss for train data is 26.24847385287285
+2019-05-29 00:26:48,647 - DEBUG : Current mean score_hat is 22.436997175216675
+2019-05-29 00:26:48,657 - DEBUG : Current mean score_golden is -2.811476696282625
+2019-05-29 00:26:51,937 - DEBUG : Now at 7583th data in epoch 0
+2019-05-29 00:26:51,940 - DEBUG : Current mean loss for train data is 23.56575247645378
+2019-05-29 00:26:51,942 - DEBUG : Current mean score_hat is 23.794245153665543
+2019-05-29 00:26:51,947 - DEBUG : Current mean score_golden is 1.22849265858531
+2019-05-29 00:27:06,959 - DEBUG : Now at 11583th data in epoch 0
+2019-05-29 00:27:06,972 - DEBUG : Current mean loss for train data is 25.87328064441681
+2019-05-29 00:27:06,975 - DEBUG : Current mean score_hat is 22.085867553949356
+2019-05-29 00:27:06,984 - DEBUG : Current mean score_golden is -2.7874132096767426
+2019-05-29 00:27:08,769 - DEBUG : Now at 7615th data in epoch 0
+2019-05-29 00:27:08,785 - DEBUG : Current mean loss for train data is 24.409193128347397
+2019-05-29 00:27:08,800 - DEBUG : Current mean score_hat is 24.697246193885803
+2019-05-29 00:27:08,812 - DEBUG : Current mean score_golden is 1.2880530431866646
+2019-05-29 00:27:25,952 - DEBUG : Now at 11615th data in epoch 0
+2019-05-29 00:27:25,957 - DEBUG : Current mean loss for train data is 26.06303036212921
+2019-05-29 00:27:25,963 - DEBUG : Current mean score_hat is 22.221754148602486
+2019-05-29 00:27:25,970 - DEBUG : Current mean score_golden is -2.841276155784726
+2019-05-29 00:27:31,290 - DEBUG : Now at 7647th data in epoch 0
+2019-05-29 00:27:31,292 - DEBUG : Current mean loss for train data is 28.159656539559364
+2019-05-29 00:27:31,295 - DEBUG : Current mean score_hat is 28.67820517718792
+2019-05-29 00:27:31,303 - DEBUG : Current mean score_golden is 1.518548727966845
+2019-05-29 00:27:47,288 - DEBUG : Now at 11647th data in epoch 0
+2019-05-29 00:27:47,314 - DEBUG : Current mean loss for train data is 28.59334248304367
+2019-05-29 00:27:47,323 - DEBUG : Current mean score_hat is 24.495485067367554
+2019-05-29 00:27:47,338 - DEBUG : Current mean score_golden is -3.0978575181216
+2019-05-29 00:27:49,571 - DEBUG : Now at 7679th data in epoch 0
+2019-05-29 00:27:49,574 - DEBUG : Current mean loss for train data is 25.971617221832275
+2019-05-29 00:27:49,576 - DEBUG : Current mean score_hat is 26.37264922261238
+2019-05-29 00:27:49,584 - DEBUG : Current mean score_golden is 1.4010316850617528
+2019-05-29 00:28:03,259 - DEBUG : Now at 11679th data in epoch 0
+2019-05-29 00:28:03,263 - DEBUG : Current mean loss for train data is 23.62457177042961
+2019-05-29 00:28:03,266 - DEBUG : Current mean score_hat is 20.09997060894966
+2019-05-29 00:28:03,279 - DEBUG : Current mean score_golden is -2.5246010795235634
+2019-05-29 00:28:06,828 - DEBUG : Now at 7711th data in epoch 0
+2019-05-29 00:28:06,831 - DEBUG : Current mean loss for train data is 24.78455975651741
+2019-05-29 00:28:06,836 - DEBUG : Current mean score_hat is 25.1425461769104
+2019-05-29 00:28:06,844 - DEBUG : Current mean score_golden is 1.3579865470528603
+2019-05-29 00:28:18,231 - DEBUG : Now at 11711th data in epoch 0
+2019-05-29 00:28:18,240 - DEBUG : Current mean loss for train data is 22.34299063682556
+2019-05-29 00:28:18,243 - DEBUG : Current mean score_hat is 18.98113840818405
+2019-05-29 00:28:18,253 - DEBUG : Current mean score_golden is -2.361852213740349
+2019-05-29 00:28:19,462 - DEBUG : Now at 7743th data in epoch 0
+2019-05-29 00:28:19,465 - DEBUG : Current mean loss for train data is 18.846484564244747
+2019-05-29 00:28:19,467 - DEBUG : Current mean score_hat is 18.863099013455212
+2019-05-29 00:28:19,471 - DEBUG : Current mean score_golden is 1.0166144028771669
+2019-05-29 00:28:40,681 - DEBUG : Now at 7775th data in epoch 0
+2019-05-29 00:28:40,688 - DEBUG : Current mean loss for train data is 27.692200250923634
+2019-05-29 00:28:40,691 - DEBUG : Current mean score_hat is 28.26635479182005
+2019-05-29 00:28:40,699 - DEBUG : Current mean score_golden is 1.5741545455530286
+2019-05-29 00:28:42,977 - DEBUG : Now at 11743th data in epoch 0
+2019-05-29 00:28:42,981 - DEBUG : Current mean loss for train data is 26.312998935580254
+2019-05-29 00:28:42,984 - DEBUG : Current mean score_hat is 22.531867280602455
+2019-05-29 00:28:42,995 - DEBUG : Current mean score_golden is -2.781131548807025
+2019-05-29 00:28:58,869 - DEBUG : Now at 7807th data in epoch 0
+2019-05-29 00:28:58,883 - DEBUG : Current mean loss for train data is 23.62752741575241
+2019-05-29 00:28:58,900 - DEBUG : Current mean score_hat is 23.942172661423683
+2019-05-29 00:28:58,904 - DEBUG : Current mean score_golden is 1.3146452326327562
+2019-05-29 00:29:00,595 - DEBUG : Now at 11775th data in epoch 0
+2019-05-29 00:29:00,599 - DEBUG : Current mean loss for train data is 25.499331161379814
+2019-05-29 00:29:00,609 - DEBUG : Current mean score_hat is 21.80215811729431
+2019-05-29 00:29:00,621 - DEBUG : Current mean score_golden is -2.697173085063696
+2019-05-29 00:29:17,450 - DEBUG : Now at 7839th data in epoch 0
+2019-05-29 00:29:17,467 - DEBUG : Current mean loss for train data is 25.815299481153488
+2019-05-29 00:29:17,476 - DEBUG : Current mean score_hat is 26.263150483369827
+2019-05-29 00:29:17,483 - DEBUG : Current mean score_golden is 1.4478511046618223
+2019-05-29 00:29:18,937 - DEBUG : Now at 11807th data in epoch 0
+2019-05-29 00:29:18,939 - DEBUG : Current mean loss for train data is 25.748045936226845
+2019-05-29 00:29:18,958 - DEBUG : Current mean score_hat is 22.02016268670559
+2019-05-29 00:29:18,970 - DEBUG : Current mean score_golden is -2.727883191779256
+2019-05-29 00:29:31,875 - DEBUG : Now at 7871th data in epoch 0
+2019-05-29 00:29:31,878 - DEBUG : Current mean loss for train data is 21.345739781856537
+2019-05-29 00:29:31,881 - DEBUG : Current mean score_hat is 21.527577191591263
+2019-05-29 00:29:31,887 - DEBUG : Current mean score_golden is 1.1818374386057258
+2019-05-29 00:29:34,695 - DEBUG : Now at 11839th data in epoch 0
+2019-05-29 00:29:34,700 - DEBUG : Current mean loss for train data is 24.125169187784195
+2019-05-29 00:29:34,705 - DEBUG : Current mean score_hat is 20.58694687485695
+2019-05-29 00:29:34,712 - DEBUG : Current mean score_golden is -2.538222558796406
+2019-05-29 00:29:51,723 - DEBUG : Now at 11871th data in epoch 0
+2019-05-29 00:29:51,726 - DEBUG : Current mean loss for train data is 24.68721753358841
+2019-05-29 00:29:51,732 - DEBUG : Current mean score_hat is 21.094698816537857
+2019-05-29 00:29:51,743 - DEBUG : Current mean score_golden is -2.592518715187907
+2019-05-29 00:29:52,400 - DEBUG : Now at 7903th data in epoch 0
+2019-05-29 00:29:52,402 - DEBUG : Current mean loss for train data is 27.034335151314735
+2019-05-29 00:29:52,405 - DEBUG : Current mean score_hat is 27.578255653381348
+2019-05-29 00:29:52,411 - DEBUG : Current mean score_golden is 1.5439202198758721
+2019-05-29 00:30:07,081 - DEBUG : Now at 11903th data in epoch 0
+2019-05-29 00:30:07,125 - DEBUG : Current mean loss for train data is 22.966893255710602
+2019-05-29 00:30:07,137 - DEBUG : Current mean score_hat is 19.589712619781494
+2019-05-29 00:30:07,140 - DEBUG : Current mean score_golden is -2.3771805744618177
+2019-05-29 00:30:09,097 - DEBUG : Now at 7935th data in epoch 0
+2019-05-29 00:30:09,108 - DEBUG : Current mean loss for train data is 22.003020763397217
+2019-05-29 00:30:09,111 - DEBUG : Current mean score_hat is 22.24427816271782
+2019-05-29 00:30:09,117 - DEBUG : Current mean score_golden is 1.2412576097995043
+2019-05-29 00:30:23,577 - DEBUG : Now at 11935th data in epoch 0
+2019-05-29 00:30:23,579 - DEBUG : Current mean loss for train data is 24.18656113743782
+2019-05-29 00:30:23,583 - DEBUG : Current mean score_hat is 20.67720863223076
+2019-05-29 00:30:23,601 - DEBUG : Current mean score_golden is -2.509352487511933
+2019-05-29 00:30:27,224 - DEBUG : Now at 7967th data in epoch 0
+2019-05-29 00:30:27,226 - DEBUG : Current mean loss for train data is 25.253525644540787
+2019-05-29 00:30:27,228 - DEBUG : Current mean score_hat is 25.69130715727806
+2019-05-29 00:30:27,237 - DEBUG : Current mean score_golden is 1.4377814838662744
+2019-05-29 00:30:39,640 - DEBUG : Now at 11967th data in epoch 0
+2019-05-29 00:30:39,646 - DEBUG : Current mean loss for train data is 23.15624950826168
+2019-05-29 00:30:39,654 - DEBUG : Current mean score_hat is 19.775125220417976
+2019-05-29 00:30:39,663 - DEBUG : Current mean score_golden is -2.3811243046075106
+2019-05-29 00:30:46,061 - DEBUG : Now at 7999th data in epoch 0
+2019-05-29 00:30:46,065 - DEBUG : Current mean loss for train data is 26.535116270184517
+2019-05-29 00:30:46,070 - DEBUG : Current mean score_hat is 27.0414397418499
+2019-05-29 00:30:46,078 - DEBUG : Current mean score_golden is 1.5063236309215426
+2019-05-29 00:30:52,534 - DEBUG : Now at 11999th data in epoch 0
+2019-05-29 00:30:52,537 - DEBUG : Current mean loss for train data is 20.403968334197998
+2019-05-29 00:30:52,538 - DEBUG : Current mean score_hat is 17.30918449163437
+2019-05-29 00:30:52,542 - DEBUG : Current mean score_golden is -2.094783928245306
+2019-05-29 00:31:01,885 - DEBUG : Now at 8031th data in epoch 0
+2019-05-29 00:31:01,891 - DEBUG : Current mean loss for train data is 23.252590000629425
+2019-05-29 00:31:01,895 - DEBUG : Current mean score_hat is 23.584350869059563
+2019-05-29 00:31:01,901 - DEBUG : Current mean score_golden is 1.3317608758807182
+2019-05-29 00:31:09,520 - DEBUG : Now at 12031th data in epoch 0
+2019-05-29 00:31:09,539 - DEBUG : Current mean loss for train data is 24.873430535197258
+2019-05-29 00:31:09,553 - DEBUG : Current mean score_hat is 21.298472233116627
+2019-05-29 00:31:09,573 - DEBUG : Current mean score_golden is -2.5749584957957268
+2019-05-29 00:31:25,940 - DEBUG : Now at 12063th data in epoch 0
+2019-05-29 00:31:25,943 - DEBUG : Current mean loss for train data is 24.560862630605698
+2019-05-29 00:31:25,951 - DEBUG : Current mean score_hat is 21.01802822947502
+2019-05-29 00:31:25,961 - DEBUG : Current mean score_golden is -2.5428340900689363
+2019-05-29 00:31:27,540 - DEBUG : Now at 8063th data in epoch 0
+2019-05-29 00:31:27,544 - DEBUG : Current mean loss for train data is 31.348045110702515
+2019-05-29 00:31:27,547 - DEBUG : Current mean score_hat is 32.21014839410782
+2019-05-29 00:31:27,556 - DEBUG : Current mean score_golden is 1.862103447318077
+2019-05-29 00:31:47,150 - DEBUG : Now at 12095th data in epoch 0
+2019-05-29 00:31:47,154 - DEBUG : Current mean loss for train data is 27.99970617890358
+2019-05-29 00:31:47,157 - DEBUG : Current mean score_hat is 24.018856212496758
+2019-05-29 00:31:47,166 - DEBUG : Current mean score_golden is -2.9808501582592726
+2019-05-29 00:31:49,532 - DEBUG : Now at 8095th data in epoch 0
+2019-05-29 00:31:49,543 - DEBUG : Current mean loss for train data is 28.00404542684555
+2019-05-29 00:31:49,552 - DEBUG : Current mean score_hat is 28.67686626315117
+2019-05-29 00:31:49,566 - DEBUG : Current mean score_golden is 1.6728207506239414
+2019-05-29 00:32:02,271 - DEBUG : Now at 12127th data in epoch 0
+2019-05-29 00:32:02,273 - DEBUG : Current mean loss for train data is 22.904993072152138
+2019-05-29 00:32:02,276 - DEBUG : Current mean score_hat is 19.49888238310814
+2019-05-29 00:32:02,286 - DEBUG : Current mean score_golden is -2.4061105642467737
+2019-05-29 00:32:05,961 - DEBUG : Now at 8127th data in epoch 0
+2019-05-29 00:32:05,964 - DEBUG : Current mean loss for train data is 24.283279418945312
+2019-05-29 00:32:05,967 - DEBUG : Current mean score_hat is 24.72949793934822
+2019-05-29 00:32:05,978 - DEBUG : Current mean score_golden is 1.446218455210328
+2019-05-29 00:32:18,484 - DEBUG : Now at 12159th data in epoch 0
+2019-05-29 00:32:18,490 - DEBUG : Current mean loss for train data is 23.435790315270424
+2019-05-29 00:32:18,500 - DEBUG : Current mean score_hat is 19.937418691813946
+2019-05-29 00:32:18,531 - DEBUG : Current mean score_golden is -2.498371521010995
+2019-05-29 00:32:23,657 - DEBUG : Now at 8159th data in epoch 0
+2019-05-29 00:32:23,660 - DEBUG : Current mean loss for train data is 24.97196862101555
+2019-05-29 00:32:23,663 - DEBUG : Current mean score_hat is 25.450815200805664
+2019-05-29 00:32:23,671 - DEBUG : Current mean score_golden is 1.4788468144834042
+2019-05-29 00:32:34,377 - DEBUG : Now at 12191th data in epoch 0
+2019-05-29 00:32:34,401 - DEBUG : Current mean loss for train data is 23.091352954506874
+2019-05-29 00:32:34,426 - DEBUG : Current mean score_hat is 19.644837141036987
+2019-05-29 00:32:34,452 - DEBUG : Current mean score_golden is -2.4465158469974995
+2019-05-29 00:32:40,823 - DEBUG : Now at 8191th data in epoch 0
+2019-05-29 00:32:40,825 - DEBUG : Current mean loss for train data is 24.62795141339302
+2019-05-29 00:32:40,830 - DEBUG : Current mean score_hat is 25.089635223150253
+2019-05-29 00:32:40,842 - DEBUG : Current mean score_golden is 1.4616839215159416
+2019-05-29 00:32:58,870 - DEBUG : Now at 8223th data in epoch 0
+2019-05-29 00:32:58,874 - DEBUG : Current mean loss for train data is 26.253166437149048
+2019-05-29 00:32:58,881 - DEBUG : Current mean score_hat is 26.80020421743393
+2019-05-29 00:32:58,889 - DEBUG : Current mean score_golden is 1.5470376815646887
+2019-05-29 00:33:00,415 - DEBUG : Now at 12223th data in epoch 0
+2019-05-29 00:33:00,420 - DEBUG : Current mean loss for train data is 32.18612441420555
+2019-05-29 00:33:00,430 - DEBUG : Current mean score_hat is 27.737305268645287
+2019-05-29 00:33:00,456 - DEBUG : Current mean score_golden is -3.448819063603878
+2019-05-29 00:33:19,116 - DEBUG : Now at 12255th data in epoch 0
+2019-05-29 00:33:19,119 - DEBUG : Current mean loss for train data is 26.465661108493805
+2019-05-29 00:33:19,122 - DEBUG : Current mean score_hat is 22.673113837838173
+2019-05-29 00:33:19,126 - DEBUG : Current mean score_golden is -2.7925473749637604
+2019-05-29 00:33:22,840 - DEBUG : Now at 8255th data in epoch 0
+2019-05-29 00:33:22,842 - DEBUG : Current mean loss for train data is 29.659044057130814
+2019-05-29 00:33:22,845 - DEBUG : Current mean score_hat is 30.432222828269005
+2019-05-29 00:33:22,853 - DEBUG : Current mean score_golden is 1.7731785627547652
+2019-05-29 00:33:43,524 - DEBUG : Now at 8287th data in epoch 0
+2019-05-29 00:33:43,527 - DEBUG : Current mean loss for train data is 26.939733773469925
+2019-05-29 00:33:43,529 - DEBUG : Current mean score_hat is 27.535529673099518
+2019-05-29 00:33:43,535 - DEBUG : Current mean score_golden is 1.5957960449159145
+2019-05-29 00:33:46,256 - DEBUG : Now at 12287th data in epoch 0
+2019-05-29 00:33:46,261 - DEBUG : Current mean loss for train data is 32.37458556890488
+2019-05-29 00:33:46,267 - DEBUG : Current mean score_hat is 27.900730937719345
+2019-05-29 00:33:46,284 - DEBUG : Current mean score_golden is -3.473854761570692
+2019-05-29 00:34:01,561 - DEBUG : Now at 8319th data in epoch 0
+2019-05-29 00:34:01,567 - DEBUG : Current mean loss for train data is 24.65867766737938
+2019-05-29 00:34:01,571 - DEBUG : Current mean score_hat is 25.109160646796227
+2019-05-29 00:34:01,582 - DEBUG : Current mean score_golden is 1.4504830269142985
+2019-05-29 00:34:04,044 - DEBUG : Now at 12319th data in epoch 0
+2019-05-29 00:34:04,049 - DEBUG : Current mean loss for train data is 25.404485046863556
+2019-05-29 00:34:04,052 - DEBUG : Current mean score_hat is 21.686764657497406
+2019-05-29 00:34:04,071 - DEBUG : Current mean score_golden is -2.7177204862236977
+2019-05-29 00:34:21,442 - DEBUG : Now at 12351th data in epoch 0
+2019-05-29 00:34:21,446 - DEBUG : Current mean loss for train data is 24.997453309595585
+2019-05-29 00:34:21,459 - DEBUG : Current mean score_hat is 21.28620009869337
+2019-05-29 00:34:21,470 - DEBUG : Current mean score_golden is -2.711253178305924
+2019-05-29 00:34:21,988 - DEBUG : Now at 8351th data in epoch 0
+2019-05-29 00:34:22,016 - DEBUG : Current mean loss for train data is 27.909134715795517
+2019-05-29 00:34:22,042 - DEBUG : Current mean score_hat is 28.582344889640808
+2019-05-29 00:34:22,069 - DEBUG : Current mean score_golden is 1.6732103005051613
+2019-05-29 00:34:41,480 - DEBUG : Now at 8383th data in epoch 0
+2019-05-29 00:34:41,489 - DEBUG : Current mean loss for train data is 26.033826559782028
+2019-05-29 00:34:41,494 - DEBUG : Current mean score_hat is 26.588175147771835
+2019-05-29 00:34:41,500 - DEBUG : Current mean score_golden is 1.5543484911322594
+2019-05-29 00:34:42,222 - DEBUG : Now at 12383th data in epoch 0
+2019-05-29 00:34:42,224 - DEBUG : Current mean loss for train data is 26.87086533010006
+2019-05-29 00:34:42,227 - DEBUG : Current mean score_hat is 22.945499032735825
+2019-05-29 00:34:42,239 - DEBUG : Current mean score_golden is -2.925366325303912
+2019-05-29 00:34:57,239 - DEBUG : Now at 8415th data in epoch 0
+2019-05-29 00:34:57,244 - DEBUG : Current mean loss for train data is 22.31410550326109
+2019-05-29 00:34:57,249 - DEBUG : Current mean score_hat is 22.6452858671546
+2019-05-29 00:34:57,255 - DEBUG : Current mean score_golden is 1.3311802176758647
+2019-05-29 00:34:58,577 - DEBUG : Now at 12415th data in epoch 0
+2019-05-29 00:34:58,582 - DEBUG : Current mean loss for train data is 22.6865264326334
+2019-05-29 00:34:58,585 - DEBUG : Current mean score_hat is 19.23776197526604
+2019-05-29 00:34:58,594 - DEBUG : Current mean score_golden is -2.4487644527107477
+2019-05-29 00:35:12,393 - DEBUG : Now at 12447th data in epoch 0
+2019-05-29 00:35:12,397 - DEBUG : Current mean loss for train data is 19.186423555016518
+2019-05-29 00:35:12,399 - DEBUG : Current mean score_hat is 16.16154356300831
+2019-05-29 00:35:12,409 - DEBUG : Current mean score_golden is -2.0248802099376917
+2019-05-29 00:35:15,988 - DEBUG : Now at 8447th data in epoch 0
+2019-05-29 00:35:15,991 - DEBUG : Current mean loss for train data is 24.75221422314644
+2019-05-29 00:35:15,995 - DEBUG : Current mean score_hat is 25.237713307142258
+2019-05-29 00:35:16,002 - DEBUG : Current mean score_golden is 1.4854989778250456
+2019-05-29 00:35:27,732 - DEBUG : Now at 12479th data in epoch 0
+2019-05-29 00:35:27,749 - DEBUG : Current mean loss for train data is 22.092351362109184
+2019-05-29 00:35:27,762 - DEBUG : Current mean score_hat is 18.71073178201914
+2019-05-29 00:35:27,777 - DEBUG : Current mean score_golden is -2.3816194562241435
+2019-05-29 00:35:32,915 - DEBUG : Now at 8479th data in epoch 0
+2019-05-29 00:35:32,918 - DEBUG : Current mean loss for train data is 24.001585990190506
+2019-05-29 00:35:32,921 - DEBUG : Current mean score_hat is 24.470065712928772
+2019-05-29 00:35:32,929 - DEBUG : Current mean score_golden is 1.4684797702357173
+2019-05-29 00:35:48,850 - DEBUG : Now at 8511th data in epoch 0
+2019-05-29 00:35:48,854 - DEBUG : Current mean loss for train data is 23.470628209412098
+2019-05-29 00:35:48,857 - DEBUG : Current mean score_hat is 23.930876918137074
+2019-05-29 00:35:48,867 - DEBUG : Current mean score_golden is 1.4602485089562833
+2019-05-29 00:35:50,282 - DEBUG : Now at 12511th data in epoch 0
+2019-05-29 00:35:50,286 - DEBUG : Current mean loss for train data is 29.374423921108246
+2019-05-29 00:35:50,297 - DEBUG : Current mean score_hat is 25.10467892885208
+2019-05-29 00:35:50,311 - DEBUG : Current mean score_golden is -3.2697451524436474
+2019-05-29 00:36:05,001 - DEBUG : Now at 8543th data in epoch 0
+2019-05-29 00:36:05,004 - DEBUG : Current mean loss for train data is 21.721082866191864
+2019-05-29 00:36:05,007 - DEBUG : Current mean score_hat is 22.05386497080326
+2019-05-29 00:36:05,015 - DEBUG : Current mean score_golden is 1.3327819965779781
+2019-05-29 00:36:05,675 - DEBUG : Now at 12543th data in epoch 0
+2019-05-29 00:36:05,677 - DEBUG : Current mean loss for train data is 22.592010661959648
+2019-05-29 00:36:05,679 - DEBUG : Current mean score_hat is 19.092382721602917
+2019-05-29 00:36:05,693 - DEBUG : Current mean score_golden is -2.499627879820764
+2019-05-29 00:36:25,170 - DEBUG : Now at 12575th data in epoch 0
+2019-05-29 00:36:25,172 - DEBUG : Current mean loss for train data is 27.404296532273293
+2019-05-29 00:36:25,175 - DEBUG : Current mean score_hat is 23.328106179833412
+2019-05-29 00:36:25,184 - DEBUG : Current mean score_golden is -3.076190212741494
+2019-05-29 00:36:26,027 - DEBUG : Now at 8575th data in epoch 0
+2019-05-29 00:36:26,031 - DEBUG : Current mean loss for train data is 26.440357200801373
+2019-05-29 00:36:26,033 - DEBUG : Current mean score_hat is 27.109855100512505
+2019-05-29 00:36:26,036 - DEBUG : Current mean score_golden is 1.669497837079689
+2019-05-29 00:36:42,785 - DEBUG : Now at 8607th data in epoch 0
+2019-05-29 00:36:42,789 - DEBUG : Current mean loss for train data is 24.815016627311707
+2019-05-29 00:36:42,792 - DEBUG : Current mean score_hat is 25.400847911834717
+2019-05-29 00:36:42,800 - DEBUG : Current mean score_golden is 1.5858311131596565
+2019-05-29 00:36:47,860 - DEBUG : Now at 12607th data in epoch 0
+2019-05-29 00:36:47,862 - DEBUG : Current mean loss for train data is 29.7798632979393
+2019-05-29 00:36:47,865 - DEBUG : Current mean score_hat is 25.45689533650875
+2019-05-29 00:36:47,877 - DEBUG : Current mean score_golden is -3.3229679632931948
+2019-05-29 00:37:00,803 - DEBUG : Now at 8639th data in epoch 0
+2019-05-29 00:37:00,806 - DEBUG : Current mean loss for train data is 25.127113163471222
+2019-05-29 00:37:00,810 - DEBUG : Current mean score_hat is 25.748025059700012
+2019-05-29 00:37:00,816 - DEBUG : Current mean score_golden is 1.6209117099642754
+2019-05-29 00:37:03,211 - DEBUG : Now at 12639th data in epoch 0
+2019-05-29 00:37:03,214 - DEBUG : Current mean loss for train data is 22.935143426060677
+2019-05-29 00:37:03,217 - DEBUG : Current mean score_hat is 19.372650980949402
+2019-05-29 00:37:03,226 - DEBUG : Current mean score_golden is -2.5624923575669527
+2019-05-29 00:37:17,553 - DEBUG : Now at 8671th data in epoch 0
+2019-05-29 00:37:17,556 - DEBUG : Current mean loss for train data is 23.81424593925476
+2019-05-29 00:37:17,559 - DEBUG : Current mean score_hat is 24.359073519706726
+2019-05-29 00:37:17,568 - DEBUG : Current mean score_golden is 1.5448274742811918
+2019-05-29 00:37:19,041 - DEBUG : Now at 12671th data in epoch 0
+2019-05-29 00:37:19,057 - DEBUG : Current mean loss for train data is 23.08939227461815
+2019-05-29 00:37:19,069 - DEBUG : Current mean score_hat is 19.488063648343086
+2019-05-29 00:37:19,080 - DEBUG : Current mean score_golden is -2.601328518241644
+2019-05-29 00:37:34,122 - DEBUG : Now at 12703th data in epoch 0
+2019-05-29 00:37:34,131 - DEBUG : Current mean loss for train data is 22.93225732445717
+2019-05-29 00:37:34,136 - DEBUG : Current mean score_hat is 19.306591659784317
+2019-05-29 00:37:34,153 - DEBUG : Current mean score_golden is -2.625665722414851
+2019-05-29 00:37:35,626 - DEBUG : Now at 8703th data in epoch 0
+2019-05-29 00:37:35,629 - DEBUG : Current mean loss for train data is 25.53294688463211
+2019-05-29 00:37:35,635 - DEBUG : Current mean score_hat is 26.19315394759178
+2019-05-29 00:37:35,642 - DEBUG : Current mean score_golden is 1.6602069716900587
+2019-05-29 00:37:50,381 - DEBUG : Now at 12735th data in epoch 0
+2019-05-29 00:37:50,384 - DEBUG : Current mean loss for train data is 24.591180562973022
+2019-05-29 00:37:50,386 - DEBUG : Current mean score_hat is 20.789908453822136
+2019-05-29 00:37:50,394 - DEBUG : Current mean score_golden is -2.8012719862163067
+2019-05-29 00:37:57,360 - DEBUG : Now at 8735th data in epoch 0
+2019-05-29 00:37:57,406 - DEBUG : Current mean loss for train data is 29.50254386663437
+2019-05-29 00:37:57,428 - DEBUG : Current mean score_hat is 30.41131228208542
+2019-05-29 00:37:57,455 - DEBUG : Current mean score_golden is 1.9087684117257595
+2019-05-29 00:38:07,542 - DEBUG : Now at 12767th data in epoch 0
+2019-05-29 00:38:07,556 - DEBUG : Current mean loss for train data is 22.091936618089676
+2019-05-29 00:38:07,559 - DEBUG : Current mean score_hat is 18.546235159039497
+2019-05-29 00:38:07,566 - DEBUG : Current mean score_golden is -2.5457013957202435
+2019-05-29 00:38:21,111 - DEBUG : Now at 8767th data in epoch 0
+2019-05-29 00:38:21,113 - DEBUG : Current mean loss for train data is 28.53335526585579
+2019-05-29 00:38:21,116 - DEBUG : Current mean score_hat is 29.38421243429184
+2019-05-29 00:38:21,129 - DEBUG : Current mean score_golden is 1.8508572867140174
+2019-05-29 00:38:25,922 - DEBUG : Now at 12799th data in epoch 0
+2019-05-29 00:38:25,925 - DEBUG : Current mean loss for train data is 26.591805547475815
+2019-05-29 00:38:25,928 - DEBUG : Current mean score_hat is 22.456296533346176
+2019-05-29 00:38:25,941 - DEBUG : Current mean score_golden is -3.1355089768767357
+2019-05-29 00:38:40,664 - DEBUG : Now at 12831th data in epoch 0
+2019-05-29 00:38:40,684 - DEBUG : Current mean loss for train data is 23.309710264205933
+2019-05-29 00:38:40,689 - DEBUG : Current mean score_hat is 19.574753403663635
+2019-05-29 00:38:40,697 - DEBUG : Current mean score_golden is -2.7349567720666528
+2019-05-29 00:38:40,710 - DEBUG : Now at 8799th data in epoch 0
+2019-05-29 00:38:40,734 - DEBUG : Current mean loss for train data is 27.845963895320892
+2019-05-29 00:38:40,741 - DEBUG : Current mean score_hat is 28.639799505472183
+2019-05-29 00:38:40,749 - DEBUG : Current mean score_golden is 1.793835868127644
+2019-05-29 00:38:58,108 - DEBUG : Now at 12863th data in epoch 0
+2019-05-29 00:38:58,119 - DEBUG : Current mean loss for train data is 26.62505140900612
+2019-05-29 00:38:58,127 - DEBUG : Current mean score_hat is 22.451478198170662
+2019-05-29 00:38:58,144 - DEBUG : Current mean score_golden is -3.1735731791704893
+2019-05-29 00:39:01,240 - DEBUG : Now at 8831th data in epoch 0
+2019-05-29 00:39:01,243 - DEBUG : Current mean loss for train data is 28.377150505781174
+2019-05-29 00:39:01,245 - DEBUG : Current mean score_hat is 29.188655748963356
+2019-05-29 00:39:01,251 - DEBUG : Current mean score_golden is 1.8115051733329892
+2019-05-29 00:39:17,464 - DEBUG : Now at 8863th data in epoch 0
+2019-05-29 00:39:17,469 - DEBUG : Current mean loss for train data is 24.56408667564392
+2019-05-29 00:39:17,472 - DEBUG : Current mean score_hat is 25.127279222011566
+2019-05-29 00:39:17,478 - DEBUG : Current mean score_golden is 1.5631924867630005
+2019-05-29 00:39:24,322 - DEBUG : Now at 12895th data in epoch 0
+2019-05-29 00:39:24,324 - DEBUG : Current mean loss for train data is 32.12640684843063
+2019-05-29 00:39:24,327 - DEBUG : Current mean score_hat is 27.26551465690136
+2019-05-29 00:39:24,339 - DEBUG : Current mean score_golden is -3.8608923107385635
+2019-05-29 00:39:35,016 - DEBUG : Now at 8895th data in epoch 0
+2019-05-29 00:39:35,032 - DEBUG : Current mean loss for train data is 25.689399987459183
+2019-05-29 00:39:35,042 - DEBUG : Current mean score_hat is 26.328560054302216
+2019-05-29 00:39:35,044 - DEBUG : Current mean score_golden is 1.6391602102667093
+2019-05-29 00:39:46,710 - DEBUG : Now at 12927th data in epoch 0
+2019-05-29 00:39:46,713 - DEBUG : Current mean loss for train data is 29.870732605457306
+2019-05-29 00:39:46,733 - DEBUG : Current mean score_hat is 25.267993181943893
+2019-05-29 00:39:46,755 - DEBUG : Current mean score_golden is -3.6027391627430916
+2019-05-29 00:39:50,975 - DEBUG : Now at 8927th data in epoch 0
+2019-05-29 00:39:50,983 - DEBUG : Current mean loss for train data is 23.814172118902206
+2019-05-29 00:39:51,001 - DEBUG : Current mean score_hat is 24.328413277864456
+2019-05-29 00:39:51,008 - DEBUG : Current mean score_golden is 1.5142412204295397
+2019-05-29 00:40:06,003 - DEBUG : Now at 12959th data in epoch 0
+2019-05-29 00:40:06,010 - DEBUG : Current mean loss for train data is 28.37107291817665
+2019-05-29 00:40:06,016 - DEBUG : Current mean score_hat is 23.952283933758736
+2019-05-29 00:40:06,026 - DEBUG : Current mean score_golden is -3.4187892228364944
+2019-05-29 00:40:07,535 - DEBUG : Now at 8959th data in epoch 0
+2019-05-29 00:40:07,550 - DEBUG : Current mean loss for train data is 24.50179846584797
+2019-05-29 00:40:07,562 - DEBUG : Current mean score_hat is 25.078287922544405
+2019-05-29 00:40:07,566 - DEBUG : Current mean score_golden is 1.5764892816077918
+2019-05-29 00:40:23,486 - DEBUG : Now at 8991th data in epoch 0
+2019-05-29 00:40:23,489 - DEBUG : Current mean loss for train data is 24.06440956890583
+2019-05-29 00:40:23,495 - DEBUG : Current mean score_hat is 24.62098629772663
+2019-05-29 00:40:23,500 - DEBUG : Current mean score_golden is 1.5565767996013165
+2019-05-29 00:40:23,746 - DEBUG : Now at 12991th data in epoch 0
+2019-05-29 00:40:23,747 - DEBUG : Current mean loss for train data is 26.589256048202515
+2019-05-29 00:40:23,750 - DEBUG : Current mean score_hat is 22.403769731521606
+2019-05-29 00:40:23,762 - DEBUG : Current mean score_golden is -3.1854863725602627
+2019-05-29 00:40:39,787 - DEBUG : Now at 9023th data in epoch 0
+2019-05-29 00:40:39,789 - DEBUG : Current mean loss for train data is 25.28301239013672
+2019-05-29 00:40:39,799 - DEBUG : Current mean score_hat is 25.964964628219604
+2019-05-29 00:40:39,803 - DEBUG : Current mean score_golden is 1.6819522138684988
+2019-05-29 00:40:40,375 - DEBUG : Now at 13023th data in epoch 0
+2019-05-29 00:40:40,411 - DEBUG : Current mean loss for train data is 25.06205725669861
+2019-05-29 00:40:40,428 - DEBUG : Current mean score_hat is 21.087808459997177
+2019-05-29 00:40:40,452 - DEBUG : Current mean score_golden is -2.974248558282852
+2019-05-29 00:40:55,597 - DEBUG : Now at 9055th data in epoch 0
+2019-05-29 00:40:55,601 - DEBUG : Current mean loss for train data is 24.595587894320488
+2019-05-29 00:40:55,608 - DEBUG : Current mean score_hat is 25.25149241089821
+2019-05-29 00:40:55,611 - DEBUG : Current mean score_golden is 1.6559043293818831
+2019-05-29 00:41:01,087 - DEBUG : Now at 13055th data in epoch 0
+2019-05-29 00:41:01,092 - DEBUG : Current mean loss for train data is 27.998225510120392
+2019-05-29 00:41:01,103 - DEBUG : Current mean score_hat is 23.673828899860382
+2019-05-29 00:41:01,115 - DEBUG : Current mean score_golden is -3.324396524578333
+2019-05-29 00:41:11,870 - DEBUG : Now at 9087th data in epoch 0
+2019-05-29 00:41:11,891 - DEBUG : Current mean loss for train data is 24.376716941595078
+2019-05-29 00:41:11,894 - DEBUG : Current mean score_hat is 25.024801820516586
+2019-05-29 00:41:11,902 - DEBUG : Current mean score_golden is 1.648084843531251
+2019-05-29 00:41:19,181 - DEBUG : Now at 13087th data in epoch 0
+2019-05-29 00:41:19,198 - DEBUG : Current mean loss for train data is 25.96619237959385
+2019-05-29 00:41:19,201 - DEBUG : Current mean score_hat is 21.855082869529724
+2019-05-29 00:41:19,216 - DEBUG : Current mean score_golden is -3.11110951192677
+2019-05-29 00:41:30,739 - DEBUG : Now at 9119th data in epoch 0
+2019-05-29 00:41:30,750 - DEBUG : Current mean loss for train data is 26.939573422074318
+2019-05-29 00:41:30,755 - DEBUG : Current mean score_hat is 27.784505993127823
+2019-05-29 00:41:30,762 - DEBUG : Current mean score_golden is 1.8449326315894723
+2019-05-29 00:41:37,344 - DEBUG : Now at 13119th data in epoch 0
+2019-05-29 00:41:37,347 - DEBUG : Current mean loss for train data is 26.432308465242386
+2019-05-29 00:41:37,349 - DEBUG : Current mean score_hat is 22.30215595662594
+2019-05-29 00:41:37,361 - DEBUG : Current mean score_golden is -3.1301525309681892
+2019-05-29 00:41:45,868 - DEBUG : Now at 9151th data in epoch 0
+2019-05-29 00:41:45,871 - DEBUG : Current mean loss for train data is 23.501591756939888
+2019-05-29 00:41:45,874 - DEBUG : Current mean score_hat is 24.090801253914833
+2019-05-29 00:41:45,883 - DEBUG : Current mean score_golden is 1.589209346100688
+2019-05-29 00:41:52,987 - DEBUG : Now at 13151th data in epoch 0
+2019-05-29 00:41:53,006 - DEBUG : Current mean loss for train data is 24.15138679742813
+2019-05-29 00:41:53,022 - DEBUG : Current mean score_hat is 20.281682521104813
+2019-05-29 00:41:53,028 - DEBUG : Current mean score_golden is -2.869704257696867
+2019-05-29 00:41:57,363 - DEBUG : Now at 9183th data in epoch 0
+2019-05-29 00:41:57,368 - DEBUG : Current mean loss for train data is 19.251294277608395
+2019-05-29 00:41:57,374 - DEBUG : Current mean score_hat is 19.5215707346797
+2019-05-29 00:41:57,381 - DEBUG : Current mean score_golden is 1.2702764132991433
+2019-05-29 00:42:08,925 - DEBUG : Now at 13183th data in epoch 0
+2019-05-29 00:42:08,971 - DEBUG : Current mean loss for train data is 22.745625257492065
+2019-05-29 00:42:08,993 - DEBUG : Current mean score_hat is 19.073418214917183
+2019-05-29 00:42:09,007 - DEBUG : Current mean score_golden is -2.6722069289535284
+2019-05-29 00:42:13,446 - DEBUG : Now at 9215th data in epoch 0
+2019-05-29 00:42:13,450 - DEBUG : Current mean loss for train data is 23.032845214009285
+2019-05-29 00:42:13,454 - DEBUG : Current mean score_hat is 23.57769100368023
+2019-05-29 00:42:13,464 - DEBUG : Current mean score_golden is 1.5448457999154925
+2019-05-29 00:42:27,810 - DEBUG : Now at 9247th data in epoch 0
+2019-05-29 00:42:27,813 - DEBUG : Current mean loss for train data is 21.720549032092094
+2019-05-29 00:42:27,821 - DEBUG : Current mean score_hat is 22.178532351506874
+2019-05-29 00:42:27,826 - DEBUG : Current mean score_golden is 1.4579834116157144
+2019-05-29 00:42:28,463 - DEBUG : Now at 13215th data in epoch 0
+2019-05-29 00:42:28,466 - DEBUG : Current mean loss for train data is 27.21696564555168
+2019-05-29 00:42:28,470 - DEBUG : Current mean score_hat is 22.99966809153557
+2019-05-29 00:42:28,483 - DEBUG : Current mean score_golden is -3.2172975093126297
+2019-05-29 00:42:41,790 - DEBUG : Now at 9279th data in epoch 0
+2019-05-29 00:42:41,795 - DEBUG : Current mean loss for train data is 20.59538985788822
+2019-05-29 00:42:41,803 - DEBUG : Current mean score_hat is 20.950740784406662
+2019-05-29 00:42:41,807 - DEBUG : Current mean score_golden is 1.3553509591147304
+2019-05-29 00:42:43,393 - DEBUG : Now at 13247th data in epoch 0
+2019-05-29 00:42:43,413 - DEBUG : Current mean loss for train data is 23.02715539187193
+2019-05-29 00:42:43,427 - DEBUG : Current mean score_hat is 19.336358100175858
+2019-05-29 00:42:43,447 - DEBUG : Current mean score_golden is -2.690797321498394
+2019-05-29 00:42:57,477 - DEBUG : Now at 13279th data in epoch 0
+2019-05-29 00:42:57,504 - DEBUG : Current mean loss for train data is 21.905026480555534
+2019-05-29 00:42:57,506 - DEBUG : Current mean score_hat is 18.335123971104622
+2019-05-29 00:42:57,511 - DEBUG : Current mean score_golden is -2.56990263517946
+2019-05-29 00:42:59,290 - DEBUG : Now at 9311th data in epoch 0
+2019-05-29 00:42:59,301 - DEBUG : Current mean loss for train data is 25.1269298940897
+2019-05-29 00:42:59,309 - DEBUG : Current mean score_hat is 25.794431895017624
+2019-05-29 00:42:59,316 - DEBUG : Current mean score_golden is 1.667501957155764
+2019-05-29 00:43:14,367 - DEBUG : Now at 9343th data in epoch 0
+2019-05-29 00:43:14,369 - DEBUG : Current mean loss for train data is 22.25199791789055
+2019-05-29 00:43:14,372 - DEBUG : Current mean score_hat is 22.761432126164436
+2019-05-29 00:43:14,386 - DEBUG : Current mean score_golden is 1.509434257633984
+2019-05-29 00:43:18,196 - DEBUG : Now at 13311th data in epoch 0
+2019-05-29 00:43:18,199 - DEBUG : Current mean loss for train data is 27.964444875717163
+2019-05-29 00:43:18,202 - DEBUG : Current mean score_hat is 23.598842188715935
+2019-05-29 00:43:18,215 - DEBUG : Current mean score_golden is -3.3656027605757117
+2019-05-29 00:43:34,781 - DEBUG : Now at 9375th data in epoch 0
+2019-05-29 00:43:34,786 - DEBUG : Current mean loss for train data is 29.127267450094223
+2019-05-29 00:43:34,799 - DEBUG : Current mean score_hat is 30.074613094329834
+2019-05-29 00:43:34,809 - DEBUG : Current mean score_golden is 1.9473458006978035
+2019-05-29 00:43:42,007 - DEBUG : Now at 13343th data in epoch 0
+2019-05-29 00:43:42,011 - DEBUG : Current mean loss for train data is 31.993891656398773
+2019-05-29 00:43:42,015 - DEBUG : Current mean score_hat is 27.13882403075695
+2019-05-29 00:43:42,022 - DEBUG : Current mean score_golden is -3.855067478492856
+2019-05-29 00:43:55,454 - DEBUG : Now at 13375th data in epoch 0
+2019-05-29 00:43:55,456 - DEBUG : Current mean loss for train data is 22.74341967701912
+2019-05-29 00:43:55,459 - DEBUG : Current mean score_hat is 19.03292666375637
+2019-05-29 00:43:55,486 - DEBUG : Current mean score_golden is -2.7104931510984898
+2019-05-29 00:44:02,534 - DEBUG : Now at 9407th data in epoch 0
+2019-05-29 00:44:02,556 - DEBUG : Current mean loss for train data is 35.346710443496704
+2019-05-29 00:44:02,567 - DEBUG : Current mean score_hat is 36.754279017448425
+2019-05-29 00:44:02,569 - DEBUG : Current mean score_golden is 2.407568657770753
+2019-05-29 00:44:09,811 - DEBUG : Now at 13407th data in epoch 0
+2019-05-29 00:44:09,813 - DEBUG : Current mean loss for train data is 22.431374296545982
+2019-05-29 00:44:09,816 - DEBUG : Current mean score_hat is 18.737768068909645
+2019-05-29 00:44:09,833 - DEBUG : Current mean score_golden is -2.6936061456799507
+2019-05-29 00:44:16,753 - DEBUG : Now at 9439th data in epoch 0
+2019-05-29 00:44:16,756 - DEBUG : Current mean loss for train data is 19.90768076479435
+2019-05-29 00:44:16,758 - DEBUG : Current mean score_hat is 20.212069132132456
+2019-05-29 00:44:16,767 - DEBUG : Current mean score_golden is 1.3043883012142032
+2019-05-29 00:44:32,931 - DEBUG : Now at 13439th data in epoch 0
+2019-05-29 00:44:32,934 - DEBUG : Current mean loss for train data is 29.560300648212433
+2019-05-29 00:44:32,938 - DEBUG : Current mean score_hat is 25.029222041368484
+2019-05-29 00:44:32,948 - DEBUG : Current mean score_golden is -3.5310785565525293
+2019-05-29 00:44:33,886 - DEBUG : Now at 9471th data in epoch 0
+2019-05-29 00:44:33,889 - DEBUG : Current mean loss for train data is 25.283132016658783
+2019-05-29 00:44:33,891 - DEBUG : Current mean score_hat is 25.998549550771713
+2019-05-29 00:44:33,896 - DEBUG : Current mean score_golden is 1.715417598374188
+2019-05-29 00:44:49,787 - DEBUG : Now at 9503th data in epoch 0
+2019-05-29 00:44:49,796 - DEBUG : Current mean loss for train data is 23.376785933971405
+2019-05-29 00:44:49,800 - DEBUG : Current mean score_hat is 23.97057916224003
+2019-05-29 00:44:49,812 - DEBUG : Current mean score_golden is 1.5937931849621236
+2019-05-29 00:44:52,334 - DEBUG : Now at 13471th data in epoch 0
+2019-05-29 00:44:52,338 - DEBUG : Current mean loss for train data is 27.71183329820633
+2019-05-29 00:44:52,340 - DEBUG : Current mean score_hat is 23.38556334376335
+2019-05-29 00:44:52,348 - DEBUG : Current mean score_golden is -3.3262699991464615
+2019-05-29 00:45:06,730 - DEBUG : Now at 13503th data in epoch 0
+2019-05-29 00:45:06,733 - DEBUG : Current mean loss for train data is 22.928993225097656
+2019-05-29 00:45:06,736 - DEBUG : Current mean score_hat is 19.182797610759735
+2019-05-29 00:45:06,750 - DEBUG : Current mean score_golden is -2.7461955826729536
+2019-05-29 00:45:08,268 - DEBUG : Now at 9535th data in epoch 0
+2019-05-29 00:45:08,271 - DEBUG : Current mean loss for train data is 25.970537573099136
+2019-05-29 00:45:08,273 - DEBUG : Current mean score_hat is 26.762094244360924
+2019-05-29 00:45:08,278 - DEBUG : Current mean score_golden is 1.7915565194562078
+2019-05-29 00:45:23,816 - DEBUG : Now at 9567th data in epoch 0
+2019-05-29 00:45:23,819 - DEBUG : Current mean loss for train data is 23.43954625725746
+2019-05-29 00:45:23,823 - DEBUG : Current mean score_hat is 24.058503717184067
+2019-05-29 00:45:23,832 - DEBUG : Current mean score_golden is 1.6189574785530567
+2019-05-29 00:45:24,488 - DEBUG : Now at 13535th data in epoch 0
+2019-05-29 00:45:24,501 - DEBUG : Current mean loss for train data is 25.15766428411007
+2019-05-29 00:45:24,504 - DEBUG : Current mean score_hat is 21.089728988707066
+2019-05-29 00:45:24,512 - DEBUG : Current mean score_golden is -3.0679351603612304
+2019-05-29 00:45:38,531 - DEBUG : Now at 13567th data in epoch 0
+2019-05-29 00:45:38,533 - DEBUG : Current mean loss for train data is 22.17975827306509
+2019-05-29 00:45:38,536 - DEBUG : Current mean score_hat is 18.469677671790123
+2019-05-29 00:45:38,541 - DEBUG : Current mean score_golden is -2.7100804364308715
+2019-05-29 00:45:40,215 - DEBUG : Now at 9599th data in epoch 0
+2019-05-29 00:45:40,237 - DEBUG : Current mean loss for train data is 24.03304775059223
+2019-05-29 00:45:40,246 - DEBUG : Current mean score_hat is 24.723751172423363
+2019-05-29 00:45:40,250 - DEBUG : Current mean score_golden is 1.6907034423202276
+2019-05-29 00:45:54,551 - DEBUG : Now at 13599th data in epoch 0
+2019-05-29 00:45:54,553 - DEBUG : Current mean loss for train data is 25.052491307258606
+2019-05-29 00:45:54,554 - DEBUG : Current mean score_hat is 21.028661102056503
+2019-05-29 00:45:54,558 - DEBUG : Current mean score_golden is -3.0238302797079086
+2019-05-29 00:46:01,454 - DEBUG : Now at 9631th data in epoch 0
+2019-05-29 00:46:01,456 - DEBUG : Current mean loss for train data is 28.501973286271095
+2019-05-29 00:46:01,459 - DEBUG : Current mean score_hat is 29.546312615275383
+2019-05-29 00:46:01,467 - DEBUG : Current mean score_golden is 2.0443391604349017
+2019-05-29 00:46:10,960 - DEBUG : Now at 13631th data in epoch 0
+2019-05-29 00:46:10,962 - DEBUG : Current mean loss for train data is 25.119323790073395
+2019-05-29 00:46:10,964 - DEBUG : Current mean score_hat is 21.12038165330887
+2019-05-29 00:46:10,967 - DEBUG : Current mean score_golden is -2.9989420492202044
+2019-05-29 00:46:26,714 - DEBUG : Now at 9663th data in epoch 0
+2019-05-29 00:46:26,717 - DEBUG : Current mean loss for train data is 30.47164535522461
+2019-05-29 00:46:26,719 - DEBUG : Current mean score_hat is 31.66090402007103
+2019-05-29 00:46:26,728 - DEBUG : Current mean score_golden is 2.189258638769388
+2019-05-29 00:46:28,374 - DEBUG : Now at 13663th data in epoch 0
+2019-05-29 00:46:28,405 - DEBUG : Current mean loss for train data is 23.759944275021553
+2019-05-29 00:46:28,409 - DEBUG : Current mean score_hat is 19.907665625214577
+2019-05-29 00:46:28,442 - DEBUG : Current mean score_golden is -2.852278681471944
+2019-05-29 00:46:46,672 - DEBUG : Now at 9695th data in epoch 0
+2019-05-29 00:46:46,690 - DEBUG : Current mean loss for train data is 21.813972651958466
+2019-05-29 00:46:46,757 - DEBUG : Current mean score_hat is 22.338530657812953
+2019-05-29 00:46:46,794 - DEBUG : Current mean score_golden is 1.524558024480939
+2019-05-29 00:46:51,135 - DEBUG : Now at 13695th data in epoch 0
+2019-05-29 00:46:51,162 - DEBUG : Current mean loss for train data is 24.122069627046585
+2019-05-29 00:46:51,217 - DEBUG : Current mean score_hat is 20.184311404824257
+2019-05-29 00:46:51,241 - DEBUG : Current mean score_golden is -2.937758330255747
+2019-05-29 00:47:07,919 - DEBUG : Now at 9727th data in epoch 0
+2019-05-29 00:47:07,922 - DEBUG : Current mean loss for train data is 26.09578251838684
+2019-05-29 00:47:07,924 - DEBUG : Current mean score_hat is 26.93395635485649
+2019-05-29 00:47:07,940 - DEBUG : Current mean score_golden is 1.838173821568489
+2019-05-29 00:47:11,241 - DEBUG : Now at 13727th data in epoch 0
+2019-05-29 00:47:11,243 - DEBUG : Current mean loss for train data is 26.495176687836647
+2019-05-29 00:47:11,250 - DEBUG : Current mean score_hat is 22.208027869462967
+2019-05-29 00:47:11,272 - DEBUG : Current mean score_golden is -3.2871487122029066
+2019-05-29 00:47:29,755 - DEBUG : Now at 9759th data in epoch 0
+2019-05-29 00:47:29,760 - DEBUG : Current mean loss for train data is 25.470711946487427
+2019-05-29 00:47:29,766 - DEBUG : Current mean score_hat is 26.26185753941536
+2019-05-29 00:47:29,770 - DEBUG : Current mean score_golden is 1.7911454178392887
+2019-05-29 00:47:33,026 - DEBUG : Now at 13759th data in epoch 0
+2019-05-29 00:47:33,031 - DEBUG : Current mean loss for train data is 24.714267030358315
+2019-05-29 00:47:33,038 - DEBUG : Current mean score_hat is 20.6589620038867
+2019-05-29 00:47:33,056 - DEBUG : Current mean score_golden is -3.0553051065653563
+2019-05-29 00:47:49,512 - DEBUG : Now at 9791th data in epoch 0
+2019-05-29 00:47:49,515 - DEBUG : Current mean loss for train data is 24.939654797315598
+2019-05-29 00:47:49,519 - DEBUG : Current mean score_hat is 25.712465316057205
+2019-05-29 00:47:49,523 - DEBUG : Current mean score_golden is 1.7728105150163174
+2019-05-29 00:48:04,891 - DEBUG : Now at 9823th data in epoch 0
+2019-05-29 00:48:04,894 - DEBUG : Current mean loss for train data is 24.47093626856804
+2019-05-29 00:48:04,897 - DEBUG : Current mean score_hat is 25.222756415605545
+2019-05-29 00:48:04,900 - DEBUG : Current mean score_golden is 1.7518201963976026
+2019-05-29 00:48:21,774 - DEBUG : Now at 9855th data in epoch 0
+2019-05-29 00:48:21,777 - DEBUG : Current mean loss for train data is 26.158431977033615
+2019-05-29 00:48:21,780 - DEBUG : Current mean score_hat is 27.02997235953808
+2019-05-29 00:48:21,783 - DEBUG : Current mean score_golden is 1.8715403014793992
+2019-05-29 00:48:36,081 - DEBUG : Now at 9887th data in epoch 0
+2019-05-29 00:48:36,083 - DEBUG : Current mean loss for train data is 26.783086717128754
+2019-05-29 00:48:36,089 - DEBUG : Current mean score_hat is 27.71670177578926
+2019-05-29 00:48:36,097 - DEBUG : Current mean score_golden is 1.9336149338632822
+2019-05-29 00:48:50,020 - DEBUG : Now at 9919th data in epoch 0
+2019-05-29 00:48:50,023 - DEBUG : Current mean loss for train data is 26.40812087059021
+2019-05-29 00:48:50,025 - DEBUG : Current mean score_hat is 27.313665196299553
+2019-05-29 00:48:50,028 - DEBUG : Current mean score_golden is 1.9055444300174713
+2019-05-29 00:49:03,009 - DEBUG : Now at 9951th data in epoch 0
+2019-05-29 00:49:03,012 - DEBUG : Current mean loss for train data is 25.157925963401794
+2019-05-29 00:49:03,014 - DEBUG : Current mean score_hat is 25.990241646766663
+2019-05-29 00:49:03,017 - DEBUG : Current mean score_golden is 1.8323157168924809
+2019-05-29 00:49:15,049 - DEBUG : Now at 9983th data in epoch 0
+2019-05-29 00:49:15,052 - DEBUG : Current mean loss for train data is 23.81405194848776
+2019-05-29 00:49:15,056 - DEBUG : Current mean score_hat is 24.5496636480093
+2019-05-29 00:49:15,059 - DEBUG : Current mean score_golden is 1.7356118122115731
+2019-05-29 00:49:25,028 - DEBUG : Now at 10015th data in epoch 0
+2019-05-29 00:49:25,030 - DEBUG : Current mean loss for train data is 21.220212042331696
+2019-05-29 00:49:25,034 - DEBUG : Current mean score_hat is 21.748251020908356
+2019-05-29 00:49:25,037 - DEBUG : Current mean score_golden is 1.5280387718230486
+2019-05-29 00:49:37,072 - DEBUG : Now at 10047th data in epoch 0
+2019-05-29 00:49:37,075 - DEBUG : Current mean loss for train data is 24.533017098903656
+2019-05-29 00:49:37,077 - DEBUG : Current mean score_hat is 25.324678525328636
+2019-05-29 00:49:37,081 - DEBUG : Current mean score_golden is 1.7916614459827542
+2019-05-29 00:49:47,261 - DEBUG : Now at 10079th data in epoch 0
+2019-05-29 00:49:47,263 - DEBUG : Current mean loss for train data is 21.064120769500732
+2019-05-29 00:49:47,264 - DEBUG : Current mean score_hat is 21.580201417207718
+2019-05-29 00:49:47,267 - DEBUG : Current mean score_golden is 1.516080653294921
+2019-05-29 00:50:04,711 - DEBUG : Now at 10111th data in epoch 0
+2019-05-29 00:50:04,713 - DEBUG : Current mean loss for train data is 27.720533460378647
+2019-05-29 00:50:04,716 - DEBUG : Current mean score_hat is 28.77869886159897
+2019-05-29 00:50:04,719 - DEBUG : Current mean score_golden is 2.058165641501546
+2019-05-29 00:50:14,453 - DEBUG : Now at 10143th data in epoch 0
+2019-05-29 00:50:14,458 - DEBUG : Current mean loss for train data is 21.12661685049534
+2019-05-29 00:50:14,462 - DEBUG : Current mean score_hat is 21.670933969318867
+2019-05-29 00:50:14,466 - DEBUG : Current mean score_golden is 1.5443174187093973
+2019-05-29 00:50:26,315 - DEBUG : Now at 10175th data in epoch 0
+2019-05-29 00:50:26,318 - DEBUG : Current mean loss for train data is 23.595552906394005
+2019-05-29 00:50:26,322 - DEBUG : Current mean score_hat is 24.331321567296982
+2019-05-29 00:50:26,325 - DEBUG : Current mean score_golden is 1.7357686813920736
+2019-05-29 00:50:37,681 - DEBUG : Now at 10207th data in epoch 0
+2019-05-29 00:50:37,683 - DEBUG : Current mean loss for train data is 21.626636505126953
+2019-05-29 00:50:37,686 - DEBUG : Current mean score_hat is 22.19011414796114
+2019-05-29 00:50:37,688 - DEBUG : Current mean score_golden is 1.5634775198996067
+2019-05-29 00:50:50,310 - DEBUG : Now at 10239th data in epoch 0
+2019-05-29 00:50:50,313 - DEBUG : Current mean loss for train data is 24.907841250300407
+2019-05-29 00:50:50,315 - DEBUG : Current mean score_hat is 25.752378314733505
+2019-05-29 00:50:50,319 - DEBUG : Current mean score_golden is 1.8445371901616454
+2019-05-29 00:51:04,297 - DEBUG : Now at 10271th data in epoch 0
+2019-05-29 00:51:04,300 - DEBUG : Current mean loss for train data is 26.751858472824097
+2019-05-29 00:51:04,303 - DEBUG : Current mean score_hat is 27.741303861141205
+2019-05-29 00:51:04,305 - DEBUG : Current mean score_golden is 1.9894456770271063
+2019-05-29 00:51:18,683 - DEBUG : Now at 10303th data in epoch 0
+2019-05-29 00:51:18,685 - DEBUG : Current mean loss for train data is 26.377264380455017
+2019-05-29 00:51:18,688 - DEBUG : Current mean score_hat is 27.339338958263397
+2019-05-29 00:51:18,693 - DEBUG : Current mean score_golden is 1.962074751034379
+2019-05-29 00:51:30,318 - DEBUG : Now at 10335th data in epoch 0
+2019-05-29 00:51:30,320 - DEBUG : Current mean loss for train data is 23.31433856487274
+2019-05-29 00:51:30,324 - DEBUG : Current mean score_hat is 24.02389658987522
+2019-05-29 00:51:30,328 - DEBUG : Current mean score_golden is 1.7095578601583838
+2019-05-29 00:51:42,645 - DEBUG : Now at 10367th data in epoch 0
+2019-05-29 00:51:42,648 - DEBUG : Current mean loss for train data is 23.065015494823456
+2019-05-29 00:51:42,651 - DEBUG : Current mean score_hat is 23.767041712999344
+2019-05-29 00:51:42,656 - DEBUG : Current mean score_golden is 1.7020259536802769

@@ -2,8 +2,10 @@
 # The code is freely distributed under a MIT license. https://github.com/LxMLS/lxmls-toolkit/
 
 import numpy as np
+# from numba import jit
 from typing import List,Tuple
 
+# @jit(nopython=True)
 def eisner_decode(score_matrix:List[List[float]],gold:List[int]=None) -> List[int]:
     """
     Implementation of Eisner's algorithm.
@@ -77,6 +79,7 @@ def eisner_decode(score_matrix:List[List[float]],gold:List[int]=None) -> List[in
     backtrack_eisner(incomplete_backtrack, complete_backtrack, 0, N, 1, 1, heads)
     return heads.tolist()
 
+# @jit(nopython=True)
 def backtrack_eisner(incomplete_backtrack, complete_backtrack, s, t, direction, complete, heads):
     '''
     Backtracking step in Eisner's algorithm.
