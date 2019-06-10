@@ -12,7 +12,7 @@ import torch
 import torch.optim as optim
 import matplotlib.pyplot as plt
 from data_processor import ConllDataSet
-from mst_lstm import BiLSTM_Parser,margin_based_loss
+import mst_lstm
 from util import set_logger
 
 logger = set_logger("train.py")
@@ -39,9 +39,8 @@ def train(config_dict:Dict):
     config_dict["model_param"]["vocab_size"] = train_data.vocab_size
     config_dict["model_param"]["pos_size"]   = train_data.pos_size
 
-    # Init model and tracker
-    model = BiLSTM_Parser(**config_dict["model_param"])
-    tracker = init_tracker()
+    # Init model
+    model = mst_lstm.BiLSTM_Parser(**config_dict["model_param"])
 
     # Train setting
     optimizer = optim.Adam(model.parameters(),config_dict["learning_rate"])
@@ -49,14 +48,15 @@ def train(config_dict:Dict):
     batch_size = config_dict["batch_size"]
 
     # Start train
-    for epoch in range(epoch_num):
-        model.train()
+    tracker = init_tracker()
+    for epoch in range(epoch_num):  # epoch = 0
         running_tracker = init_running_tracker()
         for i,data in enumerate(train_data):  # i = 4; data = train_data[i]
             head_hat,score_hat,score_golden = model(*data)
-            loss = margin_based_loss(score_hat,score_golden)
+            loss = mst_lstm.margin_based_loss(score_hat,score_golden)
             (loss / batch_size).backward()
-            update_running_tracker(running_tracker,loss,score_hat,score_golden)
+            accuracy = 1 - (mst_lstm.compute_hamming_cost(head_hat,data[2]) / len(head_hat))
+            update_running_tracker(running_tracker,loss,score_hat,score_golden,accuracy)
             # Accumualte the gradient for each batch
             if (i % batch_size == (batch_size-1)) or (i == len(train_data)-1):
                 # Update param
@@ -69,13 +69,13 @@ def train(config_dict:Dict):
 
         # Report loss for this epoch in dev data
         with torch.no_grad():
-            model.eval()
+            model.is_train_mode = False
             running_loss_dev = 0
             for j,data in enumerate(dev_data):
                 head_hat,score_hat,score_golden = model(*data)
-                loss = margin_based_loss(score_hat,score_golden)
+                loss = mst_lstm.margin_based_loss(score_hat,score_golden)
                 running_loss_dev += loss.item()
-                if i % 1000 == 99:
+                if i % 1000 == 999:
                     logger.debug(f"Now validating model; {j}th dev data now")
             mean_loss_dev = running_loss_dev/len(dev_data)
             tracker["dev_loss"].append(mean_loss_dev)
@@ -102,15 +102,18 @@ def init_tracker():
     tracker["dev_loss"]     = []
     tracker["score_hat"]    = []
     tracker["score_golden"] = []
+    tracker["accuracy"]     = []
     return tracker
 
-def update_tracker(tracker:Dict,batch_size,loss_train,score_hat,score_golden):
+def update_tracker(tracker:Dict,batch_size,loss_train,score_hat,score_golden,accuracy):
     mean_loss_train   = loss_train/batch_size
     mean_score_hat    = score_hat/batch_size
     mean_score_golden = score_golden/batch_size
+    mean_accuracy     = accuracy/batch_size
     logger.debug(f"Current mean loss for train data is {mean_loss_train}")
     logger.debug(f"Current mean score_hat is {mean_score_hat}")
     logger.debug(f"Current mean score_golden is {mean_score_golden}")
+    logger.debug(f"Current mean accuracy is {mean_accuracy}")
     tracker["train_loss"].append(mean_loss_train)
     tracker["score_hat"].append(mean_score_hat)
     tracker["score_golden"].append(mean_score_golden)
@@ -118,15 +121,17 @@ def update_tracker(tracker:Dict,batch_size,loss_train,score_hat,score_golden):
 def init_running_tracker():
     """ Accumulate metrics for one process over batch """
     running_tracker = dict()
-    running_tracker["loss_train"] = 0
-    running_tracker["score_hat"] = 0
+    running_tracker["loss_train"]   = 0
+    running_tracker["score_hat"]    = 0
     running_tracker["score_golden"] = 0
+    running_tracker["accuracy"]     = 0
     return running_tracker
 
-def update_running_tracker(running_tracker,loss,score_hat,score_golden):
-    running_tracker["loss_train"] += loss.item()
-    running_tracker["score_hat"] += score_hat.item()
+def update_running_tracker(running_tracker,loss,score_hat,score_golden,accuracy):
+    running_tracker["loss_train"]   += loss.item()
+    running_tracker["score_hat"]    += score_hat.item()
     running_tracker["score_golden"] += score_golden.item()
+    running_tracker["accuracy"]     += accuracy
     return running_tracker
 
 
@@ -141,7 +146,7 @@ if __name__ == '__main__':
         "model_param":model_param,
         "word_dropout":True,
         "learning_rate":0.001,
-        "epoch_num":10,
+        "epoch_num":30,
         "batch_size":32
     }
 

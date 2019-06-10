@@ -3,7 +3,7 @@ For Hydrogen;
 %load_ext autoreload
 %autoreload 2
 """
-from typing import List,Tuple,Union
+from typing import List,Tuple,Union,Optional
 import numpy as np
 import torch
 import torch.autograd as autograd
@@ -46,15 +46,13 @@ class BiLSTM_Parser(nn.Module):
         self.lstm = nn.LSTM(input_size   = word_embed_dim+pos_embed_dim,
                             hidden_size  = lstm_hidden_dim // 2,
                             num_layers   = num_layers,
-                            bidirectional= True,
-                            dropout=0.25)
+                            bidirectional= True)
         self.Linear_head = nn.Linear(lstm_hidden_dim,mlp_hidden_dim //2)
         self.Linear_modif = nn.Linear(lstm_hidden_dim,mlp_hidden_dim //2)
         self.output_layer = nn.Linear(mlp_hidden_dim,1)  # output layer
 
         # Store intermediate score matrices here (values are float, not tensor)
         self.score_matrix_float = None
-
         # Is the model used in training or inference
         self.is_train_mode = True
 
@@ -109,17 +107,10 @@ class BiLSTM_Parser(nn.Module):
             score += score_matrix[h][m]
         return score
 
-    def compute_hamming_cost(self,head_hat:List[int],head_golden:List[int]) -> int:
-        # Ignore ROOT
-        head_hat = np.array(head_hat[1:])
-        head_golden = np.array(head_golden[1:])
-        # Number of head not matching
-        return int(np.sum(head_hat != head_golden))
-
     def forward(self,
                 word_tensor:torch.LongTensor,
                 pos_tensor :torch.LongTensor,
-                head_golden:List[int] = None)  \
+                head_golden:Optional[List[int]] = None)  \
                 -> Tuple[List[int],torch.Tensor,Union[torch.Tensor,None]]:
 
         # Check inconsistent argument and mode
@@ -137,10 +128,17 @@ class BiLSTM_Parser(nn.Module):
         score_hat = self.compute_head_score(score_matrix,head_hat)
         if head_golden is not None:
             score_golden = self.compute_head_score(score_matrix,head_golden)
-            score_hat += self.compute_hamming_cost(head_hat,head_golden)
+            score_hat += compute_hamming_cost(head_hat,head_golden)
         else:
             score_golden = None
         return head_hat,score_hat,score_golden
+
+def compute_hamming_cost(head_hat:List[int],head_golden:List[int]) -> int:
+    # Ignore ROOT
+    head_hat = np.array(head_hat[1:])
+    head_golden = np.array(head_golden[1:])
+    # Number of head not matching
+    return int(np.sum(head_hat != head_golden))
 
 # Loss function
 def margin_based_loss(score_hat:torch.Tensor,

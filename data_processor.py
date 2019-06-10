@@ -1,10 +1,14 @@
+import csv
 from collections import Counter
 from pathlib import Path
 from typing import Generator,List,Dict,Tuple,Optional
 import re
 import numpy as np
+# import pandas as pd
+from tqdm import tqdm
+import torch
 from torch import LongTensor
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset,TensorDataset,DataLoader, RandomSampler
 from pytorch_pretrained_bert import BertTokenizer, BertModel
 from util import set_logger
 
@@ -178,6 +182,112 @@ class ConllDataSet_BERT(Dataset):
     def __getitem__(self,idx:int) -> Tuple[LongTensor,LongTensor,List[int]]:
         return  self.data[idx]
 
+def create_BERT_input(input_path,output_dir,tokenizer,labels,max_seq_length=512,mode="test"):
+    """
+    Function:
+    Create a csv file which is a valid input for BERT model;
+    * Tokenize using BERT tokenizer
+    * Convert the token to index
+    * Append tags ([CLS],[SEP])
+    * Create sengment id and input mask
+    * Pad the sequence
+    Arg:
+    input_path     : The csv file containing the text data.
+                     First column is the label, second column is the text data.
+    output_dir     : The path of directory where the outputs is saved.
+    tokenizer      : The BERT tokenizer used for tokenization.
+    max_seq_length : The maximum length of the input.
+                     The upper limmit is 512 by construction of BERT model.
+    """
+
+    # setup
+    assert max_seq_length <= 512
+    logger = set_logger()
+    input_path = Path(input_path)
+    if mode == "test":
+        logger.debug("TEST mode: the script will stop after processing 100 data")
+
+    # map label to index
+    label2index = dict()
+    for index,label in enumerate(labels):
+        label2index[label] = index
+
+    # result path and accumulators
+    contents = {"input_idxs","input_mask","segment_id","label"}
+    writer_dict = {}
+    for c in contents:
+        result_path = Path(output_dir,f"{c}.csv")
+        writer_dict[c] = csv.writer(result_path.open("w"),lineterminator="\n")
+
+    with input_path.open(mode="r") as f:
+        original_data = csv.reader(f)
+        next(original_data)
+        for count, row in tqdm(enumerate(original_data)):
+            text = row[0]
+            label_index = label2index[int(row[1])]
+            tokens = tokenizer.tokenize(text)
+
+            # truncate to maximum length
+            # Account for [CLS] and [SEP] with "- 2"
+            if len(tokens) > max_seq_length - 2:
+                tokens = tokens[:(max_seq_length - 2)]
+
+            # append tag
+            tokens = ["[CLS]"] + tokens + ["[SEP]"]
+
+            # convert the tokens to index
+            input_idxs = tokenizer.convert_tokens_to_ids(tokens)
+
+            # The mask has 1 for real tokens and 0 for padding tokens
+            # Zero-pad up to the sequence length
+            input_mask = [1] * len(input_idxs)
+            padding = [0] * (max_seq_length - len(input_idxs))
+            input_idxs += padding
+            input_mask += padding
+
+            # create segment id (currently single sentence is assumed as input)
+            segment_id = [0] * len(input_idxs)
+
+            assert len(input_idxs) == max_seq_length
+            assert len(input_mask) == max_seq_length
+            assert len(segment_id) == max_seq_length
+
+            writer_dict["input_idxs"].writerow(input_idxs)
+            writer_dict["input_mask"].writerow(input_mask)
+            writer_dict["segment_id"].writerow(segment_id)
+            writer_dict["label"].writerow([label_index])
+
+            # show the log for the first 5 data
+            if count < 5:
+                logger.debug(f"tokens:      {' '.join([str(x) for x in tokens])}")
+                logger.debug(f"input_idxs:  {' '.join([str(x) for x in input_idxs])}")
+                logger.debug(f"input_mask:  {' '.join([str(x) for x in input_mask])}")
+                logger.debug(f"segment_id: {' '.join([str(x) for x in segment_id])}")
+
+            if mode == "test" and count == 99:
+                logger.debug("Terminate: test mode finished")
+                break
+
+def load_BERT_input(bert_input_dir,batch_size=32):
+    """ Load BERT input and wrap by DataLoader"""
+
+    logger = set_logger()
+
+    contents = ["input_idxs","input_mask","segment_id","label"]
+    input_tensors = []
+    for c in contents:
+        logger.debug(f"loading {c}...")
+        bert_input_path = Path(bert_input_dir,f"{c}.csv")
+        bert_input_tensor = torch.LongTensor(pd.read_csv(bert_input_path).values)
+        input_tensors.append(bert_input_tensor)
+
+    logger.debug("wrapping the tensors into DataLoader...")
+    data_set =  TensorDataset(*tuple(input_tensors))
+    sampler = RandomSampler(data_set)
+    data_loader = DataLoader(data_set,sampler=sampler,batch_size=batch_size)
+    logger.debug("load finished")
+    return data_loader
+
 if __name__ == '__main__':
     # Test
     test_path = Path("data","en-universal-test.conll")
@@ -188,3 +298,16 @@ if __name__ == '__main__':
             print(entry.form)
             print(entry.head)
         break
+
+    # create
+    # from pytorch_pretrained_bert.tokenization import BertTokenizer
+    # tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", do_lower_case=True)
+    #
+    # for which in ["train","validation","test"]: # which = "train"
+    #     input_path = f"../../data/processed/sentiment_tweet_noise_cleansed/{which}.csv"
+    #     output_dir = f"../../data/test/processed/sentiment_BERT/"
+    #     create_BERT_input(input_path,output_dir,tokenizer,[0,2,4],max_seq_length=100,mode="test")
+
+    # bert_input_dir = f"../../data/test/processed/sentiment_BERT/"
+    # batch_size = 32
+    # dataloader = load_BERT_input(bert_input_dir,batch_size)
