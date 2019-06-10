@@ -69,7 +69,6 @@ def train(config_dict:Dict):
 
         # Report loss for this epoch in dev data
         with torch.no_grad():
-            model.is_train_mode = False
             running_loss_dev = 0
             for j,data in enumerate(dev_data):
                 head_hat,score_hat,score_golden = model(*data)
