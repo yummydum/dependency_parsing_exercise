@@ -53,9 +53,9 @@ def train(config_dict:Dict):
         running_tracker = init_running_tracker()
         for i,data in enumerate(train_data):  # i = 4; data = train_data[i]
             head_hat,score_hat,score_golden = model(*data)
-            loss = max(0,1-(score_golden - score_hat))
-            (loss / batch_size).backward()
-            # accuracy = 1 - (mst_lstm.compute_hamming_cost(head_hat,data[2]) / len(head_hat))
+            loss = 1-(score_golden - score_hat)
+            if loss.item() > 0:
+                (loss / batch_size).backward()
             accuracy = sum([int(i == j) for i,j in zip(head_hat,data[2])])/len(head_hat)
             update_running_tracker(running_tracker,loss,score_hat,score_golden,accuracy)
             # Accumualte the gradient for each batch
