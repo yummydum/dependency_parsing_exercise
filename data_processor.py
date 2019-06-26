@@ -1,15 +1,22 @@
+"""
+For Hydrogen;
+%load_ext autoreload
+%autoreload 2
+"""
+
 import csv
 from collections import Counter
 from pathlib import Path
+import pickle
 from typing import Generator,List,Dict,Tuple,Optional
 import re
 import numpy as np
 # import pandas as pd
-from tqdm import tqdm
+# from tqdm import tqdm
 import torch
 from torch import LongTensor
 from torch.utils.data import Dataset,TensorDataset,DataLoader, RandomSampler
-from pytorch_pretrained_bert import BertTokenizer, BertModel
+# from pytorch_pretrained_bert import BertTokenizer, BertModel
 from util import set_logger
 
 logger = set_logger(__name__)
@@ -17,14 +24,14 @@ np.random.seed(1)
 
 class ConllEntry:
     """
-    Represents one entry in the CoNLL data setself.
+    Represents one entry in the CoNLL data set
     "_" is filled in for missing values.
 
-    word_id    : Token counter, starting at 1 for each new sentence.
-    form  : The form of the word.
-    pos   : POS tag of the word.
-    cpos  : CPOS tag of the word.
-    head  : Head word of the word
+    word_id : Token counter, starting at 0 (ROOT) for each new sentence.
+    form    : The form of the word.
+    pos     : POS tag of the word.
+    cpos    : Coarse POS tag tag of the word.
+    head    : The index of head word of the word
     relation : The label of the dependency relation
     """
     def __init__(self, word_id, form, pos, cpos, head, relation):
@@ -49,8 +56,8 @@ def read_conll(conll_path:Path) -> Generator[List[ConllEntry],None,None]:
     root = ConllEntry(0,'*root*','ROOT-POS','ROOT-CPOS',-1,'rroot')
     entry_list = [root]
     # Loop and generate list of string representing the sentence
-    with conll_path.open(mode="r",encoding="utf-8") as f:
-        for line in f:
+    with conll_path.open(mode="r",encoding="utf-8") as f: # f = conll_path.open(), f.close()
+        for line in f:   # line = next(f)
             tok = line.strip().split('\t')
             # if empty line, yield the sentence and init the next sentence
             if not tok or line.strip() == '':
@@ -64,10 +71,7 @@ def read_conll(conll_path:Path) -> Generator[List[ConllEntry],None,None]:
                 cpos    = tok[3]
                 pos     = tok[4]
                 cpos    = tok[5]
-                if tok[6] != '_':
-                    head = int(tok[6])
-                else:  # if the word does not have head, it's head is ROOT
-                    head = -1
+                head    = int(tok[6])
                 relation = tok[7]
                 new_entry = ConllEntry(word_id, form, pos, cpos,head,relation)
                 entry_list.append(new_entry)
@@ -80,23 +84,13 @@ def count_word_stat(conll_path:Path) -> Tuple[Counter,Counter,Counter]:
     words_count = Counter()
     pos_count   = Counter()
     rel_count   = Counter()
-
     conll_gen = read_conll(conll_path)
     logger.debug("Now counting word stats...")
-    for sentence in conll_gen:
-        words    = []
-        pos_tags = []
-        relations= []
-        # collect count for this sentence
-        for entry in sentence:
-            words.append(entry.norm)
-            pos_tags.append(entry.pos)
-            relations.append(entry.relation)
+    for i,sentence in enumerate(conll_gen):
         # update counter
         words_count.update([entry.norm for entry in sentence])
         pos_count.update([entry.pos for entry in sentence])
         rel_count.update([entry.relation for entry in sentence])
-
     return words_count,pos_count,rel_count
 
 class ConllDataSet(Dataset):
@@ -128,7 +122,6 @@ class ConllDataSet(Dataset):
         # Size of input (add 1 for unknown token)
         self.vocab_size = len(self.word2index.keys()) + 1
         self.pos_size   = len(self.pos2index.keys())  + 1
-
 
         # Preprocess sentences
         logger.debug("Now preprocessing data...")
@@ -290,14 +283,17 @@ def load_BERT_input(bert_input_dir,batch_size=32):
 
 if __name__ == '__main__':
     # Test
-    test_path = Path("data","en-universal-test.conll")
-    conll_generator = read_conll(test_path)
-    for sentence in conll_generator:
+    conll_path = Path("data","en-universal-train.conll")
+    conll_generator = read_conll(conll_path)
+    for i,sentence in enumerate(conll_generator):
         # show word and it's head
-        for entry in sentence:
-            print(entry.form)
-            print(entry.head)
-        break
+        # for entry in sentence:
+        #     print(entry.form)
+        #     print(entry.head)
+        # if i == 10:
+        #     break
+        pass
+
 
     # create
     # from pytorch_pretrained_bert.tokenization import BertTokenizer

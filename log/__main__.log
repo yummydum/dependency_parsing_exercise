@@ -3711,3 +3711,888 @@
 2019-05-29 00:51:42,648 - DEBUG : Current mean loss for train data is 23.065015494823456
 2019-05-29 00:51:42,651 - DEBUG : Current mean score_hat is 23.767041712999344
 2019-05-29 00:51:42,656 - DEBUG : Current mean score_golden is 1.7020259536802769
+2019-06-11 16:14:02,559 - DEBUG : Data flowed through the network!
+2019-06-11 16:14:06,959 - DEBUG : <RsubBackward1 object at 0x121914da0>
+2019-06-11 16:14:06,965 - DEBUG : <SubBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,966 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,969 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,969 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,970 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,971 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,971 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,972 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,973 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,974 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,975 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,977 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,977 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,978 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,978 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,979 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,979 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,980 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,981 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,982 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,983 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,984 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,985 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,986 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,987 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,988 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,989 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,990 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,991 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,992 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,993 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,994 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,995 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,997 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:06,998 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:06,999 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,002 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,004 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,009 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,010 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,012 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,013 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,014 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,015 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,016 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,016 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,017 - DEBUG : <AddBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,018 - DEBUG : <AddBackward0 object at 0x1219556a0>
+2019-06-11 16:14:07,018 - DEBUG : <SqueezeBackward3 object at 0x1218e6fd0>
+2019-06-11 16:14:07,019 - DEBUG : <MmBackward object at 0x1219556a0>
+2019-06-11 16:14:07,020 - DEBUG : <UnsqueezeBackward0 object at 0x1218e6fd0>
+2019-06-11 16:14:07,021 - DEBUG : <TanhBackward object at 0x1219556a0>
+2019-06-11 16:14:07,021 - DEBUG : <CatBackward object at 0x1218e6fd0>
+2019-06-11 16:14:07,022 - DEBUG : <SelectBackward object at 0x1219556a0>
+2019-06-11 16:14:07,023 - DEBUG : <AddmmBackward object at 0x1218e6fd0>
+2019-06-11 16:48:53,372 - DEBUG : <RsubBackward1 object at 0x123d82f60>
+2019-06-11 16:48:53,379 - DEBUG : <SubBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,380 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,382 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,383 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,384 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,385 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,386 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,386 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,387 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,387 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,389 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,389 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,390 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,391 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,392 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,394 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,396 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,397 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,398 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,399 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,400 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,401 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,402 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,403 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,405 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,407 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,408 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,409 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,410 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,410 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,411 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,412 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,413 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,415 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,416 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,417 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,418 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,419 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,420 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,422 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,423 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,424 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,427 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,429 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,431 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,432 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,433 - DEBUG : <AddBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,435 - DEBUG : <AddBackward0 object at 0x123d82f60>
+2019-06-11 16:48:53,436 - DEBUG : <SqueezeBackward3 object at 0x123e22ac8>
+2019-06-11 16:48:53,438 - DEBUG : <MmBackward object at 0x123d82f60>
+2019-06-11 16:48:53,439 - DEBUG : <UnsqueezeBackward0 object at 0x123e22ac8>
+2019-06-11 16:48:53,440 - DEBUG : <TanhBackward object at 0x123d82f60>
+2019-06-11 16:48:53,442 - DEBUG : <CatBackward object at 0x123e22ac8>
+2019-06-11 16:48:53,444 - DEBUG : <SelectBackward object at 0x123d82f60>
+2019-06-11 16:48:53,445 - DEBUG : <AddmmBackward object at 0x123e22ac8>
+2019-06-11 16:50:22,383 - DEBUG : <RsubBackward1 object at 0x123ad6c88>
+2019-06-11 16:50:22,385 - DEBUG : <SubBackward0 object at 0x123da7518>
+2019-06-11 16:50:22,385 - DEBUG : <AddBackward0 object at 0x123d827b8>
+2019-06-11 16:50:22,386 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,387 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,388 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,389 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,391 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,392 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,393 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,394 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,395 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,396 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,397 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,397 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,398 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,399 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,399 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,400 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,400 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,401 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,401 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,402 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,403 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,404 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,404 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,404 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,405 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,406 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,407 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,408 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,410 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,412 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,413 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,414 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,415 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,417 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,418 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,419 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,420 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,421 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,423 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,424 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,425 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,426 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,428 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,430 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,432 - DEBUG : <AddBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,432 - DEBUG : <AddBackward0 object at 0x123ac3278>
+2019-06-11 16:50:22,433 - DEBUG : <SqueezeBackward3 object at 0x123da79b0>
+2019-06-11 16:50:22,435 - DEBUG : <MmBackward object at 0x123ac3278>
+2019-06-11 16:50:22,437 - DEBUG : <UnsqueezeBackward0 object at 0x123da79b0>
+2019-06-11 16:50:22,439 - DEBUG : <TanhBackward object at 0x123ac3278>
+2019-06-11 16:50:22,440 - DEBUG : <CatBackward object at 0x123da79b0>
+2019-06-11 16:50:22,442 - DEBUG : <SelectBackward object at 0x123ac3278>
+2019-06-11 16:50:22,444 - DEBUG : <AddmmBackward object at 0x123da79b0>
+2019-06-11 19:15:17,312 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:16:11,034 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:18:43,739 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:20:19,164 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:20:19,166 - DEBUG : <CatBackward object at 0x12339dda0>
+2019-06-11 19:20:19,166 - DEBUG : <EmbeddingBackward object at 0x12339d160>
+2019-06-11 19:20:32,181 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:20:32,182 - DEBUG : <CatBackward object at 0x12339dda0>
+2019-06-11 19:20:32,183 - DEBUG : <EmbeddingBackward object at 0x12339d160>
+2019-06-11 19:20:51,504 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:20:51,505 - DEBUG : <CatBackward object at 0x12339dda0>
+2019-06-11 19:20:51,506 - DEBUG : <EmbeddingBackward object at 0x12339d160>
+2019-06-11 19:21:30,990 - DEBUG : <ViewBackward object at 0x12339db00>
+2019-06-11 19:21:30,992 - DEBUG : <CatBackward object at 0x12339dda0>
+2019-06-11 19:21:30,993 - DEBUG : <EmbeddingBackward object at 0x12339d160>
+2019-06-11 19:21:44,876 - DEBUG : <AddmmBackward object at 0x123d789b0>
+2019-06-11 19:21:49,878 - DEBUG : <ViewBackward object at 0x123fde2e8>
+2019-06-11 19:21:49,879 - DEBUG : <CatBackward object at 0x123fde8d0>
+2019-06-11 19:21:49,880 - DEBUG : <StackBackward object at 0x123e57c88>
+2019-06-11 19:21:49,881 - DEBUG : <MulBackward0 object at 0x123ad9358>
+2019-06-11 19:21:49,882 - DEBUG : <SigmoidBackward object at 0x123389fd0>
+2019-06-11 19:21:49,883 - DEBUG : <SplitBackward object at 0x123fde9b0>
+2019-06-11 19:21:49,884 - DEBUG : <AddBackward0 object at 0x123389fd0>
+2019-06-11 19:21:49,886 - DEBUG : <AddmmBackward object at 0x123ad9358>
+2019-06-11 19:22:24,246 - DEBUG : <AddBackward0 object at 0x123397a20>
+2019-06-11 19:22:24,248 - DEBUG : <SqueezeBackward3 object at 0x123e06a90>
+2019-06-11 19:22:24,248 - DEBUG : <MmBackward object at 0x123389fd0>
+2019-06-11 19:22:24,249 - DEBUG : <UnsqueezeBackward0 object at 0x123e06a90>
+2019-06-11 19:22:24,250 - DEBUG : <TanhBackward object at 0x123389fd0>
+2019-06-11 19:22:24,251 - DEBUG : <CatBackward object at 0x123e06a90>
+2019-06-11 19:22:24,252 - DEBUG : <SelectBackward object at 0x123389fd0>
+2019-06-11 19:22:24,254 - DEBUG : <AddmmBackward object at 0x123e06a90>
+2019-06-11 19:23:06,584 - DEBUG : <AddBackward0 object at 0x1233977f0>
+2019-06-11 19:23:06,586 - DEBUG : <SqueezeBackward3 object at 0x12339d9b0>
+2019-06-11 19:23:06,587 - DEBUG : <MmBackward object at 0x123ad9cc0>
+2019-06-11 19:23:06,588 - DEBUG : <UnsqueezeBackward0 object at 0x12339d9b0>
+2019-06-11 19:23:06,589 - DEBUG : <TanhBackward object at 0x123ad9cc0>
+2019-06-11 19:23:06,590 - DEBUG : <CatBackward object at 0x12339d9b0>
+2019-06-11 19:23:06,591 - DEBUG : <SelectBackward object at 0x123ad9cc0>
+2019-06-11 19:23:06,592 - DEBUG : <AddmmBackward object at 0x12339d9b0>
+2019-06-11 19:23:19,060 - DEBUG : <AddBackward0 object at 0x124115d68>
+2019-06-11 19:23:19,062 - DEBUG : <SqueezeBackward3 object at 0x12413ada0>
+2019-06-11 19:23:19,063 - DEBUG : <MmBackward object at 0x12413a710>
+2019-06-11 19:23:19,063 - DEBUG : <UnsqueezeBackward0 object at 0x12413ada0>
+2019-06-11 19:23:19,064 - DEBUG : <TanhBackward object at 0x12413a710>
+2019-06-11 19:23:19,065 - DEBUG : <CatBackward object at 0x12413ada0>
+2019-06-11 19:23:19,066 - DEBUG : <SelectBackward object at 0x12413a710>
+2019-06-11 19:23:19,066 - DEBUG : <AddmmBackward object at 0x12413ada0>
+2019-06-11 19:25:13,137 - DEBUG : <AddBackward0 object at 0x123fba048>
+2019-06-11 19:25:13,139 - DEBUG : <SqueezeBackward3 object at 0x123e99cf8>
+2019-06-11 19:25:13,139 - DEBUG : <MmBackward object at 0x123f92e48>
+2019-06-11 19:25:13,140 - DEBUG : <UnsqueezeBackward0 object at 0x123e99cf8>
+2019-06-11 19:25:13,141 - DEBUG : <TanhBackward object at 0x123f92e48>
+2019-06-11 19:25:13,142 - DEBUG : <CatBackward object at 0x123e99cf8>
+2019-06-11 19:25:13,143 - DEBUG : <SelectBackward object at 0x123f92e48>
+2019-06-11 19:25:13,144 - DEBUG : <AddmmBackward object at 0x123e99cf8>
+2019-06-11 19:25:13,145 - DEBUG : <AccumulateGrad object at 0x123fde438>
+2019-06-11 19:25:17,888 - DEBUG : <AddBackward0 object at 0x123fbabe0>
+2019-06-11 19:25:17,890 - DEBUG : <SqueezeBackward3 object at 0x1239f5240>
+2019-06-11 19:25:17,891 - DEBUG : <MmBackward object at 0x123fbabe0>
+2019-06-11 19:25:17,892 - DEBUG : <UnsqueezeBackward0 object at 0x1239f5240>
+2019-06-11 19:25:17,892 - DEBUG : <TanhBackward object at 0x123d78908>
+2019-06-11 19:25:17,893 - DEBUG : <CatBackward object at 0x1239f5240>
+2019-06-11 19:25:17,893 - DEBUG : <SelectBackward object at 0x123d78908>
+2019-06-11 19:25:17,895 - DEBUG : <AddmmBackward object at 0x1239f5240>
+2019-06-11 19:25:17,896 - DEBUG : <AccumulateGrad object at 0x123fde438>
+2019-06-11 19:25:49,577 - DEBUG : <RsubBackward1 object at 0x123ad6c88>
+2019-06-11 19:25:49,583 - DEBUG : <SubBackward0 object at 0x123da7518>
+2019-06-11 19:25:49,584 - DEBUG : <AddBackward0 object at 0x123d827b8>
+2019-06-11 19:25:49,585 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,586 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,587 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,588 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,589 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,590 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,591 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,592 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,592 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,593 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,593 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,594 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,595 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,595 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,596 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,597 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,598 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,599 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,600 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,601 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,603 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,605 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,606 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,607 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,608 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,609 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,610 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,611 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,612 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,614 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,615 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,616 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,620 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,621 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,623 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,624 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,625 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,627 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,629 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,630 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,631 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,632 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,633 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,634 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,636 - DEBUG : <AddBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,637 - DEBUG : <AddBackward0 object at 0x123f78da0>
+2019-06-11 19:25:49,639 - DEBUG : <SqueezeBackward3 object at 0x123f78278>
+2019-06-11 19:25:49,641 - DEBUG : <MmBackward object at 0x123f78da0>
+2019-06-11 19:25:49,642 - DEBUG : <UnsqueezeBackward0 object at 0x123f78278>
+2019-06-11 19:25:49,644 - DEBUG : <TanhBackward object at 0x123f78da0>
+2019-06-11 19:25:49,646 - DEBUG : <CatBackward object at 0x123f78278>
+2019-06-11 19:25:49,648 - DEBUG : <SelectBackward object at 0x123f78da0>
+2019-06-11 19:25:49,649 - DEBUG : <AddmmBackward object at 0x123f78278>
+2019-06-11 19:25:49,650 - DEBUG : <AccumulateGrad object at 0x1219556a0>
+2019-06-11 19:25:53,703 - DEBUG : <RsubBackward1 object at 0x123ad6c88>
+2019-06-11 19:25:53,704 - DEBUG : <SubBackward0 object at 0x123da7518>
+2019-06-11 19:25:53,705 - DEBUG : <AddBackward0 object at 0x123d827b8>
+2019-06-11 19:25:53,706 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,706 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,707 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,708 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,709 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,710 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,712 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,713 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,714 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,716 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,716 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,717 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,718 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,719 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,720 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,721 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,722 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,723 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,724 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,724 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,725 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,726 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,727 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,728 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,729 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,729 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,730 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,731 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,731 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,732 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,733 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,733 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,734 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,735 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,735 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,736 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,737 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,738 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,739 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,740 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,741 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,742 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,743 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,744 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,746 - DEBUG : <AddBackward0 object at 0x124127860>
+2019-06-11 19:25:53,748 - DEBUG : <AddBackward0 object at 0x12399c358>
+2019-06-11 19:25:53,750 - DEBUG : <SqueezeBackward3 object at 0x124127860>
+2019-06-11 19:25:53,751 - DEBUG : <MmBackward object at 0x12399c358>
+2019-06-11 19:25:53,752 - DEBUG : <UnsqueezeBackward0 object at 0x124127860>
+2019-06-11 19:25:53,754 - DEBUG : <TanhBackward object at 0x12399c358>
+2019-06-11 19:25:53,755 - DEBUG : <CatBackward object at 0x124127860>
+2019-06-11 19:25:53,755 - DEBUG : <SelectBackward object at 0x12399c358>
+2019-06-11 19:25:53,758 - DEBUG : <AddmmBackward object at 0x124127860>
+2019-06-11 19:25:53,759 - DEBUG : <AccumulateGrad object at 0x1219556a0>
+2019-06-11 19:34:04,876 - DEBUG : <AddmmBackward object at 0x123faf438>
+2019-06-11 19:34:06,649 - DEBUG : <AddmmBackward object at 0x123e2fdd8>
+2019-06-11 19:34:11,494 - DEBUG : <AddmmBackward object at 0x123faf0b8>
+2019-06-11 19:34:22,152 - DEBUG : <AddmmBackward object at 0x123fafba8>
+2019-06-11 19:34:55,223 - DEBUG : <AddmmBackward object at 0x1233bbda0>
+2019-06-11 19:34:55,225 - DEBUG : <AccumulateGrad object at 0x123fde438>
+2019-06-11 19:35:05,896 - DEBUG : <AddmmBackward object at 0x1233bb8d0>
+2019-06-11 19:35:05,898 - DEBUG : <AccumulateGrad object at 0x123fde438>
+2019-06-11 19:35:10,065 - DEBUG : <AddmmBackward object at 0x1233bb8d0>
+2019-06-26 18:54:36,514 - DEBUG : 0th data now
+2019-06-26 18:54:37,347 - DEBUG : 100th data now
+2019-06-26 18:54:39,767 - DEBUG : 200th data now
+2019-06-26 18:54:43,548 - DEBUG : 300th data now
+2019-06-26 18:54:48,551 - DEBUG : 400th data now
+2019-06-26 18:54:54,846 - DEBUG : 500th data now
+2019-06-26 18:55:02,447 - DEBUG : 600th data now
+2019-06-26 18:55:11,591 - DEBUG : 700th data now
+2019-06-26 18:55:22,341 - DEBUG : 800th data now
+2019-06-26 18:55:34,380 - DEBUG : 900th data now
+2019-06-26 18:55:47,955 - DEBUG : 1000th data now
+2019-06-26 18:56:03,354 - DEBUG : 1100th data now
+2019-06-26 18:56:20,299 - DEBUG : 1200th data now
+2019-06-26 18:56:39,105 - DEBUG : 1300th data now
+2019-06-26 18:56:58,743 - DEBUG : 1400th data now
+2019-06-26 18:58:51,452 - DEBUG : 0th data now
+2019-06-26 18:58:52,268 - DEBUG : 100th data now
+2019-06-26 18:58:54,598 - DEBUG : 200th data now
+2019-06-26 18:58:58,323 - DEBUG : 300th data now
+2019-06-26 18:59:03,283 - DEBUG : 400th data now
+2019-06-26 18:59:09,548 - DEBUG : 500th data now
+2019-06-26 18:59:17,022 - DEBUG : 600th data now
+2019-06-26 18:59:25,890 - DEBUG : 700th data now
+2019-06-26 18:59:36,184 - DEBUG : 800th data now
+2019-06-26 18:59:47,909 - DEBUG : 900th data now
+2019-06-26 19:09:07,331 - DEBUG : Now counting word stats...
+2019-06-26 19:09:07,361 - DEBUG : 0th data now
+2019-06-26 19:09:08,788 - DEBUG : 100th data now
+2019-06-26 19:09:10,321 - DEBUG : 200th data now
+2019-06-26 19:09:12,051 - DEBUG : 300th data now
+2019-06-26 19:09:13,927 - DEBUG : 400th data now
+2019-06-26 19:09:15,923 - DEBUG : 500th data now
+2019-06-26 19:09:18,042 - DEBUG : 600th data now
+2019-06-26 19:09:20,329 - DEBUG : 700th data now
+2019-06-26 19:09:22,770 - DEBUG : 800th data now
+2019-06-26 19:09:25,620 - DEBUG : 900th data now
+2019-06-26 19:09:28,344 - DEBUG : 1000th data now
+2019-06-26 19:09:31,104 - DEBUG : 1100th data now
+2019-06-26 19:09:34,142 - DEBUG : 1200th data now
+2019-06-26 19:09:37,303 - DEBUG : 1300th data now
+2019-06-26 19:09:40,614 - DEBUG : 1400th data now
+2019-06-26 19:09:44,147 - DEBUG : 1500th data now
+2019-06-26 19:09:47,738 - DEBUG : 1600th data now
+2019-06-26 19:09:51,471 - DEBUG : 1700th data now
+2019-06-26 19:09:55,476 - DEBUG : 1800th data now
+2019-06-26 19:09:59,858 - DEBUG : 1900th data now
+2019-06-26 19:10:04,293 - DEBUG : 2000th data now
+2019-06-26 19:10:09,069 - DEBUG : 2100th data now
+2019-06-26 19:10:13,757 - DEBUG : 2200th data now
+2019-06-26 19:10:19,503 - DEBUG : 2300th data now
+2019-06-26 19:10:25,130 - DEBUG : 2400th data now
+2019-06-26 19:10:30,979 - DEBUG : 2500th data now
+2019-06-26 19:10:36,767 - DEBUG : 2600th data now
+2019-06-26 19:10:42,815 - DEBUG : 2700th data now
+2019-06-26 19:10:48,809 - DEBUG : 2800th data now
+2019-06-26 19:10:55,363 - DEBUG : 2900th data now
+2019-06-26 19:11:02,013 - DEBUG : 3000th data now
+2019-06-26 19:11:08,977 - DEBUG : 3100th data now
+2019-06-26 19:11:16,086 - DEBUG : 3200th data now
+2019-06-26 19:11:23,557 - DEBUG : 3300th data now
+2019-06-26 19:11:30,966 - DEBUG : 3400th data now
+2019-06-26 19:11:38,718 - DEBUG : 3500th data now
+2019-06-26 19:11:46,764 - DEBUG : 3600th data now
+2019-06-26 19:11:54,471 - DEBUG : 3700th data now
+2019-06-26 19:12:02,887 - DEBUG : 3800th data now
+2019-06-26 19:12:11,117 - DEBUG : 3900th data now
+2019-06-26 19:12:19,295 - DEBUG : 4000th data now
+2019-06-26 19:12:27,430 - DEBUG : 4100th data now
+2019-06-26 19:12:35,738 - DEBUG : 4200th data now
+2019-06-26 19:12:44,449 - DEBUG : 4300th data now
+2019-06-26 19:12:53,584 - DEBUG : 4400th data now
+2019-06-26 19:13:02,989 - DEBUG : 4500th data now
+2019-06-26 19:13:12,113 - DEBUG : 4600th data now
+2019-06-26 19:13:21,401 - DEBUG : 4700th data now
+2019-06-26 19:13:30,717 - DEBUG : 4800th data now
+2019-06-26 19:13:40,778 - DEBUG : 4900th data now
+2019-06-26 19:13:51,469 - DEBUG : 5000th data now
+2019-06-26 19:14:02,796 - DEBUG : 5100th data now
+2019-06-26 19:14:13,909 - DEBUG : 5200th data now
+2019-06-26 19:14:24,587 - DEBUG : 5300th data now
+2019-06-26 19:14:35,972 - DEBUG : 5400th data now
+2019-06-26 19:14:47,325 - DEBUG : 5500th data now
+2019-06-26 19:14:58,054 - DEBUG : 5600th data now
+2019-06-26 19:15:09,204 - DEBUG : 5700th data now
+2019-06-26 19:15:21,002 - DEBUG : 5800th data now
+2019-06-26 19:15:32,868 - DEBUG : 5900th data now
+2019-06-26 19:15:45,183 - DEBUG : 6000th data now
+2019-06-26 19:15:58,103 - DEBUG : 6100th data now
+2019-06-26 19:16:10,063 - DEBUG : 6200th data now
+2019-06-26 19:16:22,980 - DEBUG : 6300th data now
+2019-06-26 19:16:35,623 - DEBUG : 6400th data now
+2019-06-26 19:16:48,626 - DEBUG : 6500th data now
+2019-06-26 19:17:01,874 - DEBUG : 6600th data now
+2019-06-26 19:17:14,371 - DEBUG : 6700th data now
+2019-06-26 19:17:28,096 - DEBUG : 6800th data now
+2019-06-26 19:57:47,243 - DEBUG : 0th data now
+2019-06-26 19:57:56,861 - DEBUG : 100th data now
+2019-06-26 19:58:06,848 - DEBUG : 200th data now
+2019-06-26 19:58:17,133 - DEBUG : 300th data now
+2019-06-26 19:58:27,168 - DEBUG : 400th data now
+2019-06-26 19:58:37,454 - DEBUG : 500th data now
+2019-06-26 19:58:48,294 - DEBUG : 600th data now
+2019-06-26 19:58:59,388 - DEBUG : 700th data now
+2019-06-26 19:59:09,692 - DEBUG : 800th data now
+2019-06-26 19:59:20,589 - DEBUG : 900th data now
+2019-06-26 19:59:31,440 - DEBUG : 1000th data now
+2019-06-26 19:59:42,391 - DEBUG : 1100th data now
+2019-06-26 19:59:53,457 - DEBUG : 1200th data now
+2019-06-26 20:00:05,185 - DEBUG : 1300th data now
+2019-06-26 20:00:16,810 - DEBUG : 1400th data now
+2019-06-26 20:00:29,023 - DEBUG : 1500th data now
+2019-06-26 20:00:40,435 - DEBUG : 1600th data now
+2019-06-26 20:00:52,464 - DEBUG : 1700th data now
+2019-06-26 20:01:04,379 - DEBUG : 1800th data now
+2019-06-26 20:01:16,613 - DEBUG : 1900th data now
+2019-06-26 20:01:29,494 - DEBUG : 2000th data now
+2019-06-26 20:01:41,270 - DEBUG : 2100th data now
+2019-06-26 20:01:53,453 - DEBUG : 2200th data now
+2019-06-26 20:02:53,918 - DEBUG : 0th data now
+2019-06-26 20:03:06,598 - DEBUG : 100th data now
+2019-06-26 20:04:29,126 - DEBUG : 0th data now
+2019-06-26 20:10:17,395 - DEBUG : Now counting word stats...
+2019-06-26 20:13:47,263 - DEBUG : Now counting word stats...
+2019-06-26 20:13:55,786 - DEBUG : Now counting word stats...
+2019-06-26 20:14:49,094 - DEBUG : Now counting word stats...
+2019-06-26 20:15:07,534 - DEBUG : Now counting word stats...
+2019-06-26 20:15:35,133 - DEBUG : Now counting word stats...
+2019-06-26 20:15:35,135 - DEBUG : 0th data now
+2019-06-26 20:15:35,150 - DEBUG : 100th data now
+2019-06-26 20:15:35,162 - DEBUG : 200th data now
+2019-06-26 20:15:35,174 - DEBUG : 300th data now
+2019-06-26 20:15:35,184 - DEBUG : 400th data now
+2019-06-26 20:15:35,195 - DEBUG : 500th data now
+2019-06-26 20:15:35,205 - DEBUG : 600th data now
+2019-06-26 20:15:35,216 - DEBUG : 700th data now
+2019-06-26 20:15:35,227 - DEBUG : 800th data now
+2019-06-26 20:15:35,240 - DEBUG : 900th data now
+2019-06-26 20:15:35,252 - DEBUG : 1000th data now
+2019-06-26 20:15:35,263 - DEBUG : 1100th data now
+2019-06-26 20:15:35,274 - DEBUG : 1200th data now
+2019-06-26 20:15:35,288 - DEBUG : 1300th data now
+2019-06-26 20:15:35,298 - DEBUG : 1400th data now
+2019-06-26 20:15:35,308 - DEBUG : 1500th data now
+2019-06-26 20:15:35,318 - DEBUG : 1600th data now
+2019-06-26 20:15:35,329 - DEBUG : 1700th data now
+2019-06-26 20:15:35,339 - DEBUG : 1800th data now
+2019-06-26 20:15:35,349 - DEBUG : 1900th data now
+2019-06-26 20:15:35,359 - DEBUG : 2000th data now
+2019-06-26 20:15:35,370 - DEBUG : 2100th data now
+2019-06-26 20:15:35,382 - DEBUG : 2200th data now
+2019-06-26 20:15:35,391 - DEBUG : 2300th data now
+2019-06-26 20:15:35,402 - DEBUG : 2400th data now
+2019-06-26 20:15:35,413 - DEBUG : 2500th data now
+2019-06-26 20:15:35,423 - DEBUG : 2600th data now
+2019-06-26 20:15:35,435 - DEBUG : 2700th data now
+2019-06-26 20:15:35,447 - DEBUG : 2800th data now
+2019-06-26 20:15:35,460 - DEBUG : 2900th data now
+2019-06-26 20:15:35,469 - DEBUG : 3000th data now
+2019-06-26 20:15:35,479 - DEBUG : 3100th data now
+2019-06-26 20:15:35,489 - DEBUG : 3200th data now
+2019-06-26 20:15:35,500 - DEBUG : 3300th data now
+2019-06-26 20:15:35,512 - DEBUG : 3400th data now
+2019-06-26 20:15:35,523 - DEBUG : 3500th data now
+2019-06-26 20:15:35,534 - DEBUG : 3600th data now
+2019-06-26 20:15:35,545 - DEBUG : 3700th data now
+2019-06-26 20:15:35,555 - DEBUG : 3800th data now
+2019-06-26 20:15:35,564 - DEBUG : 3900th data now
+2019-06-26 20:15:35,574 - DEBUG : 4000th data now
+2019-06-26 20:15:35,584 - DEBUG : 4100th data now
+2019-06-26 20:15:35,595 - DEBUG : 4200th data now
+2019-06-26 20:15:35,608 - DEBUG : 4300th data now
+2019-06-26 20:15:35,622 - DEBUG : 4400th data now
+2019-06-26 20:15:35,636 - DEBUG : 4500th data now
+2019-06-26 20:15:35,650 - DEBUG : 4600th data now
+2019-06-26 20:15:35,665 - DEBUG : 4700th data now
+2019-06-26 20:15:35,678 - DEBUG : 4800th data now
+2019-06-26 20:15:35,690 - DEBUG : 4900th data now
+2019-06-26 20:15:35,702 - DEBUG : 5000th data now
+2019-06-26 20:15:35,716 - DEBUG : 5100th data now
+2019-06-26 20:15:35,730 - DEBUG : 5200th data now
+2019-06-26 20:15:35,741 - DEBUG : 5300th data now
+2019-06-26 20:15:35,755 - DEBUG : 5400th data now
+2019-06-26 20:15:35,767 - DEBUG : 5500th data now
+2019-06-26 20:15:35,780 - DEBUG : 5600th data now
+2019-06-26 20:15:35,790 - DEBUG : 5700th data now
+2019-06-26 20:15:35,803 - DEBUG : 5800th data now
+2019-06-26 20:15:35,815 - DEBUG : 5900th data now
+2019-06-26 20:15:35,826 - DEBUG : 6000th data now
+2019-06-26 20:15:35,837 - DEBUG : 6100th data now
+2019-06-26 20:15:35,851 - DEBUG : 6200th data now
+2019-06-26 20:15:35,863 - DEBUG : 6300th data now
+2019-06-26 20:15:35,875 - DEBUG : 6400th data now
+2019-06-26 20:15:35,887 - DEBUG : 6500th data now
+2019-06-26 20:15:35,900 - DEBUG : 6600th data now
+2019-06-26 20:15:35,911 - DEBUG : 6700th data now
+2019-06-26 20:15:35,922 - DEBUG : 6800th data now
+2019-06-26 20:15:35,936 - DEBUG : 6900th data now
+2019-06-26 20:15:35,949 - DEBUG : 7000th data now
+2019-06-26 20:15:35,960 - DEBUG : 7100th data now
+2019-06-26 20:15:35,972 - DEBUG : 7200th data now
+2019-06-26 20:15:35,984 - DEBUG : 7300th data now
+2019-06-26 20:15:35,996 - DEBUG : 7400th data now
+2019-06-26 20:15:36,005 - DEBUG : 7500th data now
+2019-06-26 20:15:36,018 - DEBUG : 7600th data now
+2019-06-26 20:15:36,032 - DEBUG : 7700th data now
+2019-06-26 20:15:36,043 - DEBUG : 7800th data now
+2019-06-26 20:15:36,054 - DEBUG : 7900th data now
+2019-06-26 20:15:36,066 - DEBUG : 8000th data now
+2019-06-26 20:15:36,079 - DEBUG : 8100th data now
+2019-06-26 20:15:36,089 - DEBUG : 8200th data now
+2019-06-26 20:15:36,102 - DEBUG : 8300th data now
+2019-06-26 20:15:36,115 - DEBUG : 8400th data now
+2019-06-26 20:15:36,128 - DEBUG : 8500th data now
+2019-06-26 20:15:36,139 - DEBUG : 8600th data now
+2019-06-26 20:15:36,151 - DEBUG : 8700th data now
+2019-06-26 20:15:36,165 - DEBUG : 8800th data now
+2019-06-26 20:15:36,177 - DEBUG : 8900th data now
+2019-06-26 20:15:36,187 - DEBUG : 9000th data now
+2019-06-26 20:15:36,199 - DEBUG : 9100th data now
+2019-06-26 20:15:36,210 - DEBUG : 9200th data now
+2019-06-26 20:15:36,221 - DEBUG : 9300th data now
+2019-06-26 20:15:36,234 - DEBUG : 9400th data now
+2019-06-26 20:15:36,246 - DEBUG : 9500th data now
+2019-06-26 20:15:36,256 - DEBUG : 9600th data now
+2019-06-26 20:15:36,267 - DEBUG : 9700th data now
+2019-06-26 20:15:36,278 - DEBUG : 9800th data now
+2019-06-26 20:15:36,288 - DEBUG : 9900th data now
+2019-06-26 20:15:36,301 - DEBUG : 10000th data now
+2019-06-26 20:15:36,313 - DEBUG : 10100th data now
+2019-06-26 20:15:36,323 - DEBUG : 10200th data now
+2019-06-26 20:15:36,337 - DEBUG : 10300th data now
+2019-06-26 20:15:36,351 - DEBUG : 10400th data now
+2019-06-26 20:15:36,364 - DEBUG : 10500th data now
+2019-06-26 20:15:36,374 - DEBUG : 10600th data now
+2019-06-26 20:15:36,386 - DEBUG : 10700th data now
+2019-06-26 20:15:36,400 - DEBUG : 10800th data now
+2019-06-26 20:15:36,411 - DEBUG : 10900th data now
+2019-06-26 20:15:36,423 - DEBUG : 11000th data now
+2019-06-26 20:15:36,435 - DEBUG : 11100th data now
+2019-06-26 20:15:36,449 - DEBUG : 11200th data now
+2019-06-26 20:15:36,460 - DEBUG : 11300th data now
+2019-06-26 20:15:36,474 - DEBUG : 11400th data now
+2019-06-26 20:15:36,486 - DEBUG : 11500th data now
+2019-06-26 20:15:36,500 - DEBUG : 11600th data now
+2019-06-26 20:15:36,514 - DEBUG : 11700th data now
+2019-06-26 20:15:36,524 - DEBUG : 11800th data now
+2019-06-26 20:15:36,536 - DEBUG : 11900th data now
+2019-06-26 20:15:36,547 - DEBUG : 12000th data now
+2019-06-26 20:15:36,557 - DEBUG : 12100th data now
+2019-06-26 20:15:36,569 - DEBUG : 12200th data now
+2019-06-26 20:15:36,584 - DEBUG : 12300th data now
+2019-06-26 20:15:36,597 - DEBUG : 12400th data now
+2019-06-26 20:15:36,607 - DEBUG : 12500th data now
+2019-06-26 20:15:36,620 - DEBUG : 12600th data now
+2019-06-26 20:15:36,633 - DEBUG : 12700th data now
+2019-06-26 20:15:36,646 - DEBUG : 12800th data now
+2019-06-26 20:15:36,659 - DEBUG : 12900th data now
+2019-06-26 20:15:36,673 - DEBUG : 13000th data now
+2019-06-26 20:15:36,687 - DEBUG : 13100th data now
+2019-06-26 20:15:36,701 - DEBUG : 13200th data now
+2019-06-26 20:15:36,715 - DEBUG : 13300th data now
+2019-06-26 20:15:36,727 - DEBUG : 13400th data now
+2019-06-26 20:15:36,740 - DEBUG : 13500th data now
+2019-06-26 20:15:36,753 - DEBUG : 13600th data now
+2019-06-26 20:15:36,765 - DEBUG : 13700th data now
+2019-06-26 20:15:36,776 - DEBUG : 13800th data now
+2019-06-26 20:15:36,787 - DEBUG : 13900th data now
+2019-06-26 20:15:36,801 - DEBUG : 14000th data now
+2019-06-26 20:15:36,815 - DEBUG : 14100th data now
+2019-06-26 20:15:36,825 - DEBUG : 14200th data now
+2019-06-26 20:15:36,837 - DEBUG : 14300th data now
+2019-06-26 20:15:36,849 - DEBUG : 14400th data now
+2019-06-26 20:15:36,862 - DEBUG : 14500th data now
+2019-06-26 20:15:36,873 - DEBUG : 14600th data now
+2019-06-26 20:15:36,886 - DEBUG : 14700th data now
+2019-06-26 20:15:36,901 - DEBUG : 14800th data now
+2019-06-26 20:15:36,913 - DEBUG : 14900th data now
+2019-06-26 20:15:36,926 - DEBUG : 15000th data now
+2019-06-26 20:15:36,938 - DEBUG : 15100th data now
+2019-06-26 20:15:36,952 - DEBUG : 15200th data now
+2019-06-26 20:15:36,968 - DEBUG : 15300th data now
+2019-06-26 20:15:36,980 - DEBUG : 15400th data now
+2019-06-26 20:15:36,990 - DEBUG : 15500th data now
+2019-06-26 20:15:37,001 - DEBUG : 15600th data now
+2019-06-26 20:15:37,015 - DEBUG : 15700th data now
+2019-06-26 20:15:37,026 - DEBUG : 15800th data now
+2019-06-26 20:15:37,039 - DEBUG : 15900th data now
+2019-06-26 20:15:37,053 - DEBUG : 16000th data now
+2019-06-26 20:15:37,066 - DEBUG : 16100th data now
+2019-06-26 20:15:37,079 - DEBUG : 16200th data now
+2019-06-26 20:15:37,092 - DEBUG : 16300th data now
+2019-06-26 20:15:37,104 - DEBUG : 16400th data now
+2019-06-26 20:15:37,117 - DEBUG : 16500th data now
+2019-06-26 20:15:37,129 - DEBUG : 16600th data now
+2019-06-26 20:15:37,138 - DEBUG : 16700th data now
+2019-06-26 20:15:37,151 - DEBUG : 16800th data now
+2019-06-26 20:15:37,164 - DEBUG : 16900th data now
+2019-06-26 20:15:37,174 - DEBUG : 17000th data now
+2019-06-26 20:15:37,188 - DEBUG : 17100th data now
+2019-06-26 20:15:37,202 - DEBUG : 17200th data now
+2019-06-26 20:15:37,216 - DEBUG : 17300th data now
+2019-06-26 20:15:37,222 - DEBUG : 17400th data now
+2019-06-26 20:15:37,233 - DEBUG : 17500th data now
+2019-06-26 20:15:37,245 - DEBUG : 17600th data now
+2019-06-26 20:15:37,257 - DEBUG : 17700th data now
+2019-06-26 20:15:37,270 - DEBUG : 17800th data now
+2019-06-26 20:15:37,284 - DEBUG : 17900th data now
+2019-06-26 20:15:37,297 - DEBUG : 18000th data now
+2019-06-26 20:15:37,311 - DEBUG : 18100th data now
+2019-06-26 20:15:37,322 - DEBUG : 18200th data now
+2019-06-26 20:15:37,334 - DEBUG : 18300th data now
+2019-06-26 20:15:37,347 - DEBUG : 18400th data now
+2019-06-26 20:15:37,360 - DEBUG : 18500th data now
+2019-06-26 20:15:37,372 - DEBUG : 18600th data now
+2019-06-26 20:15:37,387 - DEBUG : 18700th data now
+2019-06-26 20:15:37,400 - DEBUG : 18800th data now
+2019-06-26 20:15:37,409 - DEBUG : 18900th data now
+2019-06-26 20:15:37,419 - DEBUG : 19000th data now
+2019-06-26 20:15:37,431 - DEBUG : 19100th data now
+2019-06-26 20:15:37,442 - DEBUG : 19200th data now
+2019-06-26 20:15:37,454 - DEBUG : 19300th data now
+2019-06-26 20:15:37,469 - DEBUG : 19400th data now
+2019-06-26 20:15:37,482 - DEBUG : 19500th data now
+2019-06-26 20:15:37,493 - DEBUG : 19600th data now
+2019-06-26 20:15:37,507 - DEBUG : 19700th data now
+2019-06-26 20:15:37,520 - DEBUG : 19800th data now
+2019-06-26 20:15:37,532 - DEBUG : 19900th data now
+2019-06-26 20:15:37,543 - DEBUG : 20000th data now
+2019-06-26 20:15:37,556 - DEBUG : 20100th data now
+2019-06-26 20:15:37,568 - DEBUG : 20200th data now
+2019-06-26 20:15:37,579 - DEBUG : 20300th data now
+2019-06-26 20:15:37,588 - DEBUG : 20400th data now
+2019-06-26 20:15:37,599 - DEBUG : 20500th data now
+2019-06-26 20:15:37,609 - DEBUG : 20600th data now
+2019-06-26 20:15:37,621 - DEBUG : 20700th data now
+2019-06-26 20:15:37,634 - DEBUG : 20800th data now
+2019-06-26 20:15:37,645 - DEBUG : 20900th data now
+2019-06-26 20:15:37,656 - DEBUG : 21000th data now
+2019-06-26 20:15:37,669 - DEBUG : 21100th data now
+2019-06-26 20:15:37,682 - DEBUG : 21200th data now
+2019-06-26 20:15:37,696 - DEBUG : 21300th data now
+2019-06-26 20:15:37,706 - DEBUG : 21400th data now
+2019-06-26 20:15:37,717 - DEBUG : 21500th data now
+2019-06-26 20:15:37,727 - DEBUG : 21600th data now
+2019-06-26 20:15:37,740 - DEBUG : 21700th data now
+2019-06-26 20:15:37,754 - DEBUG : 21800th data now
+2019-06-26 20:15:37,767 - DEBUG : 21900th data now
+2019-06-26 20:15:37,779 - DEBUG : 22000th data now
+2019-06-26 20:15:37,793 - DEBUG : 22100th data now
+2019-06-26 20:15:37,806 - DEBUG : 22200th data now
+2019-06-26 20:15:37,819 - DEBUG : 22300th data now
+2019-06-26 20:15:37,833 - DEBUG : 22400th data now
+2019-06-26 20:15:37,845 - DEBUG : 22500th data now
+2019-06-26 20:15:37,859 - DEBUG : 22600th data now
+2019-06-26 20:15:37,871 - DEBUG : 22700th data now
+2019-06-26 20:15:37,888 - DEBUG : 22800th data now
+2019-06-26 20:15:37,902 - DEBUG : 22900th data now
+2019-06-26 20:15:37,917 - DEBUG : 23000th data now
+2019-06-26 20:15:37,930 - DEBUG : 23100th data now
+2019-06-26 20:15:37,940 - DEBUG : 23200th data now
+2019-06-26 20:15:37,954 - DEBUG : 23300th data now
+2019-06-26 20:15:37,971 - DEBUG : 23400th data now
+2019-06-26 20:15:37,985 - DEBUG : 23500th data now
+2019-06-26 20:15:38,003 - DEBUG : 23600th data now
+2019-06-26 20:15:38,017 - DEBUG : 23700th data now
+2019-06-26 20:15:38,034 - DEBUG : 23800th data now
+2019-06-26 20:15:38,048 - DEBUG : 23900th data now
+2019-06-26 20:15:38,059 - DEBUG : 24000th data now
+2019-06-26 20:15:38,071 - DEBUG : 24100th data now
+2019-06-26 20:15:38,086 - DEBUG : 24200th data now
+2019-06-26 20:15:38,099 - DEBUG : 24300th data now
+2019-06-26 20:15:38,108 - DEBUG : 24400th data now
+2019-06-26 20:15:38,120 - DEBUG : 24500th data now
+2019-06-26 20:15:38,134 - DEBUG : 24600th data now
+2019-06-26 20:15:38,146 - DEBUG : 24700th data now
+2019-06-26 20:15:38,159 - DEBUG : 24800th data now
+2019-06-26 20:15:38,171 - DEBUG : 24900th data now
+2019-06-26 20:15:38,185 - DEBUG : 25000th data now
+2019-06-26 20:15:38,199 - DEBUG : 25100th data now
+2019-06-26 20:15:38,209 - DEBUG : 25200th data now
+2019-06-26 20:15:38,221 - DEBUG : 25300th data now
+2019-06-26 20:15:38,234 - DEBUG : 25400th data now
+2019-06-26 20:15:38,244 - DEBUG : 25500th data now
+2019-06-26 20:15:38,256 - DEBUG : 25600th data now
+2019-06-26 20:15:38,269 - DEBUG : 25700th data now
+2019-06-26 20:15:38,283 - DEBUG : 25800th data now
+2019-06-26 20:15:38,295 - DEBUG : 25900th data now
+2019-06-26 20:15:38,305 - DEBUG : 26000th data now
+2019-06-26 20:15:38,319 - DEBUG : 26100th data now
+2019-06-26 20:15:38,334 - DEBUG : 26200th data now
+2019-06-26 20:15:38,346 - DEBUG : 26300th data now
+2019-06-26 20:15:38,355 - DEBUG : 26400th data now
+2019-06-26 20:15:38,368 - DEBUG : 26500th data now
+2019-06-26 20:15:38,384 - DEBUG : 26600th data now
+2019-06-26 20:15:38,399 - DEBUG : 26700th data now
+2019-06-26 20:15:38,407 - DEBUG : 26800th data now
+2019-06-26 20:15:38,421 - DEBUG : 26900th data now
+2019-06-26 20:15:38,435 - DEBUG : 27000th data now
+2019-06-26 20:15:38,450 - DEBUG : 27100th data now
+2019-06-26 20:15:38,470 - DEBUG : 27200th data now
+2019-06-26 20:15:38,480 - DEBUG : 27300th data now
+2019-06-26 20:15:38,489 - DEBUG : 27400th data now
+2019-06-26 20:15:38,501 - DEBUG : 27500th data now
+2019-06-26 20:15:38,515 - DEBUG : 27600th data now
+2019-06-26 20:15:38,525 - DEBUG : 27700th data now
+2019-06-26 20:15:38,538 - DEBUG : 27800th data now
+2019-06-26 20:15:38,553 - DEBUG : 27900th data now
+2019-06-26 20:15:38,567 - DEBUG : 28000th data now
+2019-06-26 20:15:38,579 - DEBUG : 28100th data now
+2019-06-26 20:15:38,590 - DEBUG : 28200th data now
+2019-06-26 20:15:38,602 - DEBUG : 28300th data now
+2019-06-26 20:15:38,617 - DEBUG : 28400th data now
+2019-06-26 20:15:38,630 - DEBUG : 28500th data now
+2019-06-26 20:15:38,641 - DEBUG : 28600th data now
+2019-06-26 20:15:38,654 - DEBUG : 28700th data now
+2019-06-26 20:15:38,666 - DEBUG : 28800th data now
+2019-06-26 20:15:38,676 - DEBUG : 28900th data now
+2019-06-26 20:15:38,687 - DEBUG : 29000th data now
+2019-06-26 20:15:38,700 - DEBUG : 29100th data now
+2019-06-26 20:15:38,709 - DEBUG : 29200th data now
+2019-06-26 20:15:38,722 - DEBUG : 29300th data now
+2019-06-26 20:15:38,735 - DEBUG : 29400th data now
+2019-06-26 20:15:38,750 - DEBUG : 29500th data now
+2019-06-26 20:15:38,759 - DEBUG : 29600th data now
+2019-06-26 20:15:38,772 - DEBUG : 29700th data now
+2019-06-26 20:15:38,785 - DEBUG : 29800th data now
+2019-06-26 20:15:38,798 - DEBUG : 29900th data now
+2019-06-26 20:15:38,810 - DEBUG : 30000th data now
+2019-06-26 20:15:38,821 - DEBUG : 30100th data now
+2019-06-26 20:15:38,836 - DEBUG : 30200th data now
+2019-06-26 20:15:38,850 - DEBUG : 30300th data now
+2019-06-26 20:15:38,860 - DEBUG : 30400th data now
+2019-06-26 20:15:38,872 - DEBUG : 30500th data now
+2019-06-26 20:15:38,883 - DEBUG : 30600th data now
+2019-06-26 20:15:38,895 - DEBUG : 30700th data now
+2019-06-26 20:15:38,908 - DEBUG : 30800th data now
+2019-06-26 20:15:38,921 - DEBUG : 30900th data now
+2019-06-26 20:15:38,935 - DEBUG : 31000th data now
+2019-06-26 20:15:38,946 - DEBUG : 31100th data now
+2019-06-26 20:15:38,960 - DEBUG : 31200th data now
+2019-06-26 20:15:38,977 - DEBUG : 31300th data now
+2019-06-26 20:15:38,991 - DEBUG : 31400th data now
+2019-06-26 20:15:39,001 - DEBUG : 31500th data now
+2019-06-26 20:15:39,010 - DEBUG : 31600th data now
+2019-06-26 20:15:39,027 - DEBUG : 31700th data now
+2019-06-26 20:15:39,042 - DEBUG : 31800th data now
+2019-06-26 20:15:39,053 - DEBUG : 31900th data now
+2019-06-26 20:15:39,067 - DEBUG : 32000th data now
+2019-06-26 20:15:39,080 - DEBUG : 32100th data now
+2019-06-26 20:15:39,091 - DEBUG : 32200th data now
+2019-06-26 20:15:39,101 - DEBUG : 32300th data now
+2019-06-26 20:15:39,111 - DEBUG : 32400th data now
+2019-06-26 20:15:39,125 - DEBUG : 32500th data now
+2019-06-26 20:15:39,136 - DEBUG : 32600th data now
+2019-06-26 20:15:39,146 - DEBUG : 32700th data now
+2019-06-26 20:15:39,158 - DEBUG : 32800th data now
+2019-06-26 20:15:39,169 - DEBUG : 32900th data now
+2019-06-26 20:15:39,182 - DEBUG : 33000th data now
+2019-06-26 20:15:39,193 - DEBUG : 33100th data now
+2019-06-26 20:15:39,204 - DEBUG : 33200th data now
+2019-06-26 20:15:39,218 - DEBUG : 33300th data now
+2019-06-26 20:15:39,229 - DEBUG : 33400th data now
+2019-06-26 20:15:39,240 - DEBUG : 33500th data now
+2019-06-26 20:15:39,251 - DEBUG : 33600th data now
+2019-06-26 20:15:39,262 - DEBUG : 33700th data now
+2019-06-26 20:15:39,275 - DEBUG : 33800th data now
+2019-06-26 20:15:39,286 - DEBUG : 33900th data now
+2019-06-26 20:15:39,297 - DEBUG : 34000th data now
+2019-06-26 20:15:39,309 - DEBUG : 34100th data now
+2019-06-26 20:15:39,321 - DEBUG : 34200th data now
+2019-06-26 20:15:39,335 - DEBUG : 34300th data now
+2019-06-26 20:15:39,346 - DEBUG : 34400th data now
+2019-06-26 20:15:39,358 - DEBUG : 34500th data now
+2019-06-26 20:15:39,373 - DEBUG : 34600th data now
+2019-06-26 20:15:39,385 - DEBUG : 34700th data now
+2019-06-26 20:15:39,400 - DEBUG : 34800th data now
+2019-06-26 20:15:39,414 - DEBUG : 34900th data now
+2019-06-26 20:15:39,429 - DEBUG : 35000th data now
+2019-06-26 20:15:39,443 - DEBUG : 35100th data now
+2019-06-26 20:15:39,456 - DEBUG : 35200th data now
+2019-06-26 20:15:39,473 - DEBUG : 35300th data now
+2019-06-26 20:15:39,502 - DEBUG : 35400th data now
+2019-06-26 20:15:39,522 - DEBUG : 35500th data now
+2019-06-26 20:15:39,531 - DEBUG : 35600th data now
+2019-06-26 20:15:39,543 - DEBUG : 35700th data now
+2019-06-26 20:15:39,557 - DEBUG : 35800th data now
+2019-06-26 20:15:39,573 - DEBUG : 35900th data now
+2019-06-26 20:15:39,590 - DEBUG : 36000th data now
+2019-06-26 20:15:39,604 - DEBUG : 36100th data now
+2019-06-26 20:15:39,616 - DEBUG : 36200th data now
+2019-06-26 20:15:39,630 - DEBUG : 36300th data now
+2019-06-26 20:15:39,644 - DEBUG : 36400th data now
+2019-06-26 20:15:39,658 - DEBUG : 36500th data now
+2019-06-26 20:15:39,671 - DEBUG : 36600th data now
+2019-06-26 20:15:39,686 - DEBUG : 36700th data now
+2019-06-26 20:15:39,702 - DEBUG : 36800th data now
+2019-06-26 20:15:39,716 - DEBUG : 36900th data now
+2019-06-26 20:15:39,730 - DEBUG : 37000th data now
+2019-06-26 20:15:39,744 - DEBUG : 37100th data now
+2019-06-26 20:15:39,760 - DEBUG : 37200th data now
+2019-06-26 20:15:39,776 - DEBUG : 37300th data now
+2019-06-26 20:15:39,796 - DEBUG : 37400th data now
+2019-06-26 20:15:39,811 - DEBUG : 37500th data now
+2019-06-26 20:15:39,823 - DEBUG : 37600th data now
+2019-06-26 20:15:39,836 - DEBUG : 37700th data now
+2019-06-26 20:15:39,848 - DEBUG : 37800th data now
+2019-06-26 20:15:39,860 - DEBUG : 37900th data now
+2019-06-26 20:15:39,877 - DEBUG : 38000th data now
+2019-06-26 20:15:39,891 - DEBUG : 38100th data now
+2019-06-26 20:15:39,904 - DEBUG : 38200th data now
+2019-06-26 20:15:39,919 - DEBUG : 38300th data now
+2019-06-26 20:15:39,934 - DEBUG : 38400th data now
+2019-06-26 20:15:39,948 - DEBUG : 38500th data now
+2019-06-26 20:15:39,962 - DEBUG : 38600th data now
+2019-06-26 20:15:39,975 - DEBUG : 38700th data now
+2019-06-26 20:15:39,985 - DEBUG : 38800th data now
+2019-06-26 20:15:39,998 - DEBUG : 38900th data now
+2019-06-26 20:15:40,013 - DEBUG : 39000th data now
+2019-06-26 20:15:40,025 - DEBUG : 39100th data now
+2019-06-26 20:15:40,040 - DEBUG : 39200th data now
+2019-06-26 20:15:40,053 - DEBUG : 39300th data now
+2019-06-26 20:15:40,066 - DEBUG : 39400th data now
+2019-06-26 20:15:40,078 - DEBUG : 39500th data now
+2019-06-26 20:15:40,093 - DEBUG : 39600th data now
+2019-06-26 20:15:40,107 - DEBUG : 39700th data now
+2019-06-26 20:15:40,123 - DEBUG : 39800th data now
+2019-06-26 20:16:48,592 - DEBUG : Now counting word stats...
