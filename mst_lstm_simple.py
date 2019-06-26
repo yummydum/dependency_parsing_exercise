@@ -3,7 +3,7 @@ For Hydrogen;
 %load_ext autoreload
 %autoreload 2
 """
-from typing import List,Tuple,Union,Optional
+from typing import List,Tuple,Union,Optional,Dict
 import numpy as np
 import torch
 import torch.nn as nn
@@ -80,7 +80,14 @@ class BiLSTM_Parser_simple(nn.Module):
 
         return score_matrix
 
- if __name__ == '__main__':
+    # golden_head = data[2]   # score.shape
+    def calc_loss(self,score_matrix,golden_head):
+        loss = nn.CrossEntropyLoss()
+        target = torch.tensor(golden_head[1:])
+        input = torch.transpose(score_matrix,0,1)[1:]
+        return loss(input,target)
+
+if __name__ == '__main__':
 
     # Load test
     from pathlib import Path
@@ -132,16 +139,14 @@ class BiLSTM_Parser_simple(nn.Module):
     batch_size = config_dict["batch_size"]
 
     # Start train
-    tracker = init_tracker()
+    loss_tracker = []
     for epoch in range(epoch_num):  # epoch = 0
-        running_tracker = init_running_tracker()
-        for i,data in enumerate(train_data):  # i = 4; data = train_data[i]
+        running_loss = 0
+        for i,data in enumerate(train_data):  # i = 0; data = train_data[i]
             score_matrix = model(data[0],data[1])
-            target = torch.LongTensor(data[2])
-            loss = nn.CrossEntropyLoss(score_matrix,target)  # score_matrix.shape,len(target)
+            loss = model.calc_loss(score_matrix,data[2])
             (loss / batch_size).backward()
-            accuracy = 1 - (mst_lstm.compute_hamming_cost(head_hat,data[2]) / len(head_hat))
-            update_running_tracker(running_tracker,loss,score_hat,score_golden,accuracy)
+            running_loss += loss.item() / batch_size
             # Accumualte the gradient for each batch
             if (i % batch_size == (batch_size-1)) or (i == len(train_data)-1):
                 # Update param
@@ -149,79 +154,25 @@ class BiLSTM_Parser_simple(nn.Module):
                 model.zero_grad()
                 # Record the scores
                 logger.debug(f"Now at {i}th data in epoch {epoch}")
-                update_tracker(tracker,batch_size,**running_tracker)
-                running_tracker = init_running_tracker()
+                logger.debug(f"Current loss is {running_loss}")
+                loss_tracker.append(running_loss)
+                running_loss = 0
 
         # Report loss for this epoch in dev data
         with torch.no_grad():
             running_loss_dev = 0
             for j,data in enumerate(dev_data):
-                head_hat,score_hat,score_golden = model(*data)
-                loss = mst_lstm.margin_based_loss(score_hat,score_golden)
+                score_matrix = model(data[0],data[1])
+                loss = model.calc_loss(score_matrix,data[2])
                 running_loss_dev += loss.item()
                 if i % 1000 == 999:
                     logger.debug(f"Now validating model; {j}th dev data now")
             mean_loss_dev = running_loss_dev/len(dev_data)
-            tracker["dev_loss"].append(mean_loss_dev)
             logger.debug(f"Current mean loss for dev data is {mean_loss_dev}")
 
         # Save model
         result_path = result_dir_path / f"model_epoch{epoch}.pt"
         torch.save(model,str(result_path))
-
-    ## Store the result of tracker
-    tracker_path = result_dir_path / "tracker_result.json"
-    with tracker_path.open(mode="w") as fp:
-        json.dump(tracker, fp)
-    for metric,tracks in tracker.items():
-        fig,ax = plt.subplots()
-        ax.plot(range(len(tracker[metric])),tracker[metric])
-        plot_path = result_dir_path / f"{metric}.jpeg"
-        fig.savefig(plot_path)
-
-def init_tracker():
-    """ Accumualte metrics over the whole train process """
-    tracker = dict()
-    tracker["train_loss"]   = []
-    tracker["dev_loss"]     = []
-    tracker["score_hat"]    = []
-    tracker["score_golden"] = []
-    tracker["accuracy"]     = []
-    return tracker
-
-def update_tracker(tracker:Dict,batch_size,loss_train,score_hat,score_golden,accuracy):
-    mean_loss_train   = loss_train/batch_size
-    mean_score_hat    = score_hat/batch_size
-    mean_score_golden = score_golden/batch_size
-    mean_accuracy     = accuracy/batch_size
-    logger.debug(f"Current mean loss for train data is {mean_loss_train}")
-    logger.debug(f"Current mean score_hat is {mean_score_hat}")
-    logger.debug(f"Current mean score_golden is {mean_score_golden}")
-    logger.debug(f"Current mean accuracy is {mean_accuracy}")
-    tracker["train_loss"].append(mean_loss_train)
-    tracker["score_hat"].append(mean_score_hat)
-    tracker["score_golden"].append(mean_score_golden)
-
-def init_running_tracker():
-    """ Accumulate metrics for one process over batch """
-    running_tracker = dict()
-    running_tracker["loss_train"]   = 0
-    running_tracker["score_hat"]    = 0
-    running_tracker["score_golden"] = 0
-    running_tracker["accuracy"]     = 0
-    return running_tracker
-
-def update_running_tracker(running_tracker,loss,score_hat,score_golden,accuracy):
-    running_tracker["loss_train"]   += loss.item()
-    running_tracker["score_hat"]    += score_hat.item()
-    running_tracker["score_golden"] += score_golden.item()
-    running_tracker["accuracy"]     += accuracy
-    return running_tracker
-
-
-    train(config_dict)
-
-
 
 # # Check forward() and loss funtion
 # data = dev_data[1]
