@@ -73,8 +73,9 @@ def train(config_dict:Dict):
             running_loss_dev = 0
             for j,data in enumerate(dev_data):
                 head_hat,score_hat,score_golden = model(*data)
-                loss = mst_lstm.margin_based_loss(score_hat,score_golden)
-                running_loss_dev += loss.item()
+                loss = 1-(score_golden - score_hat)
+                if loss.item() > 0:
+                    running_loss_dev += loss.item()
                 if i % 1000 == 999:
                     logger.debug(f"Now validating model; {j}th dev data now")
             mean_loss_dev = running_loss_dev/len(dev_data)
