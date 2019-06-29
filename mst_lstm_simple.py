@@ -7,17 +7,20 @@ from typing import List,Tuple,Union,Optional,Dict
 import numpy as np
 import torch
 import torch.nn as nn
+from torch.utils.data import DataLoader
+from torchtext import data, datasets
 from util import set_logger
+
 # set logger
 logger = set_logger(__name__)
 # Fix seed
 torch.manual_seed(1)
-
 # manage device
 if torch.cuda.is_available():
     device = torch.device('cuda')
 else:
     device = torch.device('cpu')
+logger.debug(f"Computation on {device}")
 
 class BiLSTM_Parser_simple(nn.Module):
 
@@ -53,7 +56,7 @@ class BiLSTM_Parser_simple(nn.Module):
         self.Linear_modif = nn.Linear(lstm_hidden_dim,mlp_hidden_dim // 2)
         self.output_layer = nn.Linear(mlp_hidden_dim,1)  # output layer
 
-    # For test : word_tensor = data[0]; pos_tensor = data[1]
+    # For test : word_tensor = data[0]; pos_tensor = data[1] ; self = model
     def forward(self,
                word_tensor:torch.LongTensor,
                pos_tensor :torch.LongTensor)  \
@@ -64,9 +67,9 @@ class BiLSTM_Parser_simple(nn.Module):
         """
         sentence_len = len(word_tensor[0])
         # Word/POS embedding
-        word_embeds = self.word_embeds(word_tensor)     # word_embeds.shape = (1,sentence_len,word_embed_dim)
-        pos_embeds  = self.pos_embeds(pos_tensor)       # pos_embeds.shape = (1,sentence_len,pos_embed_dim)
-        embeds = torch.cat((word_embeds,pos_embeds),2)  # embeds.shape = (1,sentence_len,(word_embed_dim+pos_embed_dim))
+        word_embeds = self.word_embeds(word_tensor)     # word_embeds.shape = (batch_size,sentence_len,word_embed_dim)
+        pos_embeds  = self.pos_embeds(pos_tensor)       # pos_embeds.shape = (batch_size,sentence_len,pos_embed_dim)
+        embeds = torch.cat((word_embeds,pos_embeds),2)  # embeds.shape = (batch_size,sentence_len,(word_embed_dim+pos_embed_dim))
         embeds = embeds.view(sentence_len,1,-1)         # embeds.shape = (sentence_len,1,(word_embed_dim+pos_embed_dim))
         # Bidirectional LSTM
         lstm_out, _ = self.lstm(embeds)                 # lstm_out.shape = (sentence_len,1,lstm_hidden_dim)
@@ -136,6 +139,11 @@ if __name__ == '__main__':
     config_dict["model_param"]["vocab_size"] = train_data.vocab_size
     config_dict["model_param"]["pos_size"]   = train_data.pos_size
 
+    # Init data loader
+    train_data_loader = DataLoader(train_data,batch_size=4,shuffle=True, num_workers=4)
+    # for batch in train_data_loader:
+    #     break
+
     # Init model
     model = BiLSTM_Parser_simple(**config_dict["model_param"])
     model.to(device)
@@ -149,7 +157,12 @@ if __name__ == '__main__':
     loss_tracker = []
     for epoch in range(epoch_num):  # epoch = 0
         running_loss = 0
-        for i,data in enumerate(train_data):  # i = 0; data = train_data[i]
+        for i,batch in enumerate(train_data_loader):
+
+            # stop at the 30th batch
+            if i > batch_size*30:
+                continue
+
             word_tensor = data[0].to(device)
             pos_tensor  = data[1].to(device)
             score_matrix = model(word_tensor,pos_tensor)
@@ -166,10 +179,6 @@ if __name__ == '__main__':
                 logger.debug(f"Current loss is {running_loss}")
                 loss_tracker.append(running_loss)
                 running_loss = 0
-
-            # stop at the 30th batch
-            if i > batch_size*30:
-                continue
 
         # Save model
         result_path = result_dir_path / f"model_epoch{epoch}.pt"
