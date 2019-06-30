@@ -16,7 +16,7 @@ from tqdm import tqdm
 import torch
 from torch import LongTensor
 from torch.utils.data import Dataset,TensorDataset,DataLoader, RandomSampler
-from torchtext import data, datasets
+from torchtext import data,datasets
 # from pytorch_pretrained_bert import BertTokenizer, BertModel
 from util import set_logger
 
@@ -74,6 +74,12 @@ def read_conll(conll_path:Path) -> Generator[List[ConllEntry],None,None]:
                 cpos    = tok[5]
                 head    = int(tok[6])
                 relation = tok[7]
+
+                # Skip empty string
+                if form == "''" or form == "``":
+                    continue
+
+                # Append the new token to the result
                 new_entry = ConllEntry(word_id, form, pos, cpos,head,relation)
                 entry_list.append(new_entry)
 
@@ -94,82 +100,143 @@ def count_word_stat(conll_path:Path) -> Tuple[Counter,Counter,Counter]:
         rel_count.update([entry.relation for entry in sentence])
     return words_count,pos_count,rel_count
 
-class ConllDataSet(Dataset):
+def word_dropout(word,count):
+    drop_out_prob = 0.25 / (count + 0.25)
+    is_drop = bool(np.random.binomial(1,drop_out_prob))
+    if is_drop:
+        return "<unk>"
+    else:
+        return word
 
-    def __init__(self,conll_path:Path,
-                 word2index:Optional[Dict[str,int]]=None,
-                 pos2index:Optional[Dict[str,int]] =None,
-                 word_dropout=False):
-        self.path = conll_path
-        self.word_dropout = word_dropout
-
-        # Set dict to map word/pos to index
-        if word2index is None and pos2index is None:
-            logger.debug("Loading data for training...")
-            words_count,pos_count,rel_count = count_word_stat(conll_path)
-            self.words_count = words_count
-            self.word2index = {w: i for i, w in enumerate(words_count.keys())}
-            self.pos2index  = {t: i for i, t in enumerate(pos_count.keys())}
-
-            if word_dropout:
-                logger.debug("Word drop out enabled")
-
-        elif word2index is not None and pos2index is not None:
-            self.word2index = word2index
-            self.pos2index  = pos2index
-        else:
-            raise ValueError("Provide both indexer or nothing")
-
-        # Size of input (add 1 for unknown token)
-        self.vocab_size = len(self.word2index.keys()) + 1
-        self.pos_size   = len(self.pos2index.keys())  + 1
-
-        # Preprocess sentences
-        logger.debug("Now preprocessing data...")
-        self.data = []
-        for sentence in read_conll(conll_path):
-            word_index = [self.map2index(self.word2index,entry.norm) for entry in sentence]
-            pos_index  = [self.map2index(self.pos2index,entry.pos)   for entry in sentence]
-            head       = [entry.head for entry in sentence]
-            data_i     = LongTensor(word_index).view(1,-1),LongTensor(pos_index).view(1,-1),head
-            self.data.append(data_i)
-
-    def __len__(self) -> int:
-        return len(self.data)
-
-    def __getitem__(self,idx:int) -> Tuple[LongTensor,LongTensor,List[int]]:
-        return  self.data[idx]
-
-    def map2index(self,index_dict:Dict[str,int],token:str):
-        if token in index_dict:
-            if self.word_dropout:
-                drop_out_prob = 0.25 / (self.words_count[token] + 0.25)
-                is_drop = np.random.binomial(1,drop_out_prob)
-                if is_drop == 1:
-                    return len(index_dict.keys())  # Index for unknown token
-                else:
-                    return index_dict[token]
-            else:
-                return index_dict[token]
-        else:
-            return len(index_dict.keys())  # Index for unknown token
-
-def make_data():
+def make_data(word_dropout=True):
     """ Convert the conll data to tsv file which could be loaded by torchtext """
+    # Train data
+    train_path = Path("data","en-universal-train.conll")
+    if word_dropout:
+        train_tsv_path = Path("data","train_word_dropout.tsv")
+        # Count word stat
+        logger.debug("Word drop out enabled")
+        logger.debug("Counting data for word dropout...")
+        words_count,pos_count,rel_count = count_word_stat(train_path)
+        # Write to tsv
+        with train_tsv_path.open(mode="w") as f:
+            tsv_writer = csv.writer(f, delimiter='\t')
+            tsv_writer.writerow(["text","pos","head"])
+            for sentence in read_conll(train_path):
+                word_list = []
+                pos_list = []
+                head_list = []
+                for token in sentence: # sentence[4].norm
+                    t = word_dropout(token.norm,words_count[token.norm])
+                    word_list.append(t)
+                    pos_list.append(token.pos)
+                    head_list.append(str(token.head))
+
+                tsv_writer.writerow([" ".join(word_list),
+                                     " ".join(pos_list),
+                                     " ".join(head_list)])
+    else:
+        raise NotImplementedError()
+
+    # Dev/Train deta
+    for typ in ["dev","test"]:
+        source_path   = Path("data",f"en-universal-{typ}.conll")
+        result_tsv_path = Path("data",f"{typ}.tsv")
+        with result_tsv_path.open(mode="w") as f:
+            tsv_writer = csv.writer(f, delimiter='\t')
+            tsv_writer.writerow(["text","pos","head"])
+            for sentence in read_conll(source_path):  # sentence = train_data[0]
+                word_list = []
+                pos_list = []
+                head_list = []
+                for token in sentence: # sentence[4].norm
+                    word_list.append(token.norm)
+                    pos_list.append(token.pos)
+                    head_list.append(str(token.head))
+
+                tsv_writer.writerow([" ".join(word_list),
+                                     " ".join(pos_list),
+                                     " ".join(head_list)])
+
+# manage device
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
+# torchtext constant
+TEXT = data.Field(sequential=True)
+POS  = data.Field(sequential=True)
+HEAD = data.Field(sequential=True,is_target=True)
+tsv_fld = {"text":("text",TEXT),
+           "pos":("pos",POS),
+           "head":("head",HEAD)}
+
+def load_iterator(which_data):  # data_path = train_tsv_path
+
+    # Process train data
+    if which_data == "train":
+        data_path = Path("data","train_word_dropout.tsv")
+        dataset = data.TabularDataset(path=data_path,
+                                            format="tsv",
+                                            fields=tsv_fld)
+        # Construct vocab
+        TEXT.build_vocab(dataset)
+        POS.build_vocab(dataset)
+        HEAD.build_vocab(dataset)
+        # Init Iterator (DataLoader)
+        return data.BucketIterator(dataset,
+                                   batch_size=32,
+                                   sort_key=lambda x:len(x.text),
+                                   device=device)
+    elif which_data == "dev":
+        data_path = Path("data","dev.tsv")
+        dataset = data.TabularDataset(path=data_path,
+                                      format="tsv",
+                                      fields=tsv_fld)
+        # Construct vocab
+        TEXT.build_vocab(dataset)
+        POS.build_vocab(dataset)
+        HEAD.build_vocab(dataset)
+        # Init Iterator (DataLoader)
+        return data.BucketIterator(dataset,
+                                   batch_size=32,
+                                   sort_key=lambda x:len(x.text),
+                                   device=device)
+
+    elif which_data == "test":
+        data_path = Path("data","test.tsv")
+        dataset = data.TabularDataset(path=data_path,
+                                      format="tsv",
+                                      fields=tsv_fld)
+        # Construct vocab
+        TEXT.build_vocab(dataset)
+        POS.build_vocab(dataset)
+        HEAD.build_vocab(dataset)
+        # Init Iterator (DataLoader)
+        return data.Iterator(dataset,
+                             batch_size=32,
+                             device=device)
 
 
 if __name__ == '__main__':
+    trn = load_iterator("train")
+    dev = load_iterator("dev")
+    test = load_iterator("test")
+
+    # for batch in test:
+    #     break
+
     # Test
-    conll_path = Path("data","en-universal-train.conll")
-    conll_generator = read_conll(conll_path)
-    for i,sentence in enumerate(conll_generator):
-        # show word and it's head
-        # for entry in sentence:
-        #     print(entry.form)
-        #     print(entry.head)
-        # if i == 10:
-        #     break
-        pass
+    # conll_path = Path("data","en-universal-train.conll")
+    # conll_generator = read_conll(conll_path)
+    # for i,sentence in enumerate(conll_generator):
+    #     # show word and it's head
+    #     for entry in sentence:
+    #         print(entry.form)
+    #         print(entry.head)
+    #     if i == 10:
+    #         break
+    #     pass
 
 
     # create
