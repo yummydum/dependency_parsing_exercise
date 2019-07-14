@@ -75,9 +75,9 @@ def read_conll(conll_path:Path) -> Generator[List[ConllEntry],None,None]:
                 head    = int(tok[6])
                 relation = tok[7]
 
-                # Skip empty string
+                # handle empty string
                 if form == "''" or form == "``":
-                    continue
+                    form = "<quote>"
 
                 # Append the new token to the result
                 new_entry = ConllEntry(word_id, form, pos, cpos,head,relation)
@@ -108,7 +108,7 @@ def word_dropout(word,count):
     else:
         return word
 
-def make_data(word_dropout=True):
+def make_data(dropout=True):
     """ Convert the conll data to tsv file which could be loaded by torchtext """
     # Train data
     train_path = Path("data","en-universal-train.conll")
@@ -164,67 +164,65 @@ if torch.cuda.is_available():
 else:
     device = torch.device('cpu')
 # torchtext constant
-TEXT = data.Field(sequential=True)
-POS  = data.Field(sequential=True)
-HEAD = data.Field(sequential=True,is_target=True)
-tsv_fld = {"text":("text",TEXT),
-           "pos":("pos",POS),
-           "head":("head",HEAD)}
+TEXT = data.Field(sequential=True,include_lengths=True,batch_first=True)
+POS  = data.Field(sequential=True,include_lengths=True,batch_first=True)
+HEAD = data.Field(sequential=True,use_vocab=False,pad_token=np.nan,
+                  preprocessing=lambda x: [int(i) for i in x],
+                  dtype=torch.float,batch_first=True)
+tsv_fld = {"text":("text",TEXT),"pos":("pos",POS),"head":("head",HEAD)}
 
 def load_iterator(which_data):  # data_path = train_tsv_path
+
+    """
+    Return torchtext.data.Itereator.
+    For head words, np.nan is used for padding.
+    """
 
     # Process train data
     if which_data == "train":
         data_path = Path("data","train_word_dropout.tsv")
-        dataset = data.TabularDataset(path=data_path,
-                                            format="tsv",
-                                            fields=tsv_fld)
+        dataset = data.TabularDataset(path=data_path,format="tsv",fields=tsv_fld)
         # Construct vocab
         TEXT.build_vocab(dataset)
         POS.build_vocab(dataset)
-        HEAD.build_vocab(dataset)
-        # Init Iterator (DataLoader)
-        return data.BucketIterator(dataset,
-                                   batch_size=32,
+        return data.BucketIterator(dataset,batch_size=32,shuffle=True,
                                    sort_key=lambda x:len(x.text),
+                                   sort_within_batch=True,
                                    device=device)
+
     elif which_data == "dev":
         data_path = Path("data","dev.tsv")
-        dataset = data.TabularDataset(path=data_path,
-                                      format="tsv",
-                                      fields=tsv_fld)
-        # Construct vocab
-        TEXT.build_vocab(dataset)
-        POS.build_vocab(dataset)
-        HEAD.build_vocab(dataset)
-        # Init Iterator (DataLoader)
-        return data.BucketIterator(dataset,
-                                   batch_size=32,
+        dataset = data.TabularDataset(path=data_path,format="tsv",fields=tsv_fld)
+        return data.BucketIterator(dataset,batch_size=32,shuffle=True,
                                    sort_key=lambda x:len(x.text),
+                                   sort_within_batch=True,
                                    device=device)
 
     elif which_data == "test":
         data_path = Path("data","test.tsv")
-        dataset = data.TabularDataset(path=data_path,
-                                      format="tsv",
-                                      fields=tsv_fld)
-        # Construct vocab
-        TEXT.build_vocab(dataset)
-        POS.build_vocab(dataset)
-        HEAD.build_vocab(dataset)
+        dataset = data.TabularDataset(path=data_path,format="tsv",fields=tsv_fld)
         # Init Iterator (DataLoader)
-        return data.Iterator(dataset,
-                             batch_size=32,
-                             device=device)
-
+        return data.Iterator(dataset,batch_size=32,device=device)
 
 if __name__ == '__main__':
+    # make_data()
     trn = load_iterator("train")
     dev = load_iterator("dev")
     test = load_iterator("test")
 
-    # for batch in test:
-    #     break
+    # # see content
+    # batch = next(iter(trn)) batch.head
+    # # Debug HEAD
+    # batch_size = 32
+        # fields = dataset.fields.keys()  # copy field names  dir(trn.dataset.fields)
+    # batches = data.iterator.batch(trn.data(),32,None)
+    # minibatch = next(iter(batches))
+    # name = "head"
+    # field = HEAD
+    # batch = [getattr(x, name) for x in minibatch]
+    # padded = field.pad(batch)
+    # field.numericalize(padded)
+    # field.process(batch, device=device)
 
     # Test
     # conll_path = Path("data","en-universal-train.conll")
