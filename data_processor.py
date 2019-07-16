@@ -21,7 +21,8 @@ from torchtext import data,datasets
 from util import set_logger
 
 logger = set_logger(__name__)
-np.random.seed(1)
+np.random.seed(0)
+torch.manual_seed(0)
 
 class ConllEntry:
     """
@@ -163,7 +164,7 @@ if torch.cuda.is_available():
     device = torch.device('cuda')
 else:
     device = torch.device('cpu')
-# torchtext constant
+# torchtext config
 TEXT = data.Field(sequential=True,include_lengths=True,batch_first=True)
 POS  = data.Field(sequential=True,include_lengths=True,batch_first=True)
 HEAD = data.Field(sequential=True,use_vocab=False,pad_token=np.nan,
@@ -171,38 +172,31 @@ HEAD = data.Field(sequential=True,use_vocab=False,pad_token=np.nan,
                   dtype=torch.float,batch_first=True)
 tsv_fld = {"text":("text",TEXT),"pos":("pos",POS),"head":("head",HEAD)}
 
-def load_iterator(which_data):  # data_path = train_tsv_path
-
+def load_iterator(which_data,**iterator_config):  # data_path = train_tsv_path
     """
     Return torchtext.data.Itereator.
     For head words, np.nan is used for padding.
     """
-
     # Process train data
     if which_data == "train":
         data_path = Path("data","train_word_dropout.tsv")
         dataset = data.TabularDataset(path=data_path,format="tsv",fields=tsv_fld)
-        # Construct vocab
         TEXT.build_vocab(dataset)
         POS.build_vocab(dataset)
-        return data.BucketIterator(dataset,batch_size=32,shuffle=True,
-                                   sort_key=lambda x:len(x.text),
-                                   sort_within_batch=True,
-                                   device=device)
+        return data.BucketIterator(dataset,**iterator_config)
 
     elif which_data == "dev":
         data_path = Path("data","dev.tsv")
         dataset = data.TabularDataset(path=data_path,format="tsv",fields=tsv_fld)
-        return data.BucketIterator(dataset,batch_size=32,shuffle=True,
-                                   sort_key=lambda x:len(x.text),
-                                   sort_within_batch=True,
-                                   device=device)
+        return data.BucketIterator(dataset,**iterator_config)
 
     elif which_data == "test":
         data_path = Path("data","test.tsv")
         dataset = data.TabularDataset(path=data_path,format="tsv",fields=tsv_fld)
         # Init Iterator (DataLoader)
         return data.Iterator(dataset,batch_size=32,device=device)
+    else:
+        raise ValueError("Enter whether 'train'/'dev'/'test'")
 
 if __name__ == '__main__':
     # make_data()
