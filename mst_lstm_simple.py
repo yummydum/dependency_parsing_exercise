@@ -10,8 +10,8 @@ from typing import List,Tuple,Union,Optional,Dict
 import numpy as np
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-from torchsummary import summary
 from data_processor import load_iterator
 from util import set_logger
 
@@ -19,12 +19,6 @@ from util import set_logger
 logger = set_logger(__name__)
 # Fix seed
 torch.manual_seed(1)
-# manage device
-if torch.cuda.is_available():
-    device = torch.device('cuda')
-else:
-    device = torch.device('cpu')
-logger.debug(f"Computation on {device}")
 
 class BiLSTM_Parser_simple(nn.Module):
 
@@ -57,10 +51,10 @@ class BiLSTM_Parser_simple(nn.Module):
         self.Linear_modif = nn.Linear(lstm_hidden_dim,mlp_hidden_dim // 2)
         self.output_layer = nn.Linear(mlp_hidden_dim,1)  # output layer
 
-    # For test : word_tensor = data[0]; pos_tensor = data[1]
+    # For test :
     # self = model
     # batch = next(iter(train_data))
-    # word_tensor,word_lengths = batch.text
+    # word_tensor,word_len = batch.text
     # pos_tensor,pos_lengths = batch.pos
     def forward(self,word_tensor,word_lengths,pos_tensor) -> torch.tensor:
         """
@@ -92,19 +86,23 @@ class BiLSTM_Parser_simple(nn.Module):
 
         return score_matrix
 
-    # heads = batch.head
-    # batch.dataset.examples[0].text
-    # batch.dataset.examples[0].head
-    # len(batch.dataset.examples[0].text)
-    def calc_loss(self,score_matrix,word_lengths,heads):
-        loss_func = nn.CrossEntropyLoss()
+
+    # for i,batch in enumerate(train_data):
+    #     if i == 0:
+    #         break
+    # score_matrix = model(batch.text[0],batch.text[1],batch.pos[0])  # score_matrix.shape
+    # score_matrix = score_matrix.transpose(1,2)
+    # i = 0
+    # x_i = score_matrix[i];word_len_i=batch.text[1][i];heads_i=batch.head[i]
+    def calc_loss(self,score_matrix,word_len,heads):
         loss = 0
-        for x_i,heads_i,word_len in zip(score_matrix,heads,word_lengths): # x_i = score_matrix[0];heads_i=batch.head[0];word_len=word_lengths[0]
-            word_len = word_len.item()
-            x_i = x_i.transpose(0,1)[1:word_len]  # x_i.shape
-            heads_i = heads_i[1:word_len].long()  # len(heads_i)
-            loss += loss_func(x_i,heads_i)
-        return loss / len(score_matrix[0])
+        score_matrix = score_matrix.transpose(1,2)
+        for x_i,word_len_i,heads_i in zip(score_matrix,word_len,heads):
+            word_len_i = word_len_i.item()
+            x_i = x_i[1:word_len_i]  # x_i.shape = (word_len-1,word_len)
+            heads_i = heads_i[1:word_len_i].long()  # heads_i
+            loss += F.cross_entropy(x_i,heads_i)  # TODO normalize so the loss scale will be same for different sentence length
+        return loss / score_matrix.shape[0]  # devide by minibatch size
 
 if __name__ == '__main__':
 
@@ -116,18 +114,31 @@ if __name__ == '__main__':
     import torch.optim as optim
     import matplotlib.pyplot as plt
 
+    # Config
+    if torch.cuda.is_available():
+        device = torch.device('cuda')
+    else:
+        device = torch.device('cpu')
+    logger.debug(f"Computation on {device}")
+
     model_param = {"word_embed_dim"  : 100,
                    "pos_embed_dim"   : 25,
                    "lstm_hidden_dim" :250,
                    "mlp_hidden_dim"  :100,
                    "num_layers"      : 2}
-    config_dict = {
+    model_config = {
         "model_param":model_param,
         "word_dropout":True,
         "learning_rate":0.001,
-        "epoch_num":30,
+        "epoch_num":100,
         "batch_size":32
     }
+
+    iterator_config = {"batch_size":32,
+                       "shuffle":True,
+                       "sort_key":lambda x:len(x.text),
+                       "sort_within_batch":True,
+                       "device":device}
 
     # Directory for storing result
     result_dir_path = Path("result",str(datetime.now()))
@@ -135,38 +146,40 @@ if __name__ == '__main__':
     # Store the config in json
     config_path = result_dir_path / "config.json"
     with config_path.open(mode="w") as fp:
-        json.dump(config_dict, fp)
+        json.dump(model_config, fp)
 
     # Load iterator
-    train_data = load_iterator("train")
-    dev_data   = load_iterator("dev")
+    train_data = load_iterator("train",**iterator_config)
+    dev_data   = load_iterator("dev",**iterator_config)
     TEXT = train_data.dataset.fields["text"]
     POS  = train_data.dataset.fields["pos"]
-    config_dict["model_param"]["vocab_size"] = len(TEXT.vocab.itos)
-    config_dict["model_param"]["pos_size"]   = len(POS.vocab.itos)
+    model_config["model_param"]["vocab_size"] = len(TEXT.vocab.itos)
+    model_config["model_param"]["pos_size"]   = len(POS.vocab.itos)
 
     # Init model
-    model = BiLSTM_Parser_simple(**config_dict["model_param"])
+    model = BiLSTM_Parser_simple(**model_config["model_param"])
     model.to(device)
-    # print(model)
 
     # Train setting
-    optimizer = optim.Adam(model.parameters(),config_dict["learning_rate"])
-    epoch_num = config_dict["epoch_num"]
-    batch_size = config_dict["batch_size"]
+    optimizer = optim.Adam(model.parameters(),model_config["learning_rate"])
+    # optimizer = optim.SGD(model.parameters(),model_config["learning_rate"])
+    epoch_num = model_config["epoch_num"]
+    batch_size = model_config["batch_size"]
 
     # Start train
     loss_tracker = []
     for epoch in range(epoch_num):  # epoch = 0
         running_loss = 0
-        for i,batch in enumerate(train_data):
-            # stop at the 30th batch
-            if i > 30:
+        for i,batch in enumerate(train_data):  # batch = next(iter(train_data))
+            if i >= 1:
                 continue
-            word_tensor,word_lengths = batch.text
+            word_tensor,word_len = batch.text
             pos_tensor,pos_lengths  = batch.pos
-            score_matrix = model(word_tensor,word_lengths,pos_tensor)
-            loss = model.calc_loss(score_matrix,word_lengths,batch.head)
+            original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
+            logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
+            logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
+            score_matrix = model(word_tensor,word_len,pos_tensor)
+            loss = model.calc_loss(score_matrix,word_len,batch.head)
             loss.backward()
             running_loss += loss.item()
             optimizer.step()
@@ -178,5 +191,17 @@ if __name__ == '__main__':
             running_loss = 0
 
         # Save model
-        result_path = result_dir_path / f"model_epoch{epoch}.pt"
-        torch.save(model,str(result_path))
+        # result_path = result_dir_path / f"model_epoch{epoch}.pt"
+        # torch.save(model,str(result_path))
+
+# Visualize the loss
+fig,ax = plt.subplots()
+ax.plot(range(len(loss_tracker)),loss_tracker)
+fig.savefig(result_dir_path/"loss_tracker.png")
+
+
+# acc = []
+# for batch in train_data:
+#     acc.append(batch.text[1][0].item())
+# fig,ax = plt.subplots()
+# ax.plot(range(len(acc)),acc)
