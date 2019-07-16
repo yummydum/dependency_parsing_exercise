@@ -171,11 +171,21 @@ if __name__ == '__main__':
     for epoch in range(epoch_num):  # epoch = 0
         running_loss = 0
         for i,batch in enumerate(train_data):  # batch = next(iter(train_data))
+<<<<<<< HEAD
             word_tensor,word_len = batch.text
             pos_tensor,pos_lengths  = batch.pos
             original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
             # logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
             # logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
+=======
+            if i >= 1:
+                continue
+            word_tensor,word_len = batch.text
+            pos_tensor,pos_lengths  = batch.pos
+            original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
+            logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
+            logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
+>>>>>>> 175830cde26f8746671b4e962ec392741cf1c9b8
             score_matrix = model(word_tensor,word_len,pos_tensor)
             loss = model.calc_loss(score_matrix,word_len,batch.head)
             loss.backward()
