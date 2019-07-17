@@ -183,10 +183,7 @@ if __name__ == '__main__':
             original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
             # logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
             # logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
-<<<<<<< HEAD
             logger.debug(f"The device of word_tensor is {word_tensor.device}")
-=======
->>>>>>> a7fb4c58d1d1159c088851ce344843511feb1201
             score_matrix = model(word_tensor,word_len,pos_tensor)
             loss = model.calc_loss(score_matrix,word_len,batch.head)
             loss.backward()
