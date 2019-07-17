@@ -18,6 +18,13 @@ from util import set_logger
 logger = set_logger(__name__)
 # Fix seed
 torch.manual_seed(1)
+# Config
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
+logger.debug(f"Computation on {device}")
+
 
 class BiLSTM_Parser_simple(nn.Module):
 
@@ -79,7 +86,7 @@ class BiLSTM_Parser_simple(nn.Module):
         # Compute score of h -> m
         head_features = self.Linear_head(lstm_out)  # head_features.shape(batch_size,sentence_len,mlp_hidden_dim//2)
         modif_features = self.Linear_modif(lstm_out)  # modif_features.shape(batch_size,sentence_len,mlp_hidden_dim//2)
-        score_matrix = torch.empty(size=(len(batch),sentence_len,sentence_len))
+        score_matrix = torch.empty(size=(len(batch),sentence_len,sentence_len),device=device)
         for m in range(sentence_len): # m=1
             for h in range(sentence_len): # h=2
                 feature_func = torch.cat((head_features[:,h],modif_features[:,m]),dim=1)  # feature_func.shape = (batch_size,mlp_hidden_dim)
@@ -122,13 +129,6 @@ if __name__ == '__main__':
     from pathlib import Path
     import torch.optim as optim
     import matplotlib.pyplot as plt
-
-    # Config
-    if torch.cuda.is_available():
-        device = torch.device('cuda')
-    else:
-        device = torch.device('cpu')
-    logger.debug(f"Computation on {device}")
 
     model_param = {"word_embed_dim"  : 100,
                    "pos_embed_dim"   : 25,
