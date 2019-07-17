@@ -68,13 +68,13 @@ class BiLSTM_Parser_simple(nn.Module):
         word_embeds = self.word_embeds(word_tensor)     # word_embeds.shape = (batch_size,sentence_len,word_embed_dim)
         pos_embeds  = self.pos_embeds(pos_tensor)       # pos_embeds.shape = (batch_size,sentence_len,pos_embed_dim)
         embeds = torch.cat((word_embeds,pos_embeds),2)  # embeds.shape = (batch_size,sentence_len,(word_embed_dim+pos_embed_dim))
-        logger.debug(f"The device for word_tensor is {embeds.device}")
+        logger.debug(f"The device for embeds is {embeds.device}")
 
         # Bidirectional LSTM
         packed_embeds = pack_padded_sequence(embeds,word_lengths,batch_first=True)
         packed_lstm_out, _ = self.lstm(packed_embeds)
         lstm_out,_ = pad_packed_sequence(packed_lstm_out,batch_first=True)  # lstm_out.shape = (batch_size,sentence_len,lstm_hidden_dim)
-        logger.debug(f"The device for word_tensor is {lstm_out.device}")
+        logger.debug(f"The device for lstm_out is {lstm_out.device}")
 
         # Compute score of h -> m
         head_features = self.Linear_head(lstm_out)  # head_features.shape(batch_size,sentence_len,mlp_hidden_dim//2)
@@ -85,7 +85,7 @@ class BiLSTM_Parser_simple(nn.Module):
                 feature_func = torch.cat((head_features[:,h],modif_features[:,m]),dim=1)  # feature_func.shape = (batch_size,mlp_hidden_dim)
                 neuron = torch.tanh(feature_func)
                 score_matrix[:,h,m] = self.output_layer(neuron).view(len(batch))  # self.output_layer(neuron).view(len(batch)).shape = (batch_size,)
-        logger.debug(f"The device for word_tensor is {score_matrix.device}")
+        logger.debug(f"The device for score_matrix is {score_matrix.device}")
         return score_matrix
 
 
@@ -100,7 +100,6 @@ class BiLSTM_Parser_simple(nn.Module):
         loss_fn = nn.CrossEntropyLoss()
         loss = 0
         score_matrix = score_matrix.transpose(1,2)
-        logger.debug(f"Device of score matrix is {score_matrix.device}")
         for x_i,word_len_i,heads_i in zip(score_matrix,word_len,heads):
             logger.debug(f"Device of x_i is {x_i.device}")
             logger.debug(f"Device of head_i is {heads_i.device}")
