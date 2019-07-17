@@ -68,20 +68,17 @@ class BiLSTM_Parser_simple(nn.Module):
         (i,j) element is the score of ith word being the head of jth word
         """
 
-        logger.debug(f"The device for word_tensor is {word_tensor.device}")
         sentence_len = len(word_tensor[0])
 
         # Word/POS embedding
         word_embeds = self.word_embeds(word_tensor)     # word_embeds.shape = (batch_size,sentence_len,word_embed_dim)
         pos_embeds  = self.pos_embeds(pos_tensor)       # pos_embeds.shape = (batch_size,sentence_len,pos_embed_dim)
         embeds = torch.cat((word_embeds,pos_embeds),2)  # embeds.shape = (batch_size,sentence_len,(word_embed_dim+pos_embed_dim))
-        logger.debug(f"The device for embeds is {embeds.device}")
 
         # Bidirectional LSTM
         packed_embeds = pack_padded_sequence(embeds,word_lengths,batch_first=True)
         packed_lstm_out, _ = self.lstm(packed_embeds)
         lstm_out,_ = pad_packed_sequence(packed_lstm_out,batch_first=True)  # lstm_out.shape = (batch_size,sentence_len,lstm_hidden_dim)
-        logger.debug(f"The device for lstm_out is {lstm_out.device}")
 
         # Compute score of h -> m
         head_features = self.Linear_head(lstm_out)  # head_features.shape(batch_size,sentence_len,mlp_hidden_dim//2)
@@ -92,7 +89,6 @@ class BiLSTM_Parser_simple(nn.Module):
                 feature_func = torch.cat((head_features[:,h],modif_features[:,m]),dim=1)  # feature_func.shape = (batch_size,mlp_hidden_dim)
                 neuron = torch.tanh(feature_func)
                 score_matrix[:,h,m] = self.output_layer(neuron).view(len(batch))  # self.output_layer(neuron).view(len(batch)).shape = (batch_size,)
-        logger.debug(f"The device for score_matrix is {score_matrix.device}")
         return score_matrix
 
 
@@ -185,7 +181,6 @@ if __name__ == '__main__':
             original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
             # logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
             # logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
-            logger.debug(f"The device of word_tensor is {word_tensor.device}")
             score_matrix = model(word_tensor,word_len,pos_tensor)
             loss = model.calc_loss(score_matrix,word_len,batch.head)
             loss.backward()
