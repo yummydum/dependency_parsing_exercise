@@ -97,12 +97,19 @@ class BiLSTM_Parser_simple(nn.Module):
     def calc_loss(self,score_matrix,word_len,heads):
         loss = 0
         score_matrix = score_matrix.transpose(1,2)
+        logger.debug(f"Device of score matrix is {score_matrix.device}")
         for x_i,word_len_i,heads_i in zip(score_matrix,word_len,heads):
+            logger.debug(f"Device of x_i is {x_i.device}")
+            logger.debug(f"Device of head_i is {heads_i.device}")
             word_len_i = word_len_i.item()
             x_i = x_i[1:word_len_i]  # x_i.shape = (word_len-1,word_len)
             heads_i = heads_i[1:word_len_i].long()  # heads_i
             loss += F.cross_entropy(x_i,heads_i)  # TODO normalize so the loss scale will be same for different sentence length
         return loss / score_matrix.shape[0]  # devide by minibatch size
+
+    def predict(score_matrix):
+        score_matrix = score_matrix.transpose(1,2)
+        return torch.argmax(score_matrix,dim=2)
 
 if __name__ == '__main__':
 
@@ -171,21 +178,12 @@ if __name__ == '__main__':
     for epoch in range(epoch_num):  # epoch = 0
         running_loss = 0
         for i,batch in enumerate(train_data):  # batch = next(iter(train_data))
-<<<<<<< HEAD
             word_tensor,word_len = batch.text
             pos_tensor,pos_lengths  = batch.pos
             original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
             # logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
             # logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
-=======
-            if i >= 1:
-                continue
-            word_tensor,word_len = batch.text
-            pos_tensor,pos_lengths  = batch.pos
-            original_text = [TEXT.vocab.itos[i.item()] for i in word_tensor[0]]
-            logger.debug(f"The original text of the first sample in the minibatch is: {original_text}")
-            logger.debug(f"The average length os this minibatch is {np.average(word_len)}")
->>>>>>> 175830cde26f8746671b4e962ec392741cf1c9b8
+            logger.debug(f"The device of word_tensor is {word_tensor.device}")
             score_matrix = model(word_tensor,word_len,pos_tensor)
             loss = model.calc_loss(score_matrix,word_len,batch.head)
             loss.backward()
